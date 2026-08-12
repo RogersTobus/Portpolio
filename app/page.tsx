@@ -146,11 +146,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual" aria-hidden="true">
-          <div className="aurora-field">
-            <span className="aurora-ribbon aurora-one" />
-            <span className="aurora-ribbon aurora-two" />
-            <span className="aurora-ribbon aurora-three" />
-          </div>
+          <div className="sphere-sheen" />
           <div className="orbit orbit-one"><span className="orbiter orbiter-large" /></div>
           <div className="orbit orbit-two"><span className="orbiter orbiter-small" /></div>
           <div className="orbit orbit-three"><span className="orbiter orbiter-medium" /></div>
