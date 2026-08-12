@@ -114,6 +114,7 @@ function Arrow() {
 export default function Home() {
   return (
     <main>
+      <div className="scroll-progress" aria-hidden="true" />
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="XBASE 홈">
           <Image src="/xbase-logo.png" alt="" width={30} height={30} priority />
@@ -145,6 +146,11 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual" aria-hidden="true">
+          <div className="aurora-field">
+            <span className="aurora-ribbon aurora-one" />
+            <span className="aurora-ribbon aurora-two" />
+            <span className="aurora-ribbon aurora-three" />
+          </div>
           <div className="orbit orbit-one"><span className="orbiter orbiter-large" /></div>
           <div className="orbit orbit-two"><span className="orbiter orbiter-small" /></div>
           <div className="orbit orbit-three"><span className="orbiter orbiter-medium" /></div>
