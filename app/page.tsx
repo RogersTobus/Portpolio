@@ -145,8 +145,9 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual" aria-hidden="true">
-          <div className="orbit orbit-one" />
-          <div className="orbit orbit-two" />
+          <div className="orbit orbit-one"><span className="orbiter orbiter-large" /></div>
+          <div className="orbit orbit-two"><span className="orbiter orbiter-small" /></div>
+          <div className="orbit orbit-three"><span className="orbiter orbiter-medium" /></div>
           <div className="core"><Image src="/xbase-logo.png" alt="XBASE 심볼" width={130} height={130} priority /></div>
           <span className="visual-label label-a">THINK</span>
           <span className="visual-label label-b">BUILD</span>
