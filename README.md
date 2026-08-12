@@ -1,100 +1,49 @@
-# vinext-starter
+# XBASE Portfolio
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+XBASE 공개용 개인 포트폴리오의 공식 원본 저장소입니다.
 
-## Prerequisites
+- Production: https://xbase.co.kr/
+- Brand: XBASE
+- Identity: Marketing × Data Analytics × Vibe Coding × System
+- Hosting: Cafe24 WordPress custom theme
 
-- Node.js `>=22.13.0`
+## 작업 전 필수 문서
 
-## Quick Start
+1. `AGENTS.md`
+2. `HANDOFF.md`
+3. `docs/PUBLIC_CONTENT_POLICY.md`
+4. `docs/DEPLOYMENT.md`
+5. `docs/WORKLOG.md`
 
-```bash
-npm install
-npm run dev
-npm run build
+특히 광고 매체를 직접 세팅·운영한 경력으로 표현하면 안 됩니다. 실제 역할은 퍼포먼스 마케터와 협업하여 광고 유입 이후 상담·예약·내원 퍼널과 성장 과제를 개선한 그로스 마케팅입니다.
+
+## 로컬 실행
+
+필요 환경:
+
+- Node.js 22.13 이상
+- pnpm
+
+```powershell
+pnpm install
+pnpm run dev
 ```
 
-This starter does not use `wrangler.jsonc`.
+검증:
 
-## Included Shape
-
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-Signed-in visitors receive both `oai-authenticated-user-id` and `oai-authenticated-user-email`. Private Sites require every visitor to sign in; public Sites may also have anonymous visitors, for whom neither header is present.
-
-The user ID is stable for the same user on the same Site and different across Sites. Email and name are intended for display or contact purposes.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const userId = requestHeaders.get("oai-authenticated-user-id");
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
+```powershell
+pnpm run build
 ```
 
-## Optional Dispatch-Owned ChatGPT Sign-In
+## Cafe24 배포
 
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
+자세한 절차는 `docs/DEPLOYMENT.md`를 따르세요. 카페24 비밀번호와 로컬 자격증명은 저장소에 포함되지 않습니다.
 
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
+## 주요 경로
 
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
-
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
-
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
-
-## Useful Commands
-
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
-
-## Learn More
-
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+- `app/page.tsx`: 홈 콘텐츠와 구조
+- `app/globals.css`: 전체 디자인
+- `app/detail-data.ts`: 세부 페이지 데이터
+- `app/seo.tsx`: SEO 및 구조화 데이터
+- `public/`: 로고와 공유 이미지
+- `work/`: 비밀정보를 제외한 Cafe24 배포 도구

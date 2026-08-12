@@ -2,40 +2,23 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://xbase.co.kr"),
-  title: "XBASE — Think Better. Build Better.",
-  description: "마케팅과 데이터, AI와 기술을 연결해 문제를 발견하고 더 나은 방식을 만드는 박영준의 개인 포트폴리오.",
-  openGraph: {
-    title: "XBASE — 문제를 발견하고, 더 나은 방식을 만듭니다.",
-    description: "Marketing × Data × Vibe Coding × Creative",
-    type: "website",
-    locale: "ko_KR",
-    siteName: "XBASE",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "XBASE — Think better. Build better." }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "XBASE — Think better. Build better.",
-    description: "Marketing × Data × Vibe Coding × Creative",
-    images: ["/og.png"],
-  },
+  title: { default: "XBASE | 마케팅·데이터·AI 자동화 포트폴리오", template: "%s | XBASE" },
+  description: "마케팅과 데이터, AI를 연결해 상상을 현실로 만들고 문제를 최선의 방법으로 해결하는 박영준의 개인 포트폴리오 XBASE입니다.",
+  applicationName: "XBASE",
+  authors: [{ name: "박영준", url: "https://xbase.co.kr/about/" }],
+  creator: "박영준",
+  publisher: "XBASE",
+  formatDetection: { email: false, address: false, telephone: false },
+  openGraph: { type: "website", locale: "ko_KR", siteName: "XBASE" },
+  twitter: { card: "summary_large_image" },
+  icons: { icon: "/xbase-logo.png", apple: "/xbase-logo.png" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="ko">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
-    </html>
-  );
+  return <html lang="ko"><body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body></html>;
 }
