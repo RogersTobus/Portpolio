@@ -814,7 +814,7 @@ body:has(.case-showcase-details[open]){overflow:hidden}
   .case-detail-content{height:100%;padding:18px;gap:14px;grid-template-rows:auto auto auto;align-content:start}
   .case-detail-heading{padding-right:0;gap:4px}
   .work-detail-page .case-detail-heading h2{font-size:23px;line-height:1.12}
-  .case-detail-summary{gap:7px}.case-detail-summary section{padding:10px 11px;border-radius:10px}.case-detail-summary b{margin-bottom:6px;font-size:17px}.case-detail-summary p{font-size:12px;line-height:1.4}
+  .case-detail-summary{grid-template-columns:1fr;gap:7px}.case-detail-summary section{padding:11px 12px;border-radius:10px;display:grid;grid-template-columns:68px 1fr;gap:8px;align-items:start}.case-detail-summary b{margin:1px 0 0;font-size:17px}.case-detail-summary p{font-size:13px;line-height:1.4}
   .case-detail-process{height:auto;grid-template-columns:1fr;grid-template-rows:auto auto;gap:6px;align-content:start}.case-detail-process h3{padding:0;font-size:20px}
   .case-detail-process ol{height:auto;gap:0;align-content:start}.case-detail-process li{padding:9px 0;grid-template-columns:27px 1fr;gap:7px;border-radius:0}.case-detail-process li>b{font-size:13px;line-height:1.4}.case-detail-process li>p{font-size:14px;line-height:1.4}
 }
