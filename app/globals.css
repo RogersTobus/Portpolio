@@ -793,7 +793,6 @@ body:has(.case-showcase-details[open]){overflow:hidden}
 .case-detail-process li>p{color:#2f3e52;font-size:17px;line-height:1.45;letter-spacing:-.015em}
 .case-emphasis{color:#101827;font-weight:700}
 .case-detail-visual-result .case-emphasis{color:#fff}
-.case-showcase-metric .case-emphasis{color:inherit;font-weight:inherit}
 @media(max-width:980px){
   .case-showcase-details[open] .case-showcase-detail-body{grid-template-columns:36% 64%}
   .case-detail-content{padding:24px 30px 18px;gap:12px}
