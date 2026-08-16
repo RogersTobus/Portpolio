@@ -56,12 +56,8 @@ export default function AboutPage() {
     </section>
 
     <section className="about-profile about-section" id="profile">
-      <div className="about-portrait" aria-label="인물사진 영역">
-        <div className="portrait-placeholder">
-          <Image src="/xbase-hero-symbol.svg" alt="" width={140} height={122} />
-          <span>PORTRAIT</span>
-          <p>인물사진 교체 영역</p>
-        </div>
+      <div className="about-portrait">
+        <Image className="about-portrait-photo" src="/about/park-youngjun-portrait.jpg" alt="박영준 프로필 사진" fill priority sizes="(max-width: 680px) 100vw, 38vw" />
       </div>
       <div className="about-profile-copy">
         <p className="section-kicker">INTRODUCTION</p>

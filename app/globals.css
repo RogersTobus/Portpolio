@@ -440,6 +440,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 .about-section{padding:112px max(5vw,calc((100vw - 1280px)/2))}
 .about-profile{display:grid;grid-template-columns:minmax(320px,.82fr) 1.18fr;gap:clamp(60px,8vw,128px);align-items:center;background:#fff}
 .about-portrait{position:relative;aspect-ratio:4/5;max-height:680px;border-radius:34px;overflow:hidden;background:linear-gradient(155deg,#eef4ff,#dce8ff 56%,#c9d9f5)}
+.about-portrait-photo{object-fit:cover;object-position:56% center}
 .about-portrait::before{content:"";position:absolute;width:88%;aspect-ratio:1;right:-30%;bottom:-20%;border-radius:50%;background:radial-gradient(circle,#91b4ff,rgba(87,145,255,.22) 48%,transparent 70%);filter:blur(8px)}
 .portrait-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#6e83a8}
 .portrait-placeholder img{width:25%;height:auto;opacity:.5;filter:drop-shadow(0 20px 35px rgba(47,101,212,.22))}
