@@ -1,5 +1,17 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — NEWS 섹션 순서 변경
+
+- 홈의 NEWS 섹션을 BEYOND MARKETING 섹션보다 위로 이동
+- 두 섹션의 기존 내용과 디자인은 유지
+
+## 2026-08-16 — CONTACT 섹션 제거
+
+- 홈 하단의 파란색 `LET'S CONNECT` 섹션 전체 삭제
+- 연결 대상이 사라진 헤더 `Let's talk` 버튼과 모바일 `Contact` 메뉴 제거
+- 프로젝트 카드의 `PRIVATE CASE` 링크를 `/work` 세부 페이지로 변경
+- 푸터는 기존 상태로 유지
+
 ## 2026-08-16 — THINKING 섹션 제목 변경
 
 - 홈 THINKING / THREADS 섹션의 큰 제목을 `NEWS`로 변경

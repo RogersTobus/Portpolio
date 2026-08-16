@@ -20,8 +20,7 @@ export default function DetailPage({ slug }: { slug: DetailSlug }) {
     <header className="site-header detail-header">
       <a className="wordmark" href="/"><Image src="/xbase-header-logo.svg" alt="" width={99} height={26} priority /></a>
       <nav aria-label="주요 메뉴">{menu.map(([label,href])=><a className={href===`/${slug}`?"active":""} href={href} key={href}>{label}</a>)}</nav>
-      <a className="header-cta" href="/#contact">Let&apos;s talk ↗</a>
-      <details className="mobile-menu"><summary aria-label="메뉴 열기"><span/><span/></summary><div>{menu.map(([label,href])=><a href={href} key={href}>{label}</a>)}<a href="/#contact">Contact</a></div></details>
+      <details className="mobile-menu"><summary aria-label="메뉴 열기"><span/><span/></summary><div>{menu.map(([label,href])=><a href={href} key={href}>{label}</a>)}</div></details>
     </header>
     <section className="detail-hero">
       <div className="detail-orb" aria-hidden="true"><i/><i/><span>{page.kicker}</span></div>
