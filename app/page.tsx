@@ -47,6 +47,14 @@ const works = [
   { no: "04", type: "AI · AUTOMATION · CONTENT", title: "반복 업무를 줄이고\n콘텐츠 시스템을 만들다", text: "병원 블로그의 기획과 제작 흐름을 AI 기반으로 재설계했습니다. 사람은 판단에 집중하고 반복은 시스템이 맡게 했습니다.", metric: "AI SYSTEM", label: "콘텐츠 자동화 구축", color: "navy" },
 ];
 
+const experienceHighlights = [
+  ["2026 — NOW", "식품 이커머스 기업", "E-commerce MD · Operations"],
+  ["2026", "명동 치과의원", "Marketing · Growth"],
+  ["2025", "강남 안과의원", "Marketing · Partnership"],
+  ["2024", "국내 이커머스 물류기업", "Installation Service · CX"],
+  ["2015 — 2024", "대한민국 육군", "Leadership · Operations"],
+];
+
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 
 function SkillLogo({ name }: { name: (typeof skillLogos)[number] }) {
@@ -102,6 +110,17 @@ export default function Home() {
         <a className="scroll-hint" href="#about"><span />SCROLL</a>
       </section>
 
+      <section className="impact section-pad" id="capabilities">
+        <div className="section-intro light-intro">
+          <p className="section-kicker">CAPABILITIES</p>
+          <h2>문제를 나누어 보고,<br />연결해서 해결합니다.</h2>
+          <p>고객 여정과 데이터, 화면과 운영을 하나의 흐름으로 봅니다. 문제를 구조화하고 실행 가능한 개선으로 연결합니다.</p>
+        </div>
+        <div className="impact-grid">
+          {impacts.map((item, index) => <article className={index === 0 ? "impact-card featured" : "impact-card"} key={item.label}><span>0{index + 1}</span><strong>{item.value}</strong><p>{item.label}</p></article>)}
+        </div>
+      </section>
+
       <section className="work section-pad" id="work">
         <div className="section-intro split-title work-title"><div><p className="section-kicker">WORK</p><h2>문제를 발견하고<br />바꿔낸 것들</h2></div><p>고객 여정과 운영 데이터에서 문제를 찾고,<br />직접 바꾼 과정을 보여드립니다.</p></div>
         <div className="work-list">
@@ -113,20 +132,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="impact section-pad" id="capabilities">
-        <div className="section-intro light-intro">
-          <p className="section-kicker">CAPABILITIES</p>
-          <h2>문제를 나누어 보고,<br />연결해서 해결합니다.</h2>
-          <p>고객 여정과 데이터, 화면과 운영을 하나의 흐름으로 봅니다. 문제를 구조화하고 실행 가능한 개선으로 연결합니다.</p>
-        </div>
-        <div className="impact-grid">
-          {impacts.map((item, index) => <article className={index === 0 ? "impact-card featured" : "impact-card"} key={item.label}><span>0{index + 1}</span><strong>{item.value}</strong><p>{item.label}</p></article>)}
-        </div>
-        <div className="impact-about" id="about">
+      <section className="impact about-band section-pad" id="about">
+        <div className="impact-about">
           <div className="section-intro split-title">
             <div><h2>산업은 달라도,<br />문제를 푸는 방식은 같았습니다.</h2></div>
             <div className="about-copy"><p>군에서는 조직과 운영을, 이커머스에서는 고객 경험을, 의료에서는 그로스 마케팅과 전환을 다뤘습니다.</p><p>현장을 관찰하고 데이터를 분석한 뒤, 직접 실행해 더 나은 결과로 연결해 왔습니다.</p></div>
           </div>
+        </div>
+        <div className="home-experience" aria-label="주요 경력">
+          <div className="home-experience-head"><span>EXPERIENCE</span><a href="/about">ABOUT 더 보기 <Arrow /></a></div>
+          {experienceHighlights.map(([period, company, role]) => <article key={`${period}-${company}`}>
+            <time>{period}</time><strong>{company}</strong><span>{role}</span>
+          </article>)}
         </div>
         <div className="signal-marquee" aria-hidden="true"><div>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS ·</div></div>
       </section>

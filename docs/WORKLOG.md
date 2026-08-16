@@ -1,5 +1,12 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — SKILLS 박스 레이아웃 재정렬
+
+- 과도했던 카드 높이와 섹션 상하 여백 축소
+- 세 카테고리 제목의 기준선과 영역 높이 통일
+- 로고 타일과 실제 로고 크기를 확대해 가독성 개선
+- 태블릿·모바일 카드 높이와 아이콘 크기 재조정
+
 ## 2026-08-16 — SKILLS 실제 브랜드 로고 적용
 
 - 이미지 검색으로 Microsoft, Google, Figma, Canva, 미리캔버스, OpenAI, Anthropic 로고 확인
@@ -390,3 +397,12 @@
 - 페이지 전체의 스크롤 blur/reveal 효과 제거
 - SEMA Consulting의 설득 흐름을 참고해 홈 섹션 순서 재배치
 - 핵심 정체성을 `MARKETING × DATA ANALYTICS × VIBE CODING × SYSTEM`으로 변경
+## 2026-08-16 — WORK 섹션 위치 재배치
+
+- CAPABILITIES 성과 카드와 ABOUT 소개 문구 사이로 WORK 전체 섹션을 이동
+- ABOUT 소개 영역을 독립된 다크 밴드로 분리해 섹션 순서를 명확하게 정리
+
+## 2026-08-16 — 홈 ABOUT에 압축 EXPERIENCE 추가
+
+- ABOUT 세부 페이지의 경력을 기간·조직·역할 중심의 간결한 타임라인으로 요약
+- 홈 ABOUT 소개 바로 아래에 배치하고 상세 ABOUT 이동 링크 추가
