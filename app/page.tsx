@@ -34,13 +34,6 @@ const works = [
   { no: "04", type: "AI · AUTOMATION · CONTENT", title: "반복 업무를 줄이고\n콘텐츠 시스템을 만들다", text: "병원 블로그의 기획과 제작 흐름을 AI 기반으로 재설계했습니다. 사람은 판단에 집중하고 반복은 시스템이 맡게 했습니다.", metric: "AI SYSTEM", label: "콘텐츠 자동화 구축", color: "navy" },
 ];
 
-const experiences = [
-  ["2026 — NOW", "명동 치과의원", "Marketing · Growth", "퍼포먼스 마케터와 협업하며 콘텐츠와 고객 퍼널 분석을 연결해 성장 과제를 수행하고 있습니다."],
-  ["2025", "강남 안과의원", "Marketing · Partnership", "마케팅과 제휴, 대외협력을 맡아 새로운 고객 접점과 프로젝트를 기획했습니다."],
-  ["2024", "국내 이커머스 물류기업", "Installation Service · CX", "운영 데이터와 VOC를 바탕으로 고객 경험과 설치 프로세스의 문제를 개선했습니다."],
-  ["2015 — 2024", "대한민국 육군", "Leadership · Operations", "조직과 자원을 운영하며 책임, 판단, 실행의 기본기를 익혔습니다."],
-];
-
 const steps = [
   ["01", "FIND", "데이터와 현장의 목소리에서 진짜 문제를 찾습니다."],
   ["02", "FRAME", "복잡한 문제를 모두가 이해할 수 있는 구조로 정리합니다."],
@@ -136,11 +129,6 @@ export default function Home() {
       <section className="process section-pad">
         <div className="section-intro centered"><p className="section-kicker">HOW I WORK</p><h2>전략보다 실행으로,<br />실행보다 결과로.</h2><p>감이 아니라 관찰과 데이터로 시작하고,<br />빠르게 만들고 반복해서 개선합니다.</p></div>
         <div className="process-grid">{steps.map(([no,title,text]) => <article key={no}><span>{no}</span><div className="process-symbol" aria-hidden="true"><i /><i /></div><h3>{title}</h3><p>{text}</p></article>)}</div>
-      </section>
-
-      <section className="experience section-pad" id="experience">
-        <div className="section-intro split-title"><div><p className="section-kicker">EXPERIENCE</p><h2>경험은 달라도,<br />방향은 같았습니다.</h2></div><p>조직 운영에서 고객 경험으로,<br />그리고 비즈니스 성장으로.</p></div>
-        <div className="timeline">{experiences.map(([year,company,role,description]) => <article key={year}><span className="year">{year}</span><div><h3>{company}</h3><span>{role}</span></div><p>{description}</p><i /></article>)}</div>
       </section>
 
       <section className="beyond section-pad">
