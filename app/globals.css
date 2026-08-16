@@ -711,3 +711,8 @@ body:has(.case-showcase-details[open]){overflow:hidden}
   background: #0d55dc;
   color: #fff;
 }
+
+.case-showcase,
+.case-showcase:nth-child(even) {
+  background: #fff !important;
+}
