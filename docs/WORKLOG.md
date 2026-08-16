@@ -444,3 +444,9 @@
 - CAPABILITIES 지표 3개를 세로 행으로 전환
 - 각 행의 두 번째 열에 대응하는 의료 퍼널·홈페이지 전환·설치 CX 사례를 결합
 - 중복되던 별도 WORK 카드 섹션을 제거해 홈 전체 길이를 축소
+
+## 2026-08-16 — EXPERIENCE 독립 섹션 분리
+
+- 산업 경험 소개와 경력표를 CAPABILITIES 하단이 아닌 별도 EXPERIENCE 섹션으로 전환
+- EXPERIENCE 라벨과 구분되는 다크 네이비 배경을 적용해 섹션 경계를 명확화
+- 경력표 내부의 중복 EXPERIENCE 표기는 CAREER TIMELINE으로 정리

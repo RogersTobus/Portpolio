@@ -117,15 +117,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="impact about-band section-pad" id="about">
+      <section className="experience-band about-band section-pad" id="about">
         <div className="impact-about">
           <div className="section-intro split-title">
-            <div><h2>산업은 달라도,<br />문제를 푸는 방식은 같았습니다.</h2></div>
+            <div><p className="section-kicker">EXPERIENCE</p><h2>산업은 달라도,<br />문제를 푸는 방식은 같았습니다.</h2></div>
             <div className="about-copy"><p>군에서는 조직과 운영을, 이커머스에서는 고객 경험을, 의료에서는 그로스 마케팅과 전환을 다뤘습니다.</p><p>현장을 관찰하고 데이터를 분석한 뒤, 직접 실행해 더 나은 결과로 연결해 왔습니다.</p></div>
           </div>
         </div>
         <div className="home-experience" aria-label="주요 경력">
-          <div className="home-experience-head"><span>EXPERIENCE</span><a href="/about">ABOUT 더 보기 <Arrow /></a></div>
+          <div className="home-experience-head"><span>CAREER TIMELINE</span><a href="/about">ABOUT 더 보기 <Arrow /></a></div>
           {experienceHighlights.map(([period, company, role]) => <article key={`${period}-${company}`}>
             <time>{period}</time><strong>{company}</strong><span>{role}</span>
           </article>)}
