@@ -113,10 +113,9 @@ export default function Home() {
         </div>
         <div className="impact-about" id="about">
           <div className="section-intro split-title">
-            <div><p className="section-kicker">ABOUT ME</p><h2>한 가지 공통점이<br />있었습니다.</h2></div>
+            <div><h2>한 가지 공통점이<br />있었습니다.</h2></div>
             <div className="about-copy"><p>군에서는 조직과 운영을, 이커머스 물류기업에서는 고객 경험을, 의료 업계에서는 그로스 마케팅과 전환을 다뤘습니다.</p><p>이들의 공통점은 문제를 발견하고, 원인을 분석하고, 직접 개선해 더 나은 결과를 만드는 것입니다.</p></div>
           </div>
-          <div className="about-statement"><span>ONE PERSON.</span><span>MULTIPLE PERSPECTIVES.</span><span>ONE WAY OF WORKING.</span></div>
         </div>
         <div className="signal-marquee" aria-hidden="true"><div>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS ·</div></div>
       </section>

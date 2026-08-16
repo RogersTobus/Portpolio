@@ -1,5 +1,11 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — CAPABILITIES 하단 ABOUT 문구 정리
+
+- ABOUT ME 라벨 삭제
+- ONE PERSON, MULTIPLE PERSPECTIVES, ONE WAY OF WORKING 문구 삭제
+- 제목과 본문만 유지
+
 ## 2026-08-16 — ABOUT ME를 CAPABILITIES에 통합
 
 - 상단의 독립 ABOUT ME 섹션 삭제
