@@ -41,11 +41,17 @@ const works = [
 ];
 
 const experienceHighlights = [
-  ["2026.06 — NOW", "식품 이커머스 기업", "E-commerce MD · Operations"],
-  ["2026.02 — 2026.06", "명동 치과의원", "Marketing · Growth"],
-  ["2025.02 — 2025.12", "강남 안과의원", "Marketing · Partnership"],
-  ["2024.08 — 2025.01", "국내 이커머스 물류기업", "Installation Service · CX"],
-  ["2015.07 — 2024.04", "대한민국 육군", "Leadership · Operations"],
+  ["2026.06 — NOW", "식품 이커머스 기업", "상품 운영과 판매 데이터를 기반으로 매출 성장을 관리합니다."],
+  ["2026.02 — 2026.06", "명동 치과의원", "고객 여정과 예약 전환을 분석해 마케팅 성과를 개선했습니다."],
+  ["2025.02 — 2025.12", "강남 안과의원", "제휴 마케팅과 신규 고객 접점 프로젝트를 기획했습니다."],
+  ["2024.08 — 2025.01", "국내 이커머스 물류기업", "설치 서비스 운영 데이터를 바탕으로 고객 경험을 개선했습니다."],
+  ["2015.07 — 2024.04", "대한민국 육군", "조직과 현장을 운영하며 인력·자원·품질을 관리했습니다."],
+];
+
+const newsItems = [
+  { category: "MARKETING", date: "2026. 08. 16", title: "광고보다 먼저 살펴봐야 할 고객 여정의 이탈 지점", image: "/news/customer-journey.svg", href: "https://www.threads.com/@xbase_lab?hl=ko" },
+  { category: "DATA", date: "2026. 08. 09", title: "전환율 숫자 뒤에 숨어 있는 고객 행동을 읽는 방법", image: "/news/data-signal.svg", href: "/thinking" },
+  { category: "AI", date: "2026. 08. 02", title: "반복 업무는 줄이고 판단에 집중하는 AI 활용 방식", image: "/news/ai-workflow.svg", href: "/thinking" },
 ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
@@ -97,7 +103,6 @@ export default function Home() {
           <div className="core"><Image src="/xbase-hero-symbol.svg" alt="XBASE 심볼" width={92} height={80} priority /></div>
           <span className="visual-label label-a">MARKETING</span><span className="visual-label label-b">DATA</span><span className="visual-label label-c">AI</span>
         </div>
-        <a className="scroll-hint" href="#about"><span />SCROLL</a>
       </section>
 
       <section className="impact merged-results section-pad" id="work">
@@ -108,7 +113,7 @@ export default function Home() {
         <div className="result-work-list">
           {works.slice(0, 3).map((work) => <article className={work.no === "01" ? "result-work-row featured" : "result-work-row"} key={work.no}>
             <div className="result-metric"><span>{work.no}</span><strong>{work.metric}</strong><p>{work.label}</p></div>
-            <div className="result-case"><span>{work.type}</span><h3>{work.title.split("\n").map(line => <span key={line}>{line}<br /></span>)}</h3><p>{work.text}</p></div>
+            <div className="result-case"><h3>{work.title.split("\n").map(line => <span key={line}>{line}<br /></span>)}</h3><p>{work.text}</p></div>
           </article>)}
         </div>
         <div className="more-works"><a href="/work">WORKS 더보기 <Arrow /></a></div>
@@ -122,7 +127,6 @@ export default function Home() {
           </div>
         </div>
         <div className="home-experience" aria-label="주요 경력">
-          <div className="home-experience-head"><span>CAREER TIMELINE</span></div>
           {experienceHighlights.map(([period, company, role]) => <article key={`${period}-${company}`}>
             <time>{period}</time><strong>{company}</strong><span>{role}</span>
           </article>)}
@@ -146,7 +150,12 @@ export default function Home() {
 
       <section className="thinking section-pad" id="thinking">
         <div className="section-intro split-title"><div><p className="section-kicker">THINKING / THREADS</p><h2>NEWS</h2></div></div>
-        <div className="thinking-track"><article className="thread-feature"><span>LATEST THINKING</span><h3>좋은 마케팅은 광고를 잘 만드는 일이 아니라, 고객을 멈추게 하는 지점을 찾아 없애는 일에 더 가깝습니다.</h3><div><span>@XBASE · THREADS</span><Arrow /></div></article><article><span>BUILD IN PUBLIC</span><h3>완성된 뒤 공개하는 대신, 만들어가는 과정부터 기록합니다.</h3><div><span>BUILD LOG</span><Arrow /></div></article><article><span>FIELD NOTE</span><h3>데이터는 답을 말하지 않습니다. 더 좋은 질문을 시작하게 합니다.</h3><div><span>XBASE NOTE</span><Arrow /></div></article></div>
+        <div className="thinking-track">{newsItems.map((item) => <article key={item.title}>
+          <a href={item.href} target={item.href.startsWith("http") ? "_blank" : undefined} rel={item.href.startsWith("http") ? "noreferrer" : undefined}>
+            <div className="news-thumb"><img src={item.image} alt="" /></div>
+            <div className="news-card-body"><div className="news-meta"><span>{item.category}</span><time>{item.date}</time></div><h3>{item.title}</h3><div className="news-link">READ MORE <Arrow /></div></div>
+          </a>
+        </article>)}</div>
       </section>
 
       <section className="beyond section-pad">
