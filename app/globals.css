@@ -625,3 +625,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 @media(max-width:760px){.case-showcase header{grid-template-columns:1fr}.case-showcase header>.case-showcase-meta{width:100%;max-width:420px}.case-showcase-thumb{max-width:none;margin:0}.case-showcase header h2{margin-top:6px}.case-showcase-metric{margin-top:4px}}
 .case-showcase-copy section{padding-top:0;border-top:0}
 .case-showcase-process ol{gap:12px 30px}.case-showcase-process li{padding:10px 0;border-bottom:0}
+.case-showcase-details summary{width:max-content;margin:26px 0 0 auto;padding:12px 16px;border:1px solid #b8c5d8;border-radius:999px;display:flex;align-items:center;gap:22px;list-style:none;color:#526176;cursor:pointer;transition:border-color .25s,color .25s,background .25s}.case-showcase-details summary::-webkit-details-marker{display:none}.case-showcase-details summary span{color:#1769ff;font-size:10px;letter-spacing:.1em}.case-showcase-details summary b{font-size:13px}.case-showcase-details summary i{font-size:19px;line-height:1;font-style:normal;transition:transform .3s}.case-showcase-details summary:hover{border-color:#1769ff;color:#1769ff;background:rgba(23,105,255,.04)}.case-showcase-details[open] summary i{transform:rotate(45deg)}.case-showcase-detail-body{padding-top:4px}
+@media(max-width:680px){.case-showcase-details summary{width:100%;justify-content:space-between;margin-top:24px}.case-showcase-detail-body{padding-top:2px}}
+
+/* Keep the full portrait, including shoes, inside the rounded frame. */
+.about-portrait-photo{object-fit:contain!important;object-position:center bottom!important;transform:scale(.94)}
