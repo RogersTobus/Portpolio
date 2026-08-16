@@ -13,9 +13,9 @@ const career = [
 ];
 
 const learning = [
-  { year: "2025", title: "Google Analytics Certification", label: "GAC", description: "고객 행동 데이터와 디지털 성과를 측정하고 분석하는 기반을 갖췄습니다." },
-  { year: "2024", title: "데이터분석 준전문가", label: "ADsP", description: "데이터 이해부터 분석 기획과 통계적 사고까지 실무 분석의 기본 체계를 학습했습니다." },
-  { year: "2024", title: "이어드림스쿨 4기", label: "DATA SCIENCE", description: "데이터 분석과 문제 해결 프로젝트를 통해 숫자를 실행 가능한 인사이트로 바꾸는 과정을 익혔습니다." },
+  { year: "2025", title: "Google Analytics Certification", label: "GAC", description: "고객 행동 데이터와 디지털 성과를 측정하고 분석하는 기반을 갖췄습니다.", use: "고객 행동 측정 · 퍼널 분석 · 전환 개선" },
+  { year: "2024", title: "데이터분석 준전문가", label: "ADsP", description: "데이터 이해부터 분석 기획과 통계적 사고까지 실무 분석의 기본 체계를 학습했습니다.", use: "분석 기획 · 통계적 사고 · 데이터 해석" },
+  { year: "2024", title: "이어드림스쿨 4기", label: "DATA SCIENCE", description: "데이터 분석과 문제 해결 프로젝트를 통해 숫자를 실행 가능한 인사이트로 바꾸는 과정을 익혔습니다.", use: "프로젝트 · 분석 실습 · 문제 해결" },
 ];
 
 const foundations = [
@@ -84,11 +84,18 @@ export default function AboutPage() {
     </section>
 
     <section className="about-learning about-section" id="learning">
-      <div className="about-section-heading">
-        <div><p className="section-kicker">CERTIFICATION & EDUCATION</p><h2>실행을 뒷받침하는<br />학습과 자격</h2></div>
-        <p>현장에서 얻은 질문을<br />체계적인 학습으로 확장합니다.</p>
+      <div className="learning-editorial">
+        <div className="learning-statement">
+          <p className="section-kicker">CERTIFICATION & EDUCATION</p>
+          <h2>배운 것을 증명하는 데 그치지 않고,<br /><span>문제를 푸는 도구로 사용합니다.</span></h2>
+          <p>현장에서 얻은 질문을 체계적인 학습으로 확장하고, 다시 실행과 개선에 적용합니다.</p>
+          <div className="learning-mark" aria-hidden="true"><Image src="/xbase-hero-symbol.svg" alt="" width={80} height={70} /><span>LEARN<br />APPLY<br />IMPROVE</span></div>
+        </div>
+        <div className="learning-ledger">{learning.map((item, index) => <article key={item.label}>
+          <div className="learning-index"><span>{String(index + 1).padStart(2, "0")}</span><time>{item.year}</time></div>
+          <div className="learning-entry"><div><b>{item.label}</b><span>↗</span></div><h3>{item.title}</h3><p>{item.description}</p><strong>{item.use}</strong></div>
+        </article>)}</div>
       </div>
-      <div className="learning-grid">{learning.map(item => <article key={item.label}><div><span>{item.year}</span><b>{item.label}</b></div><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
     </section>
 
     <section className="about-next">
