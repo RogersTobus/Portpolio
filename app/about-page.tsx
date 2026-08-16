@@ -52,7 +52,6 @@ export default function AboutPage() {
         <h1>경험을 연결해,<br /><span>더 나은 결과를 만듭니다.</span></h1>
         <p>마케팅, 고객 경험, 데이터와 운영을 오가며<br className="desktop-break" /> 문제의 원인을 찾고 실행 가능한 변화로 연결해 왔습니다.</p>
       </div>
-      <div className="about-hero-index" aria-hidden="true"><span>01</span><i /><span>ABOUT XBASE</span></div>
     </section>
 
     <section className="about-profile about-section" id="profile">
@@ -97,7 +96,6 @@ export default function AboutPage() {
           <p className="section-kicker">CERTIFICATION & EDUCATION</p>
           <h2>배운 것을 증명하는 데 그치지 않고,<br /><span>문제를 푸는 도구로 사용합니다.</span></h2>
           <p>현장에서 얻은 질문을 체계적인 학습으로 확장하고, 다시 실행과 개선에 적용합니다.</p>
-          <div className="learning-mark" aria-hidden="true"><Image src="/xbase-hero-symbol.svg" alt="" width={80} height={70} /><span>LEARN<br />APPLY<br />IMPROVE</span></div>
         </div>
         <div className="learning-ledger">{learning.map((item, index) => <article key={item.label}>
           <div className="learning-index"><span>{String(index + 1).padStart(2, "0")}</span><time>{item.year}</time></div>
