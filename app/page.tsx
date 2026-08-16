@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 };
 
 const works = [
-  { no: "01", type: "GROWTH · DATA · CX", title: "의료 고객 여정 전체를\n하나의 퍼널로 보다", text: "퍼포먼스 마케터와 협업하며 광고 유입 이후 상담, 예약, 내원까지 흩어진 고객 접점을 연결해 개선 지점을 찾았습니다.", teaser: "광고 이후의 고객 여정을 하나의 퍼널로 다시 설계했습니다.", metric: "12→18%", label: "DB 예약 전환율", color: "blue" },
-  { no: "02", type: "UX · DATA · MARKETING", title: "홈페이지를 소개서에서\n전환 도구로 바꾸다", text: "고객 행동을 바탕으로 정보의 순서와 예약 동선을 재구성해 더 쉽게 이해하고 행동할 수 있도록 개선했습니다.", teaser: "소개 중심의 홈페이지를 고객이 행동하는 전환 도구로 바꿨습니다.", metric: "+200%", label: "홈페이지 예약 전환", color: "cyan" },
-  { no: "03", type: "CX · OPERATIONS · DATA", title: "VOC에서 취소의 이유를\n찾아 개선하다", text: "설치 서비스 과정의 VOC와 운영 데이터를 바탕으로 고객이 놓치기 쉬운 정보를 보완하고 이용 경험을 개선했습니다.", teaser: "반복되는 고객의 목소리에서 서비스 취소의 원인을 찾았습니다.", metric: "27→4%", label: "설치 취소율", color: "violet" },
-  { no: "04", type: "AI · AUTOMATION · CONTENT", title: "반복 업무를 줄이고\n콘텐츠 시스템을 만들다", text: "병원 블로그의 기획과 제작 흐름을 AI 기반으로 재설계했습니다. 사람은 판단에 집중하고 반복은 시스템이 맡게 했습니다.", metric: "AI SYSTEM", label: "콘텐츠 자동화 구축", color: "navy" },
+  { no: "01", type: "PLATFORM · GROWTH", teaser: "의료·복지 플랫폼 광고 운영으로 신규 매출 채널을 성장시켰습니다.", metric: "+600%", label: "플랫폼 채널 매출" },
+  { no: "02", type: "DATA · TELEMARKETING", teaser: "상담데이터에서 이탈 원인을 찾아 예약 과정의 전환을 개선했습니다.", metric: "12→18%", label: "예약 전환율" },
+  { no: "03", type: "WORDPRESS · CRO", teaser: "정보 구조와 예약 동선을 다시 설계해 홈페이지를 전환 도구로 바꿨습니다.", metric: "+200%", label: "홈페이지 예약 전환" },
+  { no: "04", type: "CX · CONSULTING", teaser: "고객이 예약을 거절하는 이유를 분석해 상담 전략을 개선했습니다.", metric: "78→82%", label: "치료 동의율" },
 ];
 
 const newsItems = [
@@ -79,7 +79,7 @@ export default function Home() {
           <a className="preview-cta" href="/work">모든 프로젝트 보기 <Arrow /></a>
         </div>
         <div className="result-teaser-grid">
-          {works.slice(0, 3).map((work) => <a className="result-teaser-card" href="/work" key={work.no}>
+          {works.map((work) => <a className="result-teaser-card" href="/work" key={work.no}>
             <div className="teaser-meta"><span>{work.no}</span><b>{work.type}</b></div>
             <strong className="teaser-metric">{work.metric}</strong><p className="teaser-label">{work.label}</p>
             <p className="teaser-hook">{work.teaser}</p><div className="teaser-link">CASE 보기 <Arrow /></div>
