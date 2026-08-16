@@ -546,3 +546,4 @@
 - 검은 SKILLS 섹션에 간결한 섹션 라벨과 `성과를 만드는 실행 도구` 타이틀 복구
 - 메인 CAPABILITIES를 숫자 중심 클릭형 티저로, EXPERIENCE를 회사 목록 대신 경력 방향 프리뷰로 압축해 Work·About 전환 유도 강화
 - CAPABILITIES 아이브로우와 제목 사이의 중복 여백을 제거해 상단 타이포 위계를 정돈
+- 메인 CAPABILITIES·EXPERIENCE의 설명과 하단 CTA 행을 제거하고 CTA를 각 섹션 제목 우측 하단에 정렬

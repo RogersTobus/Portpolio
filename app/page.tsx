@@ -73,9 +73,10 @@ export default function Home() {
       </section>
 
       <section className="impact merged-results section-pad" id="work">
-        <div className="section-intro light-intro">
+        <div className="section-intro light-intro preview-heading">
           <p className="section-kicker">CAPABILITIES</p>
           <h2>실행의 결과는,<br />숫자로 증명합니다.</h2>
+          <a className="preview-cta" href="/work">모든 프로젝트 보기 <Arrow /></a>
         </div>
         <div className="result-teaser-grid">
           {works.slice(0, 3).map((work) => <a className="result-teaser-card" href="/work" key={work.no}>
@@ -84,14 +85,13 @@ export default function Home() {
             <p className="teaser-hook">{work.teaser}</p><div className="teaser-link">CASE 보기 <Arrow /></div>
           </a>)}
         </div>
-        <div className="section-route"><p>숫자 뒤에 있는 문제와 해결 과정을 확인해 보세요.</p><a href="/work">모든 프로젝트 보기 <Arrow /></a></div>
       </section>
 
       <section className="experience-band about-band section-pad" id="about">
         <div className="impact-about">
-          <div className="section-intro split-title">
+          <div className="section-intro split-title experience-heading">
             <div><p className="section-kicker">EXPERIENCE</p><h2>산업은 달라도,<br />문제를 푸는 방식은 같았습니다.</h2></div>
-            <div className="about-copy"><p>군에서는 조직과 운영을, 이커머스에서는 고객 경험을, 의료에서는 그로스 마케팅과 전환을 다뤘습니다.</p><p>현장을 관찰하고 데이터를 분석한 뒤, 직접 실행해 더 나은 결과로 연결해 왔습니다.</p></div>
+            <a className="preview-cta" href="/about">경력과 일하는 방식 보기 <Arrow /></a>
           </div>
         </div>
         <div className="career-preview" aria-label="경력 방향 미리보기">
@@ -100,7 +100,6 @@ export default function Home() {
           <div className="career-route-labels"><span>조직 운영</span><span>고객 경험</span><span>그로스 마케팅</span><span>비즈니스 운영</span></div>
           <p>서로 다른 산업에서 현장과 데이터를 연결하며 문제를 발견하고 직접 개선해 왔습니다.</p>
         </div>
-        <div className="section-route experience-route"><p>회사별 역할과 일하는 방식을 자세히 확인할 수 있습니다.</p><a href="/about">경력과 일하는 방식 보기 <Arrow /></a></div>
         <div className="signal-marquee" aria-hidden="true"><div className="signal-marquee-track"><span>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · </span><span>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · </span></div></div>
       </section>
 
