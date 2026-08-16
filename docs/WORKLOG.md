@@ -410,3 +410,8 @@
 ## 2026-08-16 — EXPERIENCE 기간 월 단위 표기
 
 - 이력서 원문을 기준으로 홈과 ABOUT 페이지 경력 기간을 `연도.월` 형식으로 통일
+
+## 2026-08-16 — DESIGN & CONTENTS에 WordPress 추가
+
+- WordPress 공식 W 마크를 로컬 자산으로 추가
+- DESIGN & CONTENTS 도구 목록에 WordPress를 배치

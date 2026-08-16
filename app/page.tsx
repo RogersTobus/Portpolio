@@ -32,6 +32,7 @@ const skillCategories = [
     { name: "Figma", src: "/skills/figma.svg" },
     { name: "Canva", src: "/skills/canva.png" },
     { name: "미리캔버스", src: "/skills/miricanvas.png" },
+    { name: "WordPress", src: "/skills/wordpress.png" },
   ] },
   { category: "AI", tools: [
     { name: "ChatGPT", src: "/skills/chatgpt.svg" },
