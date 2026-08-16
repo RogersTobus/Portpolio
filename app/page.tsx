@@ -14,18 +14,10 @@ export const metadata: Metadata = {
 };
 
 const works = [
-  { no: "01", type: "GROWTH · DATA · CX", title: "의료 고객 여정 전체를\n하나의 퍼널로 보다", text: "퍼포먼스 마케터와 협업하며 광고 유입 이후 상담, 예약, 내원까지 흩어진 고객 접점을 연결해 개선 지점을 찾았습니다.", metric: "12→18%", label: "DB 예약 전환율", color: "blue" },
-  { no: "02", type: "UX · DATA · MARKETING", title: "홈페이지를 소개서에서\n전환 도구로 바꾸다", text: "고객 행동을 바탕으로 정보의 순서와 예약 동선을 재구성해 더 쉽게 이해하고 행동할 수 있도록 개선했습니다.", metric: "+200%", label: "홈페이지 예약 전환", color: "cyan" },
-  { no: "03", type: "CX · OPERATIONS · DATA", title: "VOC에서 취소의 이유를\n찾아 개선하다", text: "설치 서비스 과정의 VOC와 운영 데이터를 바탕으로 고객이 놓치기 쉬운 정보를 보완하고 이용 경험을 개선했습니다.", metric: "27→4%", label: "설치 취소율", color: "violet" },
+  { no: "01", type: "GROWTH · DATA · CX", title: "의료 고객 여정 전체를\n하나의 퍼널로 보다", text: "퍼포먼스 마케터와 협업하며 광고 유입 이후 상담, 예약, 내원까지 흩어진 고객 접점을 연결해 개선 지점을 찾았습니다.", teaser: "광고 이후의 고객 여정을 하나의 퍼널로 다시 설계했습니다.", metric: "12→18%", label: "DB 예약 전환율", color: "blue" },
+  { no: "02", type: "UX · DATA · MARKETING", title: "홈페이지를 소개서에서\n전환 도구로 바꾸다", text: "고객 행동을 바탕으로 정보의 순서와 예약 동선을 재구성해 더 쉽게 이해하고 행동할 수 있도록 개선했습니다.", teaser: "소개 중심의 홈페이지를 고객이 행동하는 전환 도구로 바꿨습니다.", metric: "+200%", label: "홈페이지 예약 전환", color: "cyan" },
+  { no: "03", type: "CX · OPERATIONS · DATA", title: "VOC에서 취소의 이유를\n찾아 개선하다", text: "설치 서비스 과정의 VOC와 운영 데이터를 바탕으로 고객이 놓치기 쉬운 정보를 보완하고 이용 경험을 개선했습니다.", teaser: "반복되는 고객의 목소리에서 서비스 취소의 원인을 찾았습니다.", metric: "27→4%", label: "설치 취소율", color: "violet" },
   { no: "04", type: "AI · AUTOMATION · CONTENT", title: "반복 업무를 줄이고\n콘텐츠 시스템을 만들다", text: "병원 블로그의 기획과 제작 흐름을 AI 기반으로 재설계했습니다. 사람은 판단에 집중하고 반복은 시스템이 맡게 했습니다.", metric: "AI SYSTEM", label: "콘텐츠 자동화 구축", color: "navy" },
-];
-
-const experienceHighlights = [
-  ["2026.06 — NOW", "식품 이커머스 기업", "상품 운영과 판매 데이터를 기반으로 매출 성장을 관리합니다."],
-  ["2026.02 — 2026.06", "명동 치과의원", "고객 여정과 예약 전환을 분석해 마케팅 성과를 개선했습니다."],
-  ["2025.02 — 2025.12", "강남 안과의원", "제휴 마케팅과 신규 고객 접점 프로젝트를 기획했습니다."],
-  ["2024.08 — 2025.01", "국내 이커머스 물류기업", "설치 서비스 운영 데이터를 바탕으로 고객 경험을 개선했습니다."],
-  ["2015.07 — 2024.04", "대한민국 육군", "조직과 현장을 운영하며 인력·자원·품질을 관리했습니다."],
 ];
 
 const newsItems = [
@@ -85,13 +77,14 @@ export default function Home() {
           <p className="section-kicker">CAPABILITIES</p>
           <h2>실행의 결과는,<br />숫자로 증명합니다.</h2>
         </div>
-        <div className="result-work-list">
-          {works.slice(0, 3).map((work) => <article className={work.no === "01" ? "result-work-row featured" : "result-work-row"} key={work.no}>
-            <div className="result-metric"><span>{work.no}</span><strong>{work.metric}</strong><p>{work.label}</p></div>
-            <div className="result-case"><h3>{work.title.split("\n").map(line => <span key={line}>{line}<br /></span>)}</h3><p>{work.text}</p></div>
-          </article>)}
+        <div className="result-teaser-grid">
+          {works.slice(0, 3).map((work) => <a className="result-teaser-card" href="/work" key={work.no}>
+            <div className="teaser-meta"><span>{work.no}</span><b>{work.type}</b></div>
+            <strong className="teaser-metric">{work.metric}</strong><p className="teaser-label">{work.label}</p>
+            <p className="teaser-hook">{work.teaser}</p><div className="teaser-link">CASE 보기 <Arrow /></div>
+          </a>)}
         </div>
-        <div className="more-works"><a href="/work">WORKS 더보기 <Arrow /></a></div>
+        <div className="section-route"><p>숫자 뒤에 있는 문제와 해결 과정을 확인해 보세요.</p><a href="/work">모든 프로젝트 보기 <Arrow /></a></div>
       </section>
 
       <section className="experience-band about-band section-pad" id="about">
@@ -101,12 +94,13 @@ export default function Home() {
             <div className="about-copy"><p>군에서는 조직과 운영을, 이커머스에서는 고객 경험을, 의료에서는 그로스 마케팅과 전환을 다뤘습니다.</p><p>현장을 관찰하고 데이터를 분석한 뒤, 직접 실행해 더 나은 결과로 연결해 왔습니다.</p></div>
           </div>
         </div>
-        <div className="home-experience" aria-label="주요 경력">
-          {experienceHighlights.map(([period, company, role]) => <article key={`${period}-${company}`}>
-            <time>{period}</time><strong>{company}</strong><span>{role}</span>
-          </article>)}
+        <div className="career-preview" aria-label="경력 방향 미리보기">
+          <div className="career-years"><span>2015</span><span>NOW</span></div>
+          <div className="career-route-line"><i /><i /><i /><i /></div>
+          <div className="career-route-labels"><span>조직 운영</span><span>고객 경험</span><span>그로스 마케팅</span><span>비즈니스 운영</span></div>
+          <p>서로 다른 산업에서 현장과 데이터를 연결하며 문제를 발견하고 직접 개선해 왔습니다.</p>
         </div>
-        <div className="more-about"><a href="/about">ABOUT 더보기 <Arrow /></a></div>
+        <div className="section-route experience-route"><p>회사별 역할과 일하는 방식을 자세히 확인할 수 있습니다.</p><a href="/about">경력과 일하는 방식 보기 <Arrow /></a></div>
         <div className="signal-marquee" aria-hidden="true"><div className="signal-marquee-track"><span>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · </span><span>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · </span></div></div>
       </section>
 
