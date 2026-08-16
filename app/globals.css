@@ -391,11 +391,15 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 .about-foundation{background:#eef3fb}
 .compact-heading{grid-template-columns:1fr;margin-bottom:58px}
 .foundation-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.foundation-grid article{min-height:330px;padding:30px;border:1px solid #d4deed;border-radius:28px;background:rgba(255,255,255,.65);display:flex;flex-direction:column;transition:.35s}
-.foundation-grid article:hover{transform:translateY(-6px);background:#fff;box-shadow:0 24px 55px rgba(54,83,133,.1)}
-.foundation-grid article>span{color:var(--blue);font-size:12px}
-.foundation-grid h3{margin-top:auto;font-size:27px;line-height:1.35;letter-spacing:-.04em}
-.foundation-grid p{margin-top:16px;color:#69758a;font-size:15px;line-height:1.75}
+.foundation-grid article{position:relative;min-height:330px;padding:30px;border:1px solid rgba(255,255,255,.2);border-radius:28px;overflow:hidden;background-image:url('/about/working-principles-triptych.png');background-size:300% 100%;background-repeat:no-repeat;display:flex;flex-direction:column;color:#fff;box-shadow:0 18px 42px rgba(30,54,94,.13);transition:transform .45s cubic-bezier(.16,1,.3,1),box-shadow .45s ease}
+.foundation-grid article:nth-child(1){background-position:0 center}.foundation-grid article:nth-child(2){background-position:50% center}.foundation-grid article:nth-child(3){background-position:100% center}
+.foundation-grid article::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,17,36,.28) 0%,rgba(8,23,49,.6) 44%,rgba(5,14,31,.94) 100%);transition:background .45s ease}
+.foundation-grid article>*{position:relative;z-index:1}
+.foundation-grid article:hover{transform:translateY(-7px);box-shadow:0 28px 64px rgba(30,54,94,.24)}
+.foundation-grid article:hover::before{background:linear-gradient(180deg,rgba(20,70,155,.18) 0%,rgba(8,23,49,.52) 44%,rgba(5,14,31,.9) 100%)}
+.foundation-grid article>span{color:#86afff;font-size:12px}
+.foundation-grid h3{margin-top:auto;color:#fff;font-size:27px;line-height:1.35;letter-spacing:-.04em}
+.foundation-grid p{margin-top:16px;color:rgba(235,241,252,.78);font-size:15px;line-height:1.75}
 .about-learning{background:#fff}
 .learning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .learning-grid article{min-height:300px;padding:30px;border:1px solid #e0e5ec;border-radius:26px;display:flex;flex-direction:column;background:#fafbfc;transition:.35s}
