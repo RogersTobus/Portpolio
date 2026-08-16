@@ -150,7 +150,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 .thinking .split-title{margin-bottom:56px}
 .thinking-track article{min-height:360px;padding:30px}
 .thinking-track h3{margin-top:50px}
-.beyond{min-height:780px}
+.beyond{min-height:660px;padding-top:72px;padding-bottom:72px}
+.beyond .rings{width:min(38vw,500px)}
 
 @media(max-width:980px){
   .section-pad{padding-top:92px;padding-bottom:92px}
@@ -158,7 +159,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .work-title,.thinking .split-title{margin-bottom:44px}
   .about-band.section-pad{padding-top:86px;padding-bottom:86px}
   .signal-marquee{margin-bottom:-86px}
-  .beyond{min-height:720px}
+  .beyond{min-height:660px;padding-top:72px;padding-bottom:72px}
 }
 
 @media(min-width:981px) and (max-width:1180px){
@@ -200,7 +201,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .thinking-track article{min-height:250px;padding:20px}
   .thinking-track h3{margin-top:28px;font-size:22px;line-height:1.45}
   .thinking-track article>div{padding-top:16px}
-  .beyond{min-height:880px;gap:28px}
+  .beyond{min-height:780px;padding-top:64px;padding-bottom:64px;gap:24px}
+  .beyond .rings{width:min(78vw,430px)}
   .beyond{grid-template-areas:"copy" "visual" "actions";grid-template-rows:auto auto auto}
   .beyond-copy{order:initial;align-self:auto}.beyond-visual{order:initial}.beyond-actions{order:initial;width:100%;margin-top:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   .beyond-actions a{width:100%;min-width:0;padding:11px 12px}
