@@ -1,5 +1,13 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — 경력 PDF 기반 콘텐츠 보강
+
+- PDF의 공개 가능한 성과 수치를 WORK와 CAPABILITIES에 반영
+- SKILLS에 Illustrator, Google Ads, Google Analytics 추가
+- ABOUT 경력을 최신 순서로 보완하고 운영 규모·개선 결과 추가
+- ABOUT의 임시 영역을 ADsP, GAC, 이어드림스쿨 자격·교육 섹션으로 교체
+- 개인정보, 연봉, 퇴사 사유는 홈페이지에 반영하지 않음
+
 ## 2026-08-16 — SKILLS 로고 중심 디자인
 
 - SKILLS 카드의 설명 문장과 태그 삭제
