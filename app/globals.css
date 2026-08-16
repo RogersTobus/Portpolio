@@ -689,5 +689,25 @@ body:has(.case-showcase-details[open]){overflow:hidden}
 
 .case-showcase-metric > p {
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.5;
+}
+
+.case-showcase-details:not([open]) summary {
+  padding: 8px 14px;
+  gap: 16px;
+  border-color: #1769ff;
+  background: #1769ff;
+  color: #fff;
+}
+.case-showcase-details:not([open]) summary b::after {
+  font-size: 12px;
+  font-weight: 500;
+}
+.case-showcase-details:not([open]) summary i {
+  font-size: 16px;
+}
+.case-showcase-details:not([open]) summary:hover {
+  border-color: #0d55dc;
+  background: #0d55dc;
+  color: #fff;
 }
