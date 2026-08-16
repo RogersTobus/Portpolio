@@ -1,5 +1,13 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — SKILLS 실제 브랜드 로고 적용
+
+- 이미지 검색으로 Microsoft, Google, Figma, Canva, 미리캔버스, OpenAI, Anthropic 로고 확인
+- OFFICE에 PowerPoint, Excel, Word, Google Drive 배치
+- DESIGN & CONTENTS에 Figma, Canva, 미리캔버스 배치
+- AI에 ChatGPT, Claude, Gemini 배치
+- 임의 제작 아이콘 대신 실제 브랜드 벡터·앱 아이콘 사용
+
 ## 2026-08-16 — SKILLS 카테고리 박스 구성
 
 - 기존 로고 타일 대신 OFFICE, DESIGN & CONTENTS, AI 세 박스 생성
