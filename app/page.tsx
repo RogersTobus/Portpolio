@@ -104,7 +104,6 @@ export default function Home() {
         <div className="section-intro light-intro">
           <p className="section-kicker">CAPABILITIES</p>
           <h2>실행의 결과는,<br />숫자로 증명합니다.</h2>
-          <p>광고 운영부터 예약 전환, 홈페이지와 현장 운영까지.<br />직접 개선해 만든 변화를 핵심 지표로 보여드립니다.</p>
         </div>
         <div className="result-work-list">
           {works.slice(0, 3).map((work) => <article className={work.no === "01" ? "result-work-row featured" : "result-work-row"} key={work.no}>
@@ -146,7 +145,7 @@ export default function Home() {
       </section>
 
       <section className="thinking section-pad" id="thinking">
-        <div className="section-intro split-title"><div><p className="section-kicker">THINKING / THREADS</p><h2>NEWS</h2></div><p>마케팅과 데이터, AI를 실제 일에 적용하며<br />얻은 생각과 배움을 기록합니다.</p></div>
+        <div className="section-intro split-title"><div><p className="section-kicker">THINKING / THREADS</p><h2>NEWS</h2></div></div>
         <div className="thinking-track"><article className="thread-feature"><span>LATEST THINKING</span><h3>좋은 마케팅은 광고를 잘 만드는 일이 아니라, 고객을 멈추게 하는 지점을 찾아 없애는 일에 더 가깝습니다.</h3><div><span>@XBASE · THREADS</span><Arrow /></div></article><article><span>BUILD IN PUBLIC</span><h3>완성된 뒤 공개하는 대신, 만들어가는 과정부터 기록합니다.</h3><div><span>BUILD LOG</span><Arrow /></div></article><article><span>FIELD NOTE</span><h3>데이터는 답을 말하지 않습니다. 더 좋은 질문을 시작하게 합니다.</h3><div><span>XBASE NOTE</span><Arrow /></div></article></div>
       </section>
 

@@ -499,3 +499,4 @@
 - 모바일 문구→그래픽→버튼 간격을 56px에서 28px로 축소
 - 히어로 구체의 THINK·BUILD·GROW 라벨을 MARKETING·DATA·AI로 변경
 - BEYOND 섹션의 상하 패딩과 원형 그래픽 크기를 함께 줄여 불필요한 세로 공간 축소
+- CAPABILITIES와 NEWS 제목 옆의 보조 설명 문구를 삭제해 섹션 도입부 간소화
