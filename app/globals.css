@@ -629,6 +629,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 @media(max-width:680px){.case-showcase-details summary{width:100%;justify-content:space-between;margin-top:24px}.case-showcase-detail-body{padding-top:2px}}
 .case-showcase{padding-top:72px;padding-bottom:54px}.case-showcase header{padding-bottom:0;border-bottom:0}.case-showcase-details summary{margin-top:24px}.case-showcase-details[open]{display:block;padding-top:10px}
 @media(max-width:680px){.case-showcase{padding-top:52px;padding-bottom:44px}.case-showcase-details summary{margin-top:20px}.case-showcase-details[open]{padding-top:6px}}
+.case-showcase h2{font-size:clamp(34px,2.9vw,45px)}.case-showcase-details summary b{font-size:0}.case-showcase-details summary b::after{content:"자세히 보기";font-size:13px}
+@media(max-width:760px){.case-showcase header h2{font-size:30px}}
 
 /* Keep the full portrait, including shoes, inside the rounded frame. */
 .about-portrait-photo{object-fit:contain!important;object-position:center bottom!important;transform:scale(.94)}
