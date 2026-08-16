@@ -93,7 +93,7 @@ export default function AboutPage() {
       <div className="learning-editorial">
         <div className="learning-statement">
           <p className="section-kicker">CERTIFICATION & EDUCATION</p>
-          <h2>배운 것을 증명하는 데 그치지 않고,<br /><span>문제를 푸는 도구로 사용합니다.</span></h2>
+          <h2>배우는 데 그치지 않고,<br /><span>문제 해결에 활용합니다.</span></h2>
           <p>현장에서 얻은 질문을 체계적인 학습으로 확장하고, 다시 실행과 개선에 적용합니다.</p>
         </div>
         <div className="learning-ledger">{learning.map((item, index) => <article key={item.label}>
