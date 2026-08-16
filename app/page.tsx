@@ -20,11 +20,7 @@ const impacts = [
   { value: "SYSTEM", label: "측정·보고·반복 업무의 시스템화" },
 ];
 
-const skillGroups = [
-  { no: "01", category: "MARKETING", title: "고객을 움직이는 흐름", skills: ["Growth Marketing", "Performance", "Content", "CRM", "Customer Journey"] },
-  { no: "02", category: "DATA", title: "문제를 찾는 근거", skills: ["GA4", "Funnel Analysis", "VOC", "Conversion", "Reporting"] },
-  { no: "03", category: "AI & BUILD", title: "아이디어를 작동시키는 도구", skills: ["AI Workflow", "Web", "Automation", "Prototyping", "WordPress"] },
-];
+const skillLogos = ["Excel", "PowerPoint", "Figma", "Canva", "ChatGPT", "Claude"] as const;
 
 const works = [
   { no: "01", type: "GROWTH · DATA · CX", title: "의료 고객 여정 전체를\n하나의 퍼널로 보다", text: "퍼포먼스 마케터와 협업하며 광고 유입 이후 상담, 예약, 내원까지 흩어진 고객 접점을 연결해 개선 지점을 찾았습니다.", metric: "FUNNEL", label: "고객 여정 기반 협업", color: "blue" },
@@ -41,6 +37,15 @@ const steps = [
 ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
+
+function SkillLogo({ name }: { name: (typeof skillLogos)[number] }) {
+  if (name === "Excel") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#107c41"/><path d="M16 15h22v34H16z" fill="#0b5f31"/><path d="m21 23 5 9-5 9h6l3-6 3 6h6l-6-9 6-9h-6l-3 6-3-6z" fill="#fff"/><path d="M41 19h8v8h-8zm0 10h8v8h-8zm0 10h8v8h-8z" fill="#d8f3e5"/></svg>;
+  if (name === "PowerPoint") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#d24726"/><circle cx="40" cy="32" r="16" fill="#ed6c47"/><path d="M40 16v16h16A16 16 0 0 0 40 16" fill="#ffb89f"/><rect x="10" y="16" width="28" height="32" rx="4" fill="#b5361a"/><path d="M18 23h9c7 0 9 11 0 11h-4v7h-5zm5 5v4h4c3 0 3-4 0-4z" fill="#fff"/></svg>;
+  if (name === "Figma") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#fff"/><path d="M22 10h10v15H22a7.5 7.5 0 0 1 0-15" fill="#f24e1e"/><path d="M32 10h10a7.5 7.5 0 0 1 0 15H32z" fill="#ff7262"/><path d="M22 25h10v15H22a7.5 7.5 0 0 1 0-15" fill="#a259ff"/><circle cx="39.5" cy="32.5" r="7.5" fill="#1abcfe"/><path d="M22 40h10v7.5a7.5 7.5 0 1 1-10-7.1z" fill="#0acf83"/></svg>;
+  if (name === "Canva") return <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="canva-g" x1="8" y1="8" x2="56" y2="56"><stop stopColor="#00c4cc"/><stop offset="1" stopColor="#7d2ae8"/></linearGradient></defs><rect width="64" height="64" rx="15" fill="url(#canva-g)"/><path d="M43 23c-3-6-15-4-20 4-5 9 2 17 10 14 4-1 7-4 9-8-4 3-7 5-10 5-5 0-7-5-4-9 3-5 9-6 15-6z" fill="#fff"/></svg>;
+  if (name === "ChatGPT") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#10a37f"/><g fill="none" stroke="#fff" strokeWidth="3.4"><path d="M32 13a11 11 0 0 1 10 6 11 11 0 0 1 8 14 11 11 0 0 1-10 12 11 11 0 0 1-16 3 11 11 0 0 1-9-14 11 11 0 0 1 8-15 11 11 0 0 1 9-6z"/><path d="m23 19 18 10v20M15 34l17-10 18 10M24 48V28l17-9"/></g></svg>;
+  return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#d97757"/><g stroke="#fff" strokeWidth="4" strokeLinecap="round"><path d="M32 13v38M13 32h38M19 19l26 26M45 19 19 45"/><path d="m24 14 16 36M14 24l36 16M40 14 24 50M14 40l36-16" strokeWidth="2.5"/></g></svg>;
+}
 
 export default function Home() {
   return (
@@ -105,14 +110,9 @@ export default function Home() {
       <section className="skills section-pad" id="skills">
         <div className="section-intro split-title skills-title">
           <div><p className="section-kicker">SKILLS</p><h2>성과를 만드는<br />실행 도구</h2></div>
-          <p>도구를 나열하기보다,<br />어떤 문제에 어떻게 사용하는지 보여드립니다.</p>
         </div>
-        <div className="skills-grid">
-          {skillGroups.map((group) => <article className="skill-card" key={group.no}>
-            <div className="skill-card-head"><span>{group.no}</span><b>{group.category}</b></div>
-            <h3>{group.title}</h3>
-            <div className="skill-tags">{group.skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
-          </article>)}
+        <div className="skill-logo-grid">
+          {skillLogos.map((name) => <div className="skill-logo-tile" aria-label={name} title={name} key={name}><SkillLogo name={name} /></div>)}
         </div>
       </section>
 
@@ -140,7 +140,7 @@ export default function Home() {
 
       <section className="beyond section-pad">
         <div className="beyond-visual" aria-hidden="true"><div className="rings"><span>MARKETING</span><span>FINANCE</span><span>MANAGEMENT</span><span>OPERATIONS</span><i><Image src="/xbase-logo.svg" alt="" width={118} height={118} /></i></div></div>
-        <div className="beyond-copy"><p className="section-kicker">BEYOND MARKETING</p><h2>마케팅을 넘어,<br /><span>비즈니스 전체를<br />운영하는 사람으로.</span></h2><p>고객을 이해하는 마케팅에서 시작해 숫자를 이해하는 회계와 재무, 조직과 시스템을 다루는 경영관리로 확장하고 있습니다.</p><div className="growth-path"><span>Marketing</span><i>→</i><span>Finance</span><i>→</i><span>Management</span><i>→</i><b>COO</b></div></div>
+        <div className="beyond-copy"><p className="section-kicker">BEYOND MARKETING</p><h2>마케팅을 넘어,<br /><span>비즈니스 전체를<br />운영하는 사람으로.</span></h2><p>고객을 이해하는 마케팅에서 시작해 숫자를 이해하는 회계와 재무, 조직과 시스템을 다루는 경영관리로 확장하고 있습니다.</p><div className="growth-path"><span>Marketing</span><i>→</i><span>Finance</span><i>→</i><span>Management</span><i>→</i><b>COO</b></div><div className="beyond-actions"><a href="/work">WORK 보기 <Arrow /></a><a href="/about">ABOUT 더 보기 <Arrow /></a></div></div>
       </section>
 
       <footer><a className="wordmark inverse" href="#top"><Image src="/xbase-logo.svg" alt="" width={30} height={30} /><b>XBASE<span>.</span></b></a><p>개인 포트폴리오 · 프로젝트 내용은 공개 가능한 범위에서 재구성했습니다.</p><p>© 2026 XBASE. Built by Park Young Jun.</p></footer>

@@ -1,5 +1,23 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — SKILLS 로고 중심 디자인
+
+- SKILLS 카드의 설명 문장과 태그 삭제
+- Excel, PowerPoint, Figma, Canva, ChatGPT, Claude를 로고 타일로 표현
+- 데스크톱 6열, 태블릿 3열, 모바일 2열 반응형 구성
+
+## 2026-08-16 — 홈 구조 밀도 및 마무리 개선
+
+- SKILLS의 상하 여백과 카드 높이를 줄여 섹션 밀도 개선
+- WORK 카드 간격과 높이를 소폭 축소
+- BEYOND MARKETING 하단에 WORK와 ABOUT 이동 링크 추가
+
+## 2026-08-16 — SKILLS 실사용 도구 중심 개편
+
+- SKILLS를 OFFICE & DATA, DESIGN & CONTENT, AI & BUILD로 재구성
+- Excel, PowerPoint, Figma, Canva, ChatGPT, Claude 추가
+- 프로그램을 목적과 활용 방식에 따라 보여주도록 설명 문구 수정
+
 ## 2026-08-16 — 홈 SKILLS 섹션 추가 및 구조 점검
 
 - WORK와 CAPABILITIES 사이에 SKILLS 섹션 추가
