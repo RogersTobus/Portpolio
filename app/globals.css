@@ -806,15 +806,15 @@ body:has(.case-showcase-details[open]){overflow:hidden}
   .case-detail-process li{padding:9px 0}.case-detail-process li>p{font-size:14px}
 }
 @media(max-width:680px){
-  .case-showcase-details[open] .case-showcase-detail-body{width:calc(100vw - 16px);height:calc(100dvh - 16px);grid-template-columns:1fr;grid-template-rows:31% 69%;border-radius:20px}
+  .case-showcase-details[open] .case-showcase-detail-body{width:calc(100vw - 16px);height:min(900px,calc(100dvh - 16px));grid-template-columns:1fr;grid-template-rows:240px minmax(0,1fr);border-radius:20px}
   .case-showcase-details[open] summary{top:18px;right:18px;padding:7px 10px;background:rgba(255,255,255,.94)}
   .case-detail-visual-result{left:20px;right:72px;bottom:17px}
   .case-detail-visual-result>span,.case-detail-visual-result>p{display:none}
   .case-detail-visual-result>strong{font-size:43px}
-  .case-detail-content{padding:18px 18px 15px;gap:12px;grid-template-rows:auto auto 1fr}
+  .case-detail-content{height:auto;padding:18px 18px 15px;gap:14px;grid-template-rows:auto auto auto;align-content:start}
   .case-detail-heading{padding-right:0;gap:4px}
   .work-detail-page .case-detail-heading h2{font-size:23px;line-height:1.12}
-  .case-detail-summary{gap:7px}.case-detail-summary section{padding:9px 10px;border-radius:10px}.case-detail-summary b{margin-bottom:5px;font-size:16px}.case-detail-summary p{font-size:11px;line-height:1.35}
-  .case-detail-process{grid-template-columns:1fr;gap:5px}.case-detail-process h3{padding:0;font-size:17px}
-  .case-detail-process ol{gap:0}.case-detail-process li{padding:5px 0;grid-template-columns:24px 1fr;gap:6px;border-radius:0}.case-detail-process li>b,.case-detail-process li>p{font-size:11px;line-height:1.3}
+  .case-detail-summary{gap:7px}.case-detail-summary section{padding:10px 11px;border-radius:10px}.case-detail-summary b{margin-bottom:6px;font-size:17px}.case-detail-summary p{font-size:12px;line-height:1.4}
+  .case-detail-process{grid-template-columns:1fr;grid-template-rows:auto auto;gap:7px;align-content:start}.case-detail-process h3{padding:0;font-size:18px}
+  .case-detail-process ol{gap:0}.case-detail-process li{padding:7px 0;grid-template-columns:26px 1fr;gap:7px;border-radius:0}.case-detail-process li>b,.case-detail-process li>p{font-size:12px;line-height:1.38}
 }
