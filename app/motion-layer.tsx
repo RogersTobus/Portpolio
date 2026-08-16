@@ -13,18 +13,30 @@ export default function MotionLayer() {
       ".section-intro, .result-work-row, .home-experience article, .skill-category-box, .thinking-track article, .beyond-copy, .beyond-visual, .beyond-actions, .more-works, .more-about"
     ));
 
-    revealItems.forEach((item, index) => item.style.setProperty("--reveal-order", String(index % 4)));
+    revealItems.forEach((item, index) => {
+      item.style.setProperty("--reveal-order", String(index % 4));
+      item.classList.add("motion-pending");
+    });
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          (entry.target as HTMLElement).classList.remove("motion-pending");
           (entry.target as HTMLElement).classList.add("is-in-view");
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.13, rootMargin: "0px 0px -6%" });
+    }, { threshold: 0.01, rootMargin: "0px 0px -12% 0px" });
 
-    if (reduceMotion.matches) revealItems.forEach((item) => item.classList.add("is-in-view"));
-    else revealItems.forEach((item) => observer.observe(item));
+    if (reduceMotion.matches) revealItems.forEach((item) => {
+      item.classList.remove("motion-pending");
+      item.classList.add("is-in-view");
+    });
+    else revealItems.forEach((item) => {
+      if (item.getBoundingClientRect().bottom < 0) {
+        item.classList.remove("motion-pending");
+        item.classList.add("is-in-view");
+      } else observer.observe(item);
+    });
 
     const hero = document.querySelector<HTMLElement>(".hero");
     const visual = document.querySelector<HTMLElement>(".hero > .hero-visual");
