@@ -641,3 +641,22 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 
 /* Keep the full portrait, including shoes, inside the rounded frame. */
 .about-portrait-photo{object-fit:contain!important;object-position:center bottom!important;transform:scale(.94)}
+
+/* Keep the supplied 3:4 portrait intact without forcing it into the old 4:5 frame. */
+.about-portrait{aspect-ratio:3/4;max-height:none}
+.about-portrait-photo{object-fit:cover!important;object-position:center!important;transform:none}
+.about-next{min-height:0;padding-top:72px;padding-bottom:72px}
+
+/* Work thumbnails use the original project material; only the visible crop is adjusted. */
+.case-showcase-meta>b{display:none}
+.case-showcase:nth-child(2) .case-showcase-thumb img{object-position:center 45%}
+.case-showcase:nth-child(3) .case-showcase-thumb img{object-position:center 40%}
+.case-showcase:nth-child(4) .case-showcase-thumb img{object-position:center 48%}
+.case-showcase:nth-child(5) .case-showcase-thumb img{object-position:center 38%}
+.case-showcase:nth-child(6) .case-showcase-thumb img{object-position:center 48%}
+.case-showcase:nth-child(7) .case-showcase-thumb img{object-position:center 34%}
+.case-showcase:nth-child(8) .case-showcase-thumb img{object-position:center 40%}
+@media(max-width:680px){
+  .about-portrait{aspect-ratio:3/4}
+  .about-next{min-height:0;padding-top:56px;padding-bottom:56px}
+}
