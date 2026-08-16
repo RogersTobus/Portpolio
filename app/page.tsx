@@ -115,7 +115,7 @@ export default function Home() {
         </article>)}</div>
       </section>
 
-      <div className="signal-marquee home-transition-marquee" aria-hidden="true"><div className="signal-marquee-track"><span>OBSERVE THE FIELD · READ THE DATA · FIND THE PROBLEM · BUILD THE CHANGE · PROVE THE RESULT · </span><span>OBSERVE THE FIELD · READ THE DATA · FIND THE PROBLEM · BUILD THE CHANGE · PROVE THE RESULT · </span><span>OBSERVE THE FIELD · READ THE DATA · FIND THE PROBLEM · BUILD THE CHANGE · PROVE THE RESULT · </span></div></div>
+      <div className="signal-marquee home-transition-marquee" aria-hidden="true"><div className="signal-marquee-track"><span>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · </span><span>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · </span></div></div>
 
       <section className="beyond section-pad">
         <div className="beyond-visual" aria-hidden="true"><div className="rings"><span>MARKETING</span><span>FINANCE</span><span>MANAGEMENT</span><span>OPERATIONS</span><i><Image src="/xbase-logo.svg" alt="" width={118} height={118} /></i></div></div>
