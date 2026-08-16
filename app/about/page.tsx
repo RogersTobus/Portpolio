@@ -1,4 +1,4 @@
-import DetailPage from "../detail-page";
+import AboutPage from "../about-page";
 import { detailMetadata } from "../seo";
 export const metadata = detailMetadata("about");
-export default function Page(){return <DetailPage slug="about"/>}
+export default function Page(){return <AboutPage/>}
