@@ -176,9 +176,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .impact-grid{margin-top:38px;gap:10px}
   .impact-card{min-height:180px;padding:23px}
   .result-work-list{margin-top:38px}
-  .result-work-row{min-height:0;padding:28px 0;grid-template-columns:1fr;gap:24px}
-  .result-metric{min-height:135px;padding:0 0 22px;border-right:0;border-bottom:1px solid #30343a}
-  .result-metric>span{position:static;align-self:flex-start;margin-bottom:26px}
+  .result-work-row{min-height:0;padding:22px 0;grid-template-columns:1fr;gap:18px}
+  .result-metric{min-height:110px;padding:0 0 14px;border-right:0;border-bottom:1px solid #30343a}
+  .result-metric>span{position:absolute;left:0;top:0;margin:0}
   .result-case h3{font-size:30px}
   .more-works,.more-about{margin-top:28px}.more-works a,.more-about a{width:max-content;min-width:170px}
   .work-title,.thinking .split-title{margin-bottom:36px}
