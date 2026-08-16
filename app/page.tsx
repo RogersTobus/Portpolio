@@ -75,8 +75,8 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow reveal">MARKETING × DATA × AI</p>
-          <h1 className="reveal delay-1">데이터로 문제를 찾고,<br /><span>방향을 개선합니다.</span></h1>
-          <p className="hero-description reveal delay-2">마케팅과 데이터, AI를 연결해<br className="desktop-break" /> 아이디어를 제안이 아닌 결과로 만듭니다.</p>
+          <h1 className="reveal delay-1"><span className="hero-accent">데이터</span>로 문제를 찾고,<br /><span>방향을 개선합니다.</span></h1>
+          <p className="hero-description reveal delay-2">마케팅과 데이터, AI를 연결해<br className="desktop-break" /> 아이디어를 <strong>제안이 아닌 결과</strong>로 만듭니다.</p>
           <div className="hero-actions reveal delay-3">
             <a className="button hero-secondary" href="#work">프로젝트 보기 <Arrow /></a>
           </div>
@@ -95,7 +95,7 @@ export default function Home() {
       <section className="about section-pad" id="about">
         <div className="section-intro split-title">
           <div><p className="section-kicker">ABOUT XBASE</p><h2>직함보다,<br />문제를 푸는 방식으로<br />저를 설명합니다.</h2></div>
-          <div className="about-copy"><h3>산업과 역할은 달랐지만,<br />제가 해온 일에는 한 가지<br />공통점이 있습니다.</h3><p>군에서는 조직과 운영을, 이커머스 물류기업에서는 고객 경험을, 의료 업계에서는 그로스 마케팅과 전환을 다뤘습니다. 퍼포먼스 마케터와 협업하며 콘텐츠와 광고 성과를 상담·예약 흐름에 연결해 문제를 찾고 개선합니다.</p><p><b>XBASE</b>는 그 과정과 생각을 기록하는 개인 브랜드입니다. X는 가능성과 교차점을, BASE는 모든 실행의 단단한 기반을 의미합니다.</p></div>
+          <div className="about-copy"><h3>산업과 역할은 달랐지만,<br />제가 해온 일에는 한 가지<br />공통점이 있습니다.</h3><p>군에서는 조직과 운영을, 이커머스 물류기업에서는 고객 경험을, 의료 업계에서는 그로스 마케팅과 전환을 다뤘습니다. 퍼포먼스 마케터와 협업하며 콘텐츠와 광고 성과를 상담·예약 흐름에 연결해 문제를 찾고 개선합니다.</p></div>
         </div>
         <div className="about-statement"><span>ONE PERSON.</span><span>MULTIPLE PERSPECTIVES.</span><span>ONE WAY OF WORKING.</span></div>
       </section>
