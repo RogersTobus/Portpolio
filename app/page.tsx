@@ -91,14 +91,6 @@ export default function Home() {
         <a className="scroll-hint" href="#about"><span />SCROLL</a>
       </section>
 
-      <section className="about section-pad" id="about">
-        <div className="section-intro split-title">
-          <div><p className="section-kicker">ABOUT ME</p><h2>한 가지 공통점이<br />있었습니다.</h2></div>
-          <div className="about-copy"><p>군에서는 조직과 운영을, 이커머스 물류기업에서는 고객 경험을, 의료 업계에서는 그로스 마케팅과 전환을 다뤘습니다.</p><p>이들의 공통점은 문제를 발견하고, 원인을 분석하고, 직접 개선해 더 나은 결과를 만드는 것입니다.</p></div>
-        </div>
-        <div className="about-statement"><span>ONE PERSON.</span><span>MULTIPLE PERSPECTIVES.</span><span>ONE WAY OF WORKING.</span></div>
-      </section>
-
       <section className="work section-pad" id="work">
         <div className="section-intro split-title work-title"><div><p className="section-kicker">WORK</p><h2>문제를 발견하고<br />바꿔낸 것들</h2></div><p>성과만 나열하기보다 문제를 어떻게 보고,<br />무엇을 바꿨는지 보여드립니다.</p></div>
         <div className="work-list">
@@ -119,13 +111,23 @@ export default function Home() {
         <div className="impact-grid">
           {impacts.map((item, index) => <article className={index === 0 ? "impact-card featured" : "impact-card"} key={item.label}><span>0{index + 1}</span><strong>{item.value}</strong><p>{item.label}</p></article>)}
         </div>
-        <div className="impact-skills">
-          <p className="section-kicker">SKILLS</p>
-          <div className="skill-logo-grid">
-            {skillLogos.map((name) => <div className="skill-logo-tile" aria-label={name} title={name} key={name}><SkillLogo name={name} /></div>)}
+        <div className="impact-about" id="about">
+          <div className="section-intro split-title">
+            <div><p className="section-kicker">ABOUT ME</p><h2>한 가지 공통점이<br />있었습니다.</h2></div>
+            <div className="about-copy"><p>군에서는 조직과 운영을, 이커머스 물류기업에서는 고객 경험을, 의료 업계에서는 그로스 마케팅과 전환을 다뤘습니다.</p><p>이들의 공통점은 문제를 발견하고, 원인을 분석하고, 직접 개선해 더 나은 결과를 만드는 것입니다.</p></div>
           </div>
+          <div className="about-statement"><span>ONE PERSON.</span><span>MULTIPLE PERSPECTIVES.</span><span>ONE WAY OF WORKING.</span></div>
         </div>
         <div className="signal-marquee" aria-hidden="true"><div>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS ·</div></div>
+      </section>
+
+      <section className="skills section-pad" id="skills">
+        <div className="section-intro split-title skills-title">
+          <div><p className="section-kicker">SKILLS</p><h2>성과를 만드는<br />실행 도구</h2></div>
+        </div>
+        <div className="skill-logo-grid">
+          {skillLogos.map((name) => <div className="skill-logo-tile" aria-label={name} title={name} key={name}><SkillLogo name={name} /></div>)}
+        </div>
       </section>
 
       <section className="process section-pad">

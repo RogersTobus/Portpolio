@@ -1,5 +1,11 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — ABOUT ME를 CAPABILITIES에 통합
+
+- 상단의 독립 ABOUT ME 섹션 삭제
+- ABOUT ME 내용을 CAPABILITIES 성과 카드 하단으로 이동
+- SKILLS는 다시 독립된 흰색 섹션으로 복구
+
 ## 2026-08-16 — SKILLS를 CAPABILITIES에 통합
 
 - 독립된 흰색 SKILLS 섹션 삭제
