@@ -1,4 +1,4 @@
-import DetailPage from "../detail-page";
+import { WorkPage } from "../work-thinking-page";
 import { detailMetadata } from "../seo";
 export const metadata = detailMetadata("work");
-export default function Page(){return <DetailPage slug="work"/>}
+export default function Page(){return <WorkPage/>}
