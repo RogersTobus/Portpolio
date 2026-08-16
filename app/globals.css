@@ -226,8 +226,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 .home-experience article>span{color:#a7aeba}
 .signal-marquee{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
 .signal-marquee-track{display:flex;width:max-content}
-.signal-marquee-track>span{flex:none;padding-right:2.4em}
+.signal-marquee-track>span{flex:none}
 .skill-category-tools{margin-top:14px;padding-top:0;border-top:0}
+.more-works a,.more-about a{min-width:196px;padding:14px 18px;font-size:14px;font-weight:500!important}
+.beyond-actions a{padding:14px 18px;font-size:14px;font-weight:500!important}
 
 .thinking-track{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .thinking-track article,.thinking-track .thread-feature{min-height:0;padding:0;border:1px solid #e0e5ed;border-radius:24px;background:#fff;overflow:hidden;display:block;box-shadow:0 14px 38px rgba(31,54,94,.07)}
@@ -259,6 +261,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .result-metric p{font-size:15px}
   .home-experience article>span{font-size:13px}
   .skill-category-tools{margin-top:10px;padding-top:0}
+  .more-works a,.more-about a{font-size:14px}
+  .beyond-actions a{padding:13px 14px;font-size:14px}
   .thinking-track{grid-template-columns:1fr}
   .thinking-track article{min-height:0;padding:0}
   .news-card-body{min-height:190px;padding:18px}
