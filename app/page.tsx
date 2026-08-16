@@ -48,11 +48,11 @@ const works = [
 ];
 
 const experienceHighlights = [
-  ["2026 — NOW", "식품 이커머스 기업", "E-commerce MD · Operations"],
-  ["2026", "명동 치과의원", "Marketing · Growth"],
-  ["2025", "강남 안과의원", "Marketing · Partnership"],
-  ["2024", "국내 이커머스 물류기업", "Installation Service · CX"],
-  ["2015 — 2024", "대한민국 육군", "Leadership · Operations"],
+  ["2026.06 — NOW", "식품 이커머스 기업", "E-commerce MD · Operations"],
+  ["2026.02 — 2026.06", "명동 치과의원", "Marketing · Growth"],
+  ["2025.02 — 2025.12", "강남 안과의원", "Marketing · Partnership"],
+  ["2024.08 — 2025.01", "국내 이커머스 물류기업", "Installation Service · CX"],
+  ["2015.07 — 2024.04", "대한민국 육군", "Leadership · Operations"],
 ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
