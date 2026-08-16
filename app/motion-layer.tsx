@@ -14,7 +14,8 @@ export default function MotionLayer() {
     ));
 
     revealItems.forEach((item, index) => {
-      item.style.setProperty("--reveal-order", String(index % 4));
+      item.style.setProperty("--reveal-order", String(index % 3));
+      item.classList.add("motion-item");
       item.classList.add("motion-pending");
     });
     const observer = new IntersectionObserver((entries) => {
