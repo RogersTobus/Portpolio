@@ -21,6 +21,7 @@ const impacts = [
 ];
 
 const skillLogos = ["Excel", "PowerPoint", "Illustrator", "Figma", "Canva", "Google Ads", "Google Analytics", "ChatGPT", "Claude"] as const;
+const skillCategories = ["OFFICE", "DESIGN & CONTENTS", "AI"];
 
 const works = [
   { no: "01", type: "GROWTH · DATA · CX", title: "의료 고객 여정 전체를\n하나의 퍼널로 보다", text: "퍼포먼스 마케터와 협업하며 광고 유입 이후 상담, 예약, 내원까지 흩어진 고객 접점을 연결해 개선 지점을 찾았습니다.", metric: "12→18%", label: "DB 예약 전환율", color: "blue" },
@@ -117,8 +118,12 @@ export default function Home() {
         <div className="section-intro split-title skills-title">
           <div><p className="section-kicker">SKILLS</p><h2>성과를 만드는<br />실행 도구</h2></div>
         </div>
-        <div className="skill-logo-grid">
-          {skillLogos.map((name) => <div className="skill-logo-tile" aria-label={name} title={name} key={name}><SkillLogo name={name} /></div>)}
+        <div className="skill-category-grid">
+          {skillCategories.map((category, index) => <article className="skill-category-box" key={category}>
+            <span>0{index + 1}</span>
+            <h3>{category}</h3>
+            <div className="skill-category-slot" aria-hidden="true" />
+          </article>)}
         </div>
       </section>
 
