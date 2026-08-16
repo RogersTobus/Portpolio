@@ -137,7 +137,7 @@ export default function Home() {
       </section>
 
       <section className="thinking section-pad" id="thinking">
-        <div className="section-intro split-title"><div><p className="section-kicker">THINKING / THREADS</p><h2>배운 것과<br />생각한 것을 기록합니다.</h2></div><p>마케팅, 일하는 방식, AI와 기술,<br />그리고 성장 과정에 대한 생각을 나눕니다.</p></div>
+        <div className="section-intro split-title"><div><p className="section-kicker">THINKING / THREADS</p><h2>NEWS</h2></div><p>마케팅, 일하는 방식, AI와 기술,<br />그리고 성장 과정에 대한 생각을 나눕니다.</p></div>
         <div className="thinking-track"><article className="thread-feature"><span>LATEST THINKING</span><h3>좋은 마케팅은 광고를 잘 만드는 일이 아니라, 고객을 멈추게 하는 지점을 찾아 없애는 일에 더 가깝습니다.</h3><div><span>@XBASE · THREADS</span><Arrow /></div></article><article><span>BUILD IN PUBLIC</span><h3>완성해진 뒤 공개하는 대신, 만들어가는 과정부터 기록합니다.</h3><div><span>THREADS 연결 예정</span><Arrow /></div></article><article><span>FIELD NOTE</span><h3>데이터는 답을 말하지 않습니다. 더 좋은 질문을 시작하게 합니다.</h3><div><span>XBASE NOTE</span><Arrow /></div></article></div>
       </section>
 
