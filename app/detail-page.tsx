@@ -29,13 +29,13 @@ export default function DetailPage({ slug }: { slug: DetailSlug }) {
       <nav className="breadcrumbs" aria-label="탐색경로"><a href="/">홈</a><span>›</span><span aria-current="page">{seoPages[slug].title}</span></nav>
       <h1>{page.title.split("\n").map(line=><span key={line}>{line}<br/></span>)}</h1>
       <p>{page.intro}</p>
-      <a href="#overview">EXPLORE <span>↓</span></a>
+      <a href={slug === "about" ? "#experience" : "#overview"}>EXPLORE <span>↓</span></a>
     </section>
-    <section className="detail-stats" id="overview">{page.stats.map(([value,label])=><article key={value}><strong>{value}</strong><span>{label}</span></article>)}</section>
-    <section className="detail-overview section-pad">
+    {slug !== "about" && <section className="detail-stats" id="stats">{page.stats.map(([value,label])=><article key={value}><strong>{value}</strong><span>{label}</span></article>)}</section>}
+    {slug !== "about" && <section className="detail-overview section-pad" id="overview">
       <div className="detail-overview-title"><p className="section-kicker">OVERVIEW</p><h2>{slug === "creative" ? "이미지로 보여줄 공간" : slug === "build" ? "시스템으로 해결한 일" : "XBASE의 관점과 기록"}</h2></div>
       <div className="detail-card-grid">{page.sections.map(([no,title,text],i)=><article className={`detail-card detail-card-${i+1}`} key={no}><span>{no}</span><div className="detail-card-art" aria-hidden="true"><i/><i/></div><h3>{title}</h3><p>{text}</p><a href="#detail">DETAIL VIEW ↗</a></article>)}</div>
-    </section>
+    </section>}
     {slug === "about" && <section className="experience section-pad" id="experience">
       <div className="section-intro split-title"><div><p className="section-kicker">EXPERIENCE</p><h2>경험은 달라도,<br />방향은 같았습니다.</h2></div><p>조직 운영에서 고객 경험으로,<br />그리고 비즈니스 성장으로.</p></div>
       <div className="timeline">{experiences.map(([year,company,role,description]) => <article key={year}><span className="year">{year}</span><div><h3>{company}</h3><span>{role}</span></div><p>{description}</p><i /></article>)}</div>

@@ -1,5 +1,28 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — ABOUT ME 제목 간소화
+
+- 홈 ABOUT ME 제목에서 `제가 해온 일에는` 문구 제거
+- 제목을 `한 가지 공통점이 있었습니다.`로 간결하게 정리
+
+## 2026-08-16 — ABOUT OVERVIEW 전체 제거
+
+- ABOUT 세부 페이지의 OVERVIEW 제목과 소개 카드 전체 삭제
+- ABOUT 페이지 흐름을 히어로에서 EXPERIENCE로 바로 연결
+- EXPLORE 링크의 이동 대상을 ABOUT에서는 `#experience`로 변경
+- 다른 세부 페이지의 OVERVIEW 섹션은 유지
+
+## 2026-08-16 — ABOUT 통계 블록 제거
+
+- ABOUT 세부 페이지의 `10 YEARS / 4 FIELDS / ONE BASE` 통계 블록 삭제
+- 다른 세부 페이지의 통계 블록은 유지
+- ABOUT의 EXPLORE 링크가 바로 OVERVIEW 섹션으로 연결되도록 앵커 정리
+
+## 2026-08-16 — ABOUT 제목 시제 수정
+
+- `한 가지 공통점이 있습니다.`를 `한 가지 공통점이 있었습니다.`로 변경
+- 기존 제목 줄바꿈과 타이포그래피 유지
+
 ## 2026-08-16 — EXPERIENCE를 ABOUT 세부 페이지로 이동
 
 - 홈에서 EXPERIENCE 섹션과 경력 데이터 제거
