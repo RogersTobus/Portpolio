@@ -264,8 +264,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .result-metric p{font-size:15px}
   .home-experience article>span{font-size:13px}
   .skill-category-tools{margin-top:10px;padding-top:0}
-  .skill-category-box{min-height:150px;padding-top:12px;padding-bottom:12px}
+  .skill-category-box,.skill-category-box:nth-child(3){min-height:110px;padding-top:12px;padding-bottom:12px}
   .skill-category-box h3,.skill-category-box:first-child h3{font-size:clamp(18px,4.7vw,20px)}
+  .skill-category-box h3{height:auto;min-height:0;line-height:1.15}
+  .skill-category-tools{margin-top:8px}
   .more-works a,.more-about a{font-size:14px}
   .beyond-actions a{padding:13px 14px;font-size:14px}
   .thinking-track{grid-template-columns:1fr}
