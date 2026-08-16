@@ -90,6 +90,10 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
+        <video className="hero-background-video" autoPlay muted loop playsInline preload="metadata" aria-hidden="true">
+          <source src="/media/hero-background.mp4" type="video/mp4" />
+        </video>
+        <div className="hero-video-overlay" aria-hidden="true" />
         <div className="hero-copy">
           <p className="eyebrow reveal">MARKETING × DATA × AI</p>
           <h1 className="reveal delay-1"><span className="hero-accent">데이터</span>로 길을 찾고,<br /><span className="hero-secondary-line">경험과 성과를 만듭니다.</span></h1>
