@@ -1,5 +1,11 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — BEYOND MARKETING 내용 간소화
+
+- 설명 문장 삭제
+- Marketing → Finance → Management → COO 경로 삭제
+- 제목과 WORK·ABOUT 이동 링크만 유지
+
 ## 2026-08-16 — 경력 PDF 기반 콘텐츠 보강
 
 - PDF의 공개 가능한 성과 수치를 WORK와 CAPABILITIES에 반영

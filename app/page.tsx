@@ -143,7 +143,7 @@ export default function Home() {
 
       <section className="beyond section-pad">
         <div className="beyond-visual" aria-hidden="true"><div className="rings"><span>MARKETING</span><span>FINANCE</span><span>MANAGEMENT</span><span>OPERATIONS</span><i><Image src="/xbase-logo.svg" alt="" width={118} height={118} /></i></div></div>
-        <div className="beyond-copy"><p className="section-kicker">BEYOND MARKETING</p><h2>마케팅을 넘어,<br /><span>비즈니스 전체를<br />운영하는 사람으로.</span></h2><p>고객을 이해하는 마케팅에서 시작해 숫자를 이해하는 회계와 재무, 조직과 시스템을 다루는 경영관리로 확장하고 있습니다.</p><div className="growth-path"><span>Marketing</span><i>→</i><span>Finance</span><i>→</i><span>Management</span><i>→</i><b>COO</b></div><div className="beyond-actions"><a href="/work">WORK 보기 <Arrow /></a><a href="/about">ABOUT 더 보기 <Arrow /></a></div></div>
+        <div className="beyond-copy"><p className="section-kicker">BEYOND MARKETING</p><h2>마케팅을 넘어,<br /><span>비즈니스 전체를<br />운영하는 사람으로.</span></h2><div className="beyond-actions"><a href="/work">WORK 보기 <Arrow /></a><a href="/about">ABOUT 더 보기 <Arrow /></a></div></div>
       </section>
 
       <footer><a className="wordmark inverse" href="#top"><Image src="/xbase-logo.svg" alt="" width={30} height={30} /><b>XBASE<span>.</span></b></a><p>개인 포트폴리오 · 프로젝트 내용은 공개 가능한 범위에서 재구성했습니다.</p><p>© 2026 XBASE. Built by Park Young Jun.</p></footer>
