@@ -111,13 +111,10 @@ export default function AboutPage() {
     </section>
 
     <section className="about-skills about-section" id="skills">
-      <div className="about-section-heading">
-        <div><p className="section-kicker">SKILLS & TOOLS</p><h2>배운 것을<br />실행으로 옮기는 도구</h2></div>
-        <p>목적에 맞는 도구를 선택하고,<br />실제 결과물까지 직접 만듭니다.</p>
-      </div>
-      <div className="about-skill-grid">{skillCategories.map((group, index) => <article key={group.category}>
-        <div className="about-skill-head"><span>{String(index + 1).padStart(2, "0")}</span><h3>{group.category}</h3><p>{group.description}</p></div>
-        <div className="about-skill-tools">{group.tools.map(tool => <div title={tool.name} key={tool.name}><img src={tool.src} alt={`${tool.name} 로고`} /><span>{tool.name}</span></div>)}</div>
+      <div className="about-skills-title"><p className="section-kicker">SKILLS</p><h2>성과를 만드는 실행 도구</h2></div>
+      <div className="skill-category-grid">{skillCategories.map(group => <article className="skill-category-box" key={group.category}>
+        <h3>{group.category}</h3>
+        <div className="skill-category-tools">{group.tools.map(tool => <div className="skill-tool-icon" title={tool.name} key={tool.name}><img src={tool.src} alt={`${tool.name} 로고`} /></div>)}</div>
       </article>)}</div>
     </section>
 
