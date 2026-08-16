@@ -1,5 +1,10 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — CAPABILITIES 섹션 순서 변경
+
+- CAPABILITIES를 SKILLS 바로 위로 이동
+- 홈 흐름을 WORK → CAPABILITIES → SKILLS로 변경
+
 ## 2026-08-16 — 헤더 메뉴 간소화
 
 - 홈과 세부 페이지 헤더에서 Impact, Creative, Build 메뉴 삭제
