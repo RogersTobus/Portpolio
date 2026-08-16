@@ -13,27 +13,6 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
 };
 
-const skillLogos = ["Excel", "PowerPoint", "Illustrator", "Figma", "Canva", "Google Ads", "Google Analytics", "ChatGPT", "Claude"] as const;
-const skillCategories = [
-  { category: "OFFICE", tools: [
-    { name: "PowerPoint", src: "/skills/powerpoint.svg" },
-    { name: "Excel", src: "/skills/excel.svg" },
-    { name: "Word", src: "/skills/word.svg" },
-    { name: "Google Drive", src: "/skills/google-drive.svg" },
-  ] },
-  { category: "DESIGN & CONTENTS", tools: [
-    { name: "Figma", src: "/skills/figma.svg" },
-    { name: "Canva", src: "/skills/canva.png" },
-    { name: "미리캔버스", src: "/skills/miricanvas.png" },
-    { name: "WordPress", src: "/skills/wordpress.png" },
-  ] },
-  { category: "AI", tools: [
-    { name: "ChatGPT", src: "/skills/chatgpt.svg" },
-    { name: "Claude", src: "/skills/claude.svg" },
-    { name: "Gemini", src: "/skills/gemini.svg" },
-  ] },
-];
-
 const works = [
   { no: "01", type: "GROWTH · DATA · CX", title: "의료 고객 여정 전체를\n하나의 퍼널로 보다", text: "퍼포먼스 마케터와 협업하며 광고 유입 이후 상담, 예약, 내원까지 흩어진 고객 접점을 연결해 개선 지점을 찾았습니다.", metric: "12→18%", label: "DB 예약 전환율", color: "blue" },
   { no: "02", type: "UX · DATA · MARKETING", title: "홈페이지를 소개서에서\n전환 도구로 바꾸다", text: "고객 행동을 바탕으로 정보의 순서와 예약 동선을 재구성해 더 쉽게 이해하고 행동할 수 있도록 개선했습니다.", metric: "+200%", label: "홈페이지 예약 전환", color: "cyan" },
@@ -56,18 +35,6 @@ const newsItems = [
 ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
-
-function SkillLogo({ name }: { name: (typeof skillLogos)[number] }) {
-  if (name === "Excel") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#107c41"/><path d="M16 15h22v34H16z" fill="#0b5f31"/><path d="m21 23 5 9-5 9h6l3-6 3 6h6l-6-9 6-9h-6l-3 6-3-6z" fill="#fff"/><path d="M41 19h8v8h-8zm0 10h8v8h-8zm0 10h8v8h-8z" fill="#d8f3e5"/></svg>;
-  if (name === "PowerPoint") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#d24726"/><circle cx="40" cy="32" r="16" fill="#ed6c47"/><path d="M40 16v16h16A16 16 0 0 0 40 16" fill="#ffb89f"/><rect x="10" y="16" width="28" height="32" rx="4" fill="#b5361a"/><path d="M18 23h9c7 0 9 11 0 11h-4v7h-5zm5 5v4h4c3 0 3-4 0-4z" fill="#fff"/></svg>;
-  if (name === "Illustrator") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#330000"/><rect x="7" y="7" width="50" height="50" rx="11" fill="none" stroke="#ff9a00" strokeWidth="3"/><path d="m18 43 8-25h7l8 25h-6l-2-6h-8l-2 6zm9-11h5l-2-8h-1z" fill="#ff9a00"/><path d="M43 24h5v19h-5zm0-7h5v5h-5z" fill="#ff9a00"/></svg>;
-  if (name === "Figma") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#fff"/><path d="M22 10h10v15H22a7.5 7.5 0 0 1 0-15" fill="#f24e1e"/><path d="M32 10h10a7.5 7.5 0 0 1 0 15H32z" fill="#ff7262"/><path d="M22 25h10v15H22a7.5 7.5 0 0 1 0-15" fill="#a259ff"/><circle cx="39.5" cy="32.5" r="7.5" fill="#1abcfe"/><path d="M22 40h10v7.5a7.5 7.5 0 1 1-10-7.1z" fill="#0acf83"/></svg>;
-  if (name === "Canva") return <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="canva-g" x1="8" y1="8" x2="56" y2="56"><stop stopColor="#00c4cc"/><stop offset="1" stopColor="#7d2ae8"/></linearGradient></defs><rect width="64" height="64" rx="15" fill="url(#canva-g)"/><path d="M43 23c-3-6-15-4-20 4-5 9 2 17 10 14 4-1 7-4 9-8-4 3-7 5-10 5-5 0-7-5-4-9 3-5 9-6 15-6z" fill="#fff"/></svg>;
-  if (name === "Google Ads") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#fff"/><path d="m27 13 9 5 18 31-9 5z" fill="#4285f4"/><path d="M27 13 9 45a9 9 0 0 0 4 12l9-5 18-31z" fill="#34a853"/><circle cx="17" cy="49" r="8" fill="#fbbc04"/></svg>;
-  if (name === "Google Analytics") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#fff4e7"/><rect x="14" y="35" width="9" height="17" rx="4" fill="#f9ab00"/><rect x="27" y="24" width="9" height="28" rx="4" fill="#e37400"/><rect x="40" y="12" width="10" height="40" rx="5" fill="#e37400"/></svg>;
-  if (name === "ChatGPT") return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#10a37f"/><g fill="none" stroke="#fff" strokeWidth="3.4"><path d="M32 13a11 11 0 0 1 10 6 11 11 0 0 1 8 14 11 11 0 0 1-10 12 11 11 0 0 1-16 3 11 11 0 0 1-9-14 11 11 0 0 1 8-15 11 11 0 0 1 9-6z"/><path d="m23 19 18 10v20M15 34l17-10 18 10M24 48V28l17-9"/></g></svg>;
-  return <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#d97757"/><g stroke="#fff" strokeWidth="4" strokeLinecap="round"><path d="M32 13v38M13 32h38M19 19l26 26M45 19 19 45"/><path d="m24 14 16 36M14 24l36 16M40 14 24 50M14 40l36-16" strokeWidth="2.5"/></g></svg>;
-}
 
 export default function Home() {
   return (
@@ -141,18 +108,6 @@ export default function Home() {
         </div>
         <div className="more-about"><a href="/about">ABOUT 더보기 <Arrow /></a></div>
         <div className="signal-marquee" aria-hidden="true"><div className="signal-marquee-track"><span>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · </span><span>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · </span></div></div>
-      </section>
-
-      <section className="skills section-pad" id="skills">
-        <div className="section-intro split-title skills-title">
-          <div><p className="section-kicker">SKILLS</p><h2>성과를 만드는 실행 도구</h2></div>
-        </div>
-        <div className="skill-category-grid">
-          {skillCategories.map((group) => <article className="skill-category-box" key={group.category}>
-            <h3>{group.category}</h3>
-            <div className="skill-category-tools">{group.tools.map((tool) => <div className="skill-tool-icon" title={tool.name} key={tool.name}><img src={tool.src} alt={`${tool.name} 로고`} /></div>)}</div>
-          </article>)}
-        </div>
       </section>
 
       <section className="thinking section-pad" id="thinking">

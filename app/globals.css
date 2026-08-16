@@ -421,6 +421,18 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 .learning-entry h3{margin-top:15px;font-size:clamp(25px,2vw,30px);line-height:1.35;letter-spacing:-.04em}
 .learning-entry p{max-width:620px;margin-top:13px;color:#697486;font-size:14px;line-height:1.72}
 .learning-entry strong{display:block;margin-top:18px;color:#3f4d62;font-size:13px;line-height:1.5;font-weight:500!important}
+.about-skills{background:#111315;color:#fff}
+.about-skills .about-section-heading>p{color:#8e98a7}
+.about-skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.about-skill-grid>article{min-height:330px;padding:28px;border:1px solid #30343a;border-radius:27px;background:linear-gradient(145deg,#191c20,#15171a);display:flex;flex-direction:column;transition:transform .4s cubic-bezier(.16,1,.3,1),border-color .4s,background .4s}
+.about-skill-grid>article:hover{transform:translateY(-6px);border-color:#416bb6;background:linear-gradient(145deg,#1d2430,#15171a)}
+.about-skill-head>span{color:#4b82ee;font-size:12px}
+.about-skill-head h3{margin-top:34px;font-size:25px;line-height:1.25;letter-spacing:-.035em}
+.about-skill-head p{margin-top:12px;color:#8993a2;font-size:14px;line-height:1.65}
+.about-skill-tools{margin-top:auto;padding-top:28px;border-top:1px solid #30343a;display:flex;gap:8px;flex-wrap:wrap}
+.about-skill-tools>div{display:flex;align-items:center;gap:9px;padding:7px 10px 7px 7px;border:1px solid #303743;border-radius:14px;background:#1d2025;color:#aab3c1;font-size:11px;transition:.3s}
+.about-skill-tools>div:hover{transform:translateY(-3px);border-color:#557fca;color:#fff}
+.about-skill-tools img{width:32px;height:32px;border-radius:8px;object-fit:contain}
 .learning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .learning-grid article{min-height:300px;padding:30px;border:1px solid #e0e5ec;border-radius:26px;display:flex;flex-direction:column;background:#fafbfc;transition:.35s}
 .learning-grid article:hover{transform:translateY(-6px);border-color:#b9cef5;box-shadow:0 22px 50px rgba(40,70,120,.09)}
@@ -445,6 +457,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .career-detail{grid-column:3}
   .foundation-grid,.learning-grid{grid-template-columns:repeat(2,1fr)}
   .learning-editorial{grid-template-columns:1fr;gap:58px}.learning-statement{position:static}.learning-statement h2{max-width:720px}
+  .about-skill-grid{grid-template-columns:1fr}.about-skill-grid>article{min-height:240px}
   .foundation-grid article:last-child,.learning-grid article:last-child{grid-column:span 2}
 }
 
@@ -467,6 +480,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .foundation-grid,.learning-grid{grid-template-columns:1fr}
   .learning-editorial{gap:44px}.learning-statement h2{font-size:clamp(31px,8.5vw,37px)}.learning-statement>p:not(.section-kicker){font-size:15px}.learning-mark{margin-top:34px}
   .learning-ledger article{grid-template-columns:52px 1fr;gap:14px;padding:28px 0}.learning-ledger article:hover{padding-left:0;padding-right:0}.learning-entry h3{font-size:22px}.learning-entry p{font-size:14px}.learning-entry strong{font-size:12px;line-height:1.6}
+  .about-skill-grid>article{min-height:220px;padding:22px}.about-skill-head h3{margin-top:22px;font-size:22px}.about-skill-tools{margin-top:26px;padding-top:20px}.about-skill-tools>div{padding-right:8px}.about-skill-tools>div span{display:none}
   .foundation-grid article,.learning-grid article{min-height:240px;padding:24px}
   .foundation-grid article:last-child,.learning-grid article:last-child{grid-column:auto}
   .foundation-grid h3,.learning-grid h3{font-size:24px}

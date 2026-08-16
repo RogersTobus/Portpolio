@@ -24,6 +24,18 @@ const foundations = [
   ["03", "직접 실행하고 검증합니다", "기획에서 끝내지 않고 화면, 콘텐츠, 프로세스를 직접 바꾸며 결과가 달라지는지 확인합니다."],
 ];
 
+const skillCategories = [
+  { category: "OFFICE", description: "문서와 데이터를 정확하게 정리합니다.", tools: [
+    { name: "PowerPoint", src: "/skills/powerpoint.svg" }, { name: "Excel", src: "/skills/excel.svg" }, { name: "Word", src: "/skills/word.svg" }, { name: "Google Drive", src: "/skills/google-drive.svg" },
+  ] },
+  { category: "DESIGN & CONTENTS", description: "생각을 화면과 콘텐츠로 구현합니다.", tools: [
+    { name: "Figma", src: "/skills/figma.svg" }, { name: "Canva", src: "/skills/canva.png" }, { name: "미리캔버스", src: "/skills/miricanvas.png" }, { name: "WordPress", src: "/skills/wordpress.png" },
+  ] },
+  { category: "AI", description: "아이디어를 빠르게 실행 가능한 형태로 만듭니다.", tools: [
+    { name: "ChatGPT", src: "/skills/chatgpt.svg" }, { name: "Claude", src: "/skills/claude.svg" }, { name: "Gemini", src: "/skills/gemini.svg" },
+  ] },
+];
+
 export default function AboutPage() {
   return <main className="about-page">
     <JsonLd slug="about" />
@@ -96,6 +108,17 @@ export default function AboutPage() {
           <div className="learning-entry"><div><b>{item.label}</b><span>↗</span></div><h3>{item.title}</h3><p>{item.description}</p><strong>{item.use}</strong></div>
         </article>)}</div>
       </div>
+    </section>
+
+    <section className="about-skills about-section" id="skills">
+      <div className="about-section-heading">
+        <div><p className="section-kicker">SKILLS & TOOLS</p><h2>배운 것을<br />실행으로 옮기는 도구</h2></div>
+        <p>목적에 맞는 도구를 선택하고,<br />실제 결과물까지 직접 만듭니다.</p>
+      </div>
+      <div className="about-skill-grid">{skillCategories.map((group, index) => <article key={group.category}>
+        <div className="about-skill-head"><span>{String(index + 1).padStart(2, "0")}</span><h3>{group.category}</h3><p>{group.description}</p></div>
+        <div className="about-skill-tools">{group.tools.map(tool => <div title={tool.name} key={tool.name}><img src={tool.src} alt={`${tool.name} 로고`} /><span>{tool.name}</span></div>)}</div>
+      </article>)}</div>
     </section>
 
     <section className="about-next">
