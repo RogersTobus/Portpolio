@@ -686,3 +686,8 @@ body:has(.case-showcase-details[open]){overflow:hidden}
 .case-showcase-details[open] .case-showcase-process-title > span {
   display: none;
 }
+
+.case-showcase-metric > p {
+  font-size: 15px;
+  line-height: 1.7;
+}
