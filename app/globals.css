@@ -223,10 +223,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 .hero>.hero-visual .orbit{border-color:rgba(32,101,255,.34);filter:drop-shadow(0 0 8px rgba(39,115,255,.28))}
 .hero>.hero-visual .orbit-two{border-color:rgba(53,135,255,.45)}
 .hero>.hero-visual .orbit-three{border-color:rgba(90,170,255,.34)}
-.hero>.hero-visual .core{width:199px;height:199px;box-shadow:0 0 0 16px rgba(255,255,255,.34),0 0 70px 18px rgba(42,119,255,.3)}
+.hero>.hero-visual .core{width:199px;height:199px;border-radius:0;overflow:visible;background:transparent;box-shadow:none;filter:drop-shadow(0 0 26px rgba(42,119,255,.42));animation:synapse-core-glow 3.6s ease-in-out infinite alternate}
 .hero>.hero-visual .orbiter{animation:synapse-pulse 1.8s ease-in-out infinite alternate}
 .hero>.hero-visual .orbiter-large{width:25px;height:25px}.hero>.hero-visual .orbiter-medium{width:17px;height:17px}.hero>.hero-visual .orbiter-small{width:12px;height:12px}
 @keyframes synapse-pulse{from{opacity:.55;box-shadow:0 0 0 4px rgba(47,108,255,.08),0 0 14px 3px rgba(47,108,255,.35)}to{opacity:1;box-shadow:0 0 0 9px rgba(47,108,255,.1),0 0 32px 10px rgba(47,108,255,.7)}}
+@keyframes synapse-core-glow{from{filter:drop-shadow(0 0 18px rgba(42,119,255,.3))}to{filter:drop-shadow(0 0 38px rgba(42,119,255,.62))}}
 .section-kicker,.eyebrow{font-size:12px;line-height:1.4;font-weight:500!important}
 .section-intro h2,.split-title h2,.impact-about .split-title h2{font-size:clamp(38px,3.5vw,52px);line-height:1.18;letter-spacing:-.042em}
 .beyond-copy h2{font-size:clamp(40px,3.6vw,54px);line-height:1.17;letter-spacing:-.035em}
