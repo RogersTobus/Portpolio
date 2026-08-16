@@ -74,8 +74,8 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow reveal">MARKETING × DATA ANALYTICS × VIBE CODING × SYSTEM</p>
-          <h1 className="reveal delay-1">문제를 발견하고,<br /><span>더 나은 방식을 만듭니다.</span></h1>
+          <p className="eyebrow reveal">MARKETING × DATA ANALYTICS × AI</p>
+          <h1 className="reveal delay-1">데이터로 문제를 찾고,<br /><span>최선의 방향으로 개선합니다.</span></h1>
           <p className="hero-description reveal delay-2">마케팅과 데이터, AI를 연결해<br className="desktop-break" /> 상상을 현실로 만들고, 문제를 최선의 방법으로 해결합니다.</p>
           <div className="hero-actions reveal delay-3">
             <a className="button hero-secondary" href="#work">프로젝트 보기 <Arrow /></a>
