@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { JsonLd } from "./seo";
 import SocialDock from "./social-dock";
+import MotionLayer from "./motion-layer";
 
 export const metadata: Metadata = {
   title: "마케팅·데이터·AI 자동화 포트폴리오",
@@ -73,6 +74,7 @@ export default function Home() {
     <main>
       <JsonLd />
       <SocialDock />
+      <MotionLayer />
       <div className="scroll-progress" aria-hidden="true" />
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="XBASE 홈">
@@ -97,7 +99,7 @@ export default function Home() {
         <div className="hero-inner">
           <div className="hero-copy">
             <p className="eyebrow reveal">MARKETING × DATA × AI</p>
-            <h1 className="reveal delay-1"><span className="hero-accent">데이터</span>로 길을 찾고,<br /><span className="hero-secondary-line">경험과 성과를 만듭니다.</span></h1>
+            <h1 className="hero-title reveal delay-1"><span className="hero-title-line"><span><b className="hero-accent">데이터</b>로 길을 찾고,</span></span><span className="hero-title-line"><span className="hero-secondary-line">경험과 성과를 만듭니다.</span></span></h1>
             <p className="hero-description reveal delay-2">정보가 넘칠수록, 사람을 움직이는 건 마음에 남는 경험입니다.<br />마케팅·데이터·AI를 연결해 그 경험을 <strong>더 나은 성과</strong>로 바꿉니다.</p>
           </div>
         </div>
