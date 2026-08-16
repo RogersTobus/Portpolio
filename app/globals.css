@@ -716,3 +716,9 @@ body:has(.case-showcase-details[open]){overflow:hidden}
 .case-showcase:nth-child(even) {
   background: #fff !important;
 }
+
+.work-detail-page h1,
+.work-detail-page h2,
+.work-detail-page h3 {
+  font-weight: 600;
+}
