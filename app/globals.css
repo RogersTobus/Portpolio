@@ -660,3 +660,23 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .about-portrait{aspect-ratio:3/4}
   .about-next{min-height:0;padding-top:56px;padding-bottom:56px}
 }
+
+/* Case details open as a modal instead of extending the card. */
+body:has(.case-showcase-details[open]){overflow:hidden}
+.case-showcase-details[open]::before{content:"";position:fixed;inset:0;z-index:1200;background:rgba(7,12,22,.7);backdrop-filter:blur(10px)}
+.case-showcase-details[open] summary{position:fixed;top:32px;right:32px;z-index:1202;margin:0;padding:12px 17px;border-color:#d3dbea;background:#fff;color:#111827;box-shadow:0 10px 34px rgba(8,18,38,.18)}
+.case-showcase-details[open] summary span,.case-showcase-details[open] summary b{display:none}
+.case-showcase-details[open] summary::after{content:"닫기";font-size:13px;font-weight:600}
+.case-showcase-details[open] summary i{font-size:0;transform:none}
+.case-showcase-details[open] summary i::after{content:"×";font-size:20px}
+.case-showcase-details[open] .case-showcase-detail-body{position:fixed;top:50%;left:50%;z-index:1201;width:min(920px,calc(100vw - 40px));max-height:calc(100vh - 40px);padding:72px 56px 52px;overflow-y:auto;transform:translate(-50%,-50%);border-radius:28px;background:#fff;box-shadow:0 30px 90px rgba(6,15,32,.28)}
+.case-showcase-details[open] .case-showcase-lead{margin-top:0}
+.case-showcase-details[open] .case-showcase-process{margin-top:48px}
+.case-showcase-process-title h3{font-size:0}
+.case-showcase-process-title h3::after{content:"HOW";font-size:28px;letter-spacing:-.02em}
+@media(max-width:680px){
+  .case-showcase-details[open] summary{top:20px;right:20px}
+  .case-showcase-details[open] .case-showcase-detail-body{width:calc(100vw - 20px);max-height:calc(100vh - 20px);padding:72px 24px 36px;border-radius:22px}
+  .case-showcase-details[open] .case-showcase-process{margin-top:38px}
+  .case-showcase-process-title h3::after{font-size:24px}
+}
