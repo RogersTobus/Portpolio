@@ -151,7 +151,7 @@ export default function Home() {
 
       <section className="skills section-pad" id="skills">
         <div className="section-intro split-title skills-title">
-          <div><p className="section-kicker">SKILLS</p><h2>성과를 만드는<br />실행 도구</h2></div>
+          <div><p className="section-kicker">SKILLS</p><h2>성과를 만드는 실행 도구</h2></div>
         </div>
         <div className="skill-category-grid">
           {skillCategories.map((group, index) => <article className="skill-category-box" key={group.category}>
