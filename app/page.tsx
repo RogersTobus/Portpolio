@@ -95,6 +95,7 @@ export default function Home() {
           </div>
         </div>
         <div className="career-spectrum" aria-label="경력 방향 미리보기">
+          <div className="career-spectrum-media" aria-hidden="true"><i /><i /><i /></div>
           <div className="career-spectrum-shade" />
           <div className="career-spectrum-track">
             <article><time>2015—2024</time><span>01</span><h3>조직 운영</h3><p>현장 운영과 리더십</p></article>
