@@ -680,18 +680,6 @@ body:has(.case-showcase-details[open]){overflow:hidden}
   .case-showcase-details[open] .case-showcase-process{margin-top:38px}
   .case-showcase-process-title h3::after{font-size:24px}
 }
-.case-showcase:nth-child(1) .case-showcase-thumb,
-.case-showcase:nth-child(2) .case-showcase-thumb,
-.case-showcase:nth-child(3) .case-showcase-thumb {
-  background-position: center;
-  background-size: cover;
-}
-
-.case-showcase:nth-child(1) .case-showcase-thumb { background-image: url("/portfolio/case-01-db-funnel.png"); }
-.case-showcase:nth-child(2) .case-showcase-thumb { background-image: url("/portfolio/case-02-consultation.png"); }
-.case-showcase:nth-child(3) .case-showcase-thumb { background-image: url("/portfolio/case-03-booking-ux.png"); }
-.case-showcase:nth-child(-n + 3) .case-showcase-thumb img { opacity: 0; }
-
 .case-showcase-details[open] .case-showcase-copy > section > span,
 .case-showcase-details[open] .case-showcase-process-title > span {
   display: none;
