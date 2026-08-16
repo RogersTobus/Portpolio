@@ -92,7 +92,7 @@ export default function Home() {
       </section>
 
       <section className="work section-pad" id="work">
-        <div className="section-intro split-title work-title"><div><p className="section-kicker">WORK</p><h2>문제를 발견하고<br />바꿔낸 것들</h2></div><p>성과만 나열하기보다 문제를 어떻게 보고,<br />무엇을 바꿨는지 보여드립니다.</p></div>
+        <div className="section-intro split-title work-title"><div><p className="section-kicker">WORK</p><h2>문제를 발견하고<br />바꿔낸 것들</h2></div><p>고객 여정과 운영 데이터에서 문제를 찾고,<br />직접 바꾼 과정을 보여드립니다.</p></div>
         <div className="work-list">
           {works.map((work) => <article className={`work-card ${work.color}`} key={work.no}>
             <div className="work-number">CASE {work.no}</div>
@@ -106,15 +106,15 @@ export default function Home() {
         <div className="section-intro light-intro">
           <p className="section-kicker">CAPABILITIES</p>
           <h2>문제를 나누어 보고,<br />연결해서 해결합니다.</h2>
-          <p>고객 여정과 데이터, 화면과 운영을 따로 보지 않습니다. 서로 연결된 문제를 구조화하고 실행 가능한 개선점으로 바꿉니다.</p>
+          <p>고객 여정과 데이터, 화면과 운영을 하나의 흐름으로 봅니다. 문제를 구조화하고 실행 가능한 개선으로 연결합니다.</p>
         </div>
         <div className="impact-grid">
           {impacts.map((item, index) => <article className={index === 0 ? "impact-card featured" : "impact-card"} key={item.label}><span>0{index + 1}</span><strong>{item.value}</strong><p>{item.label}</p></article>)}
         </div>
         <div className="impact-about" id="about">
           <div className="section-intro split-title">
-            <div><h2>한 가지 공통점이<br />있었습니다.</h2></div>
-            <div className="about-copy"><p>군에서는 조직과 운영을, 이커머스 물류기업에서는 고객 경험을, 의료 업계에서는 그로스 마케팅과 전환을 다뤘습니다.</p><p>이들의 공통점은 문제를 발견하고, 원인을 분석하고, 직접 개선해 더 나은 결과를 만드는 것입니다.</p></div>
+            <div><h2>산업은 달라도,<br />문제를 푸는 방식은 같았습니다.</h2></div>
+            <div className="about-copy"><p>군에서는 조직과 운영을, 이커머스에서는 고객 경험을, 의료에서는 그로스 마케팅과 전환을 다뤘습니다.</p><p>현장을 관찰하고 데이터를 분석한 뒤, 직접 실행해 더 나은 결과로 연결해 왔습니다.</p></div>
           </div>
         </div>
         <div className="signal-marquee" aria-hidden="true"><div>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS ·</div></div>
@@ -130,13 +130,13 @@ export default function Home() {
       </section>
 
       <section className="process section-pad">
-        <div className="section-intro centered"><p className="section-kicker">HOW I WORK</p><h2>전략보다 실행으로,<br />실행보다 결과로.</h2><p>감이 아니라 관찰과 데이터로 시작하고,<br />빠르게 만들고 반복해서 개선합니다.</p></div>
+        <div className="section-intro centered"><p className="section-kicker">HOW I WORK</p><h2>전략보다 실행으로,<br />실행보다 결과로.</h2><p>관찰과 데이터로 시작해,<br />빠르게 실행하고 결과로 검증합니다.</p></div>
         <div className="process-grid">{steps.map(([no,title,text]) => <article key={no}><span>{no}</span><div className="process-symbol" aria-hidden="true"><i /><i /></div><h3>{title}</h3><p>{text}</p></article>)}</div>
       </section>
 
       <section className="thinking section-pad" id="thinking">
-        <div className="section-intro split-title"><div><p className="section-kicker">THINKING / THREADS</p><h2>NEWS</h2></div><p>마케팅, 일하는 방식, AI와 기술,<br />그리고 성장 과정에 대한 생각을 나눕니다.</p></div>
-        <div className="thinking-track"><article className="thread-feature"><span>LATEST THINKING</span><h3>좋은 마케팅은 광고를 잘 만드는 일이 아니라, 고객을 멈추게 하는 지점을 찾아 없애는 일에 더 가깝습니다.</h3><div><span>@XBASE · THREADS</span><Arrow /></div></article><article><span>BUILD IN PUBLIC</span><h3>완성해진 뒤 공개하는 대신, 만들어가는 과정부터 기록합니다.</h3><div><span>THREADS 연결 예정</span><Arrow /></div></article><article><span>FIELD NOTE</span><h3>데이터는 답을 말하지 않습니다. 더 좋은 질문을 시작하게 합니다.</h3><div><span>XBASE NOTE</span><Arrow /></div></article></div>
+        <div className="section-intro split-title"><div><p className="section-kicker">THINKING / THREADS</p><h2>NEWS</h2></div><p>마케팅과 데이터, AI를 실제 일에 적용하며<br />얻은 생각과 배움을 기록합니다.</p></div>
+        <div className="thinking-track"><article className="thread-feature"><span>LATEST THINKING</span><h3>좋은 마케팅은 광고를 잘 만드는 일이 아니라, 고객을 멈추게 하는 지점을 찾아 없애는 일에 더 가깝습니다.</h3><div><span>@XBASE · THREADS</span><Arrow /></div></article><article><span>BUILD IN PUBLIC</span><h3>완성된 뒤 공개하는 대신, 만들어가는 과정부터 기록합니다.</h3><div><span>BUILD LOG</span><Arrow /></div></article><article><span>FIELD NOTE</span><h3>데이터는 답을 말하지 않습니다. 더 좋은 질문을 시작하게 합니다.</h3><div><span>XBASE NOTE</span><Arrow /></div></article></div>
       </section>
 
       <section className="beyond section-pad">
