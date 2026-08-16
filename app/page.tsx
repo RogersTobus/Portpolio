@@ -94,8 +94,8 @@ export default function Home() {
 
       <section className="about section-pad" id="about">
         <div className="section-intro split-title">
-          <div><p className="section-kicker">ABOUT XBASE</p><h2>직함보다,<br />문제를 푸는 방식으로<br />저를 설명합니다.</h2></div>
-          <div className="about-copy"><h3>산업과 역할은 달랐지만,<br />제가 해온 일에는 한 가지<br />공통점이 있습니다.</h3><p>군에서는 조직과 운영을, 이커머스 물류기업에서는 고객 경험을, 의료 업계에서는 그로스 마케팅과 전환을 다뤘습니다. 퍼포먼스 마케터와 협업하며 콘텐츠와 광고 성과를 상담·예약 흐름에 연결해 문제를 찾고 개선합니다.</p></div>
+          <div><p className="section-kicker">ABOUT ME</p><h2>제가 해온 일에는<br />한 가지 공통점이<br />있습니다.</h2></div>
+          <div className="about-copy"><p>군에서는 조직과 운영을, 이커머스 물류기업에서는 고객 경험을, 의료 업계에서는 그로스 마케팅과 전환을 다뤘습니다. 퍼포먼스 마케터와 협업하며 콘텐츠와 광고 성과를 상담·예약 흐름에 연결해 문제를 찾고 개선합니다.</p></div>
         </div>
         <div className="about-statement"><span>ONE PERSON.</span><span>MULTIPLE PERSPECTIVES.</span><span>ONE WAY OF WORKING.</span></div>
       </section>
