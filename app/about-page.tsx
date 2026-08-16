@@ -64,7 +64,6 @@ export default function AboutPage() {
         <div className="profile-lead">안녕하세요. 문제를 발견하고 직접 개선해 결과를 만드는 박영준입니다.</div>
         <p>군에서는 조직과 운영을, 이커머스 물류 현장에서는 고객 경험을, 의료 업계에서는 마케팅과 전환을 다뤘습니다. 산업과 역할은 달랐지만 제가 일하는 방식에는 한 가지 공통점이 있었습니다.</p>
         <p>현장을 관찰하고 데이터를 통해 원인을 좁힌 뒤, 실행 가능한 형태로 바꾸는 것입니다. 지금은 마케팅을 넘어 상품과 매출, 재무와 사업 운영까지 시야를 넓히며 비즈니스 전체를 이해하는 사람으로 성장하고 있습니다.</p>
-        <div className="profile-meta"><span>SEOUL, KOREA</span><span>MARKETING · DATA · AI</span></div>
       </div>
     </section>
 
