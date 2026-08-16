@@ -3,7 +3,7 @@ import { detailPages, type DetailSlug } from "./detail-data";
 import { JsonLd, seoPages } from "./seo";
 import SocialDock from "./social-dock";
 
-const menu = [["About","/about"],["Impact","/impact"],["Work","/work"],["Creative","/creative"],["Build","/build"],["Thinking","/thinking"]];
+const menu = [["About","/about"],["Work","/work"],["Thinking","/thinking"]];
 
 const experiences = [
   ["2026 — NOW", "식품 이커머스 기업", "E-commerce MD · Operations", "상품과 운영의 흐름을 연결하며 이커머스 실무 경험을 확장하고 있습니다."],

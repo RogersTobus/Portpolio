@@ -1,5 +1,11 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — 헤더 메뉴 간소화
+
+- 홈과 세부 페이지 헤더에서 Impact, Creative, Build 메뉴 삭제
+- About, Work, Thinking 메뉴만 유지
+- 모바일 메뉴에도 동일하게 적용
+
 ## 2026-08-16 — BEYOND MARKETING 내용 간소화
 
 - 설명 문장 삭제

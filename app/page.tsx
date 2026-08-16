@@ -61,12 +61,12 @@ export default function Home() {
           <Image src="/xbase-header-logo.svg" alt="" width={99} height={26} priority />
         </a>
         <nav aria-label="주요 메뉴">
-          <a href="/about">About</a><a href="/impact">Impact</a><a href="/work">Work</a><a href="/creative">Creative</a><a href="/build">Build</a><a href="/thinking">Thinking</a>
+          <a href="/about">About</a><a href="/work">Work</a><a href="/thinking">Thinking</a>
         </nav>
         <details className="mobile-menu">
           <summary aria-label="메뉴 열기"><span /><span /></summary>
           <div>
-            <a href="/about">About</a><a href="/impact">Impact</a><a href="/work">Work</a><a href="/creative">Creative</a><a href="/build">Build</a><a href="/thinking">Thinking</a>
+            <a href="/about">About</a><a href="/work">Work</a><a href="/thinking">Thinking</a>
           </div>
         </details>
       </header>
