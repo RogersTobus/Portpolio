@@ -225,6 +225,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 .home-experience article:first-child{border-top:0}
 .home-experience article>span{color:#a7aeba}
 .signal-marquee{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+.signal-marquee-track{display:flex;width:max-content}
+.signal-marquee-track>span{flex:none;padding-right:2.4em}
 .skill-category-tools{margin-top:14px;padding-top:0;border-top:0}
 
 .thinking-track{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
