@@ -94,13 +94,15 @@ export default function Home() {
             <a className="preview-cta" href="/about">경력과 일하는 방식 보기 <Arrow /></a>
           </div>
         </div>
-        <div className="career-preview" aria-label="경력 방향 미리보기">
-          <div className="career-years"><span>2015</span><span>NOW</span></div>
-          <div className="career-route-line"><i /><i /><i /><i /></div>
-          <div className="career-route-labels"><span>조직 운영</span><span>고객 경험</span><span>그로스 마케팅</span><span>비즈니스 운영</span></div>
-          <p>서로 다른 산업에서 현장과 데이터를 연결하며 문제를 발견하고 직접 개선해 왔습니다.</p>
+        <div className="career-spectrum" aria-label="경력 방향 미리보기">
+          <div className="career-spectrum-shade" />
+          <div className="career-spectrum-track">
+            <article><time>2015—2024</time><span>01</span><h3>조직 운영</h3><p>현장 운영과 리더십</p></article>
+            <article><time>2024</time><span>02</span><h3>고객 경험</h3><p>설치 여정과 VOC 개선</p></article>
+            <article><time>2025</time><span>03</span><h3>그로스 마케팅</h3><p>유입부터 전환까지</p></article>
+            <article><time>2026—NOW</time><span>04</span><h3>비즈니스 운영</h3><p>데이터 기반 성장 설계</p></article>
+          </div>
         </div>
-        <div className="signal-marquee" aria-hidden="true"><div className="signal-marquee-track"><span>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · </span><span>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · </span></div></div>
       </section>
 
       <section className="thinking section-pad" id="thinking">
@@ -112,6 +114,8 @@ export default function Home() {
           </a>
         </article>)}</div>
       </section>
+
+      <div className="signal-marquee home-transition-marquee" aria-hidden="true"><div className="signal-marquee-track"><span>OBSERVE THE FIELD · READ THE DATA · FIND THE PROBLEM · BUILD THE CHANGE · PROVE THE RESULT · </span><span>OBSERVE THE FIELD · READ THE DATA · FIND THE PROBLEM · BUILD THE CHANGE · PROVE THE RESULT · </span><span>OBSERVE THE FIELD · READ THE DATA · FIND THE PROBLEM · BUILD THE CHANGE · PROVE THE RESULT · </span></div></div>
 
       <section className="beyond section-pad">
         <div className="beyond-visual" aria-hidden="true"><div className="rings"><span>MARKETING</span><span>FINANCE</span><span>MANAGEMENT</span><span>OPERATIONS</span><i><Image src="/xbase-logo.svg" alt="" width={118} height={118} /></i></div></div>

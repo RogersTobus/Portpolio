@@ -10,7 +10,7 @@ export default function MotionLayer() {
     root.classList.add("motion-ready");
 
     const revealItems = Array.from(document.querySelectorAll<HTMLElement>(
-      ".section-intro, .result-work-row, .result-teaser-card, .home-experience article, .career-preview, .skill-category-box, .thinking-track article, .beyond-copy, .beyond-visual, .beyond-actions, .more-works, .more-about, .section-route"
+      ".section-intro, .result-work-row, .result-teaser-card, .home-experience article, .career-spectrum, .skill-category-box, .thinking-track article, .beyond-copy, .beyond-visual, .beyond-actions, .more-works, .more-about, .section-route"
     ));
 
     revealItems.forEach((item, index) => {

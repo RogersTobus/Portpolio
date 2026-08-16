@@ -547,3 +547,4 @@
 - 메인 CAPABILITIES를 숫자 중심 클릭형 티저로, EXPERIENCE를 회사 목록 대신 경력 방향 프리뷰로 압축해 Work·About 전환 유도 강화
 - CAPABILITIES 아이브로우와 제목 사이의 중복 여백을 제거해 상단 타이포 위계를 정돈
 - 메인 CAPABILITIES·EXPERIENCE의 설명과 하단 CTA 행을 제거하고 CTA를 각 섹션 제목 우측 하단에 정렬
+- EXPERIENCE를 이미지 오버레이 기반의 가로형 커리어 스펙트럼으로 재구성하고 롤링 메시지를 NEWS와 하단 CTA 사이로 이동
