@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   formatDetection: { email: false, address: false, telephone: false },
   openGraph: { type: "website", locale: "ko_KR", siteName: "XBASE" },
   twitter: { card: "summary_large_image" },
-  icons: { icon: "/xbase-logo.png", apple: "/xbase-logo.png" },
+  icons: { icon: "/xbase-logo.svg", apple: "/xbase-logo.svg" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

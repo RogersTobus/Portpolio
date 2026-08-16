@@ -58,7 +58,7 @@ export default function Home() {
       <div className="scroll-progress" aria-hidden="true" />
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="XBASE 홈">
-          <Image src="/xbase-logo.png" alt="" width={32} height={32} priority />
+          <Image src="/xbase-logo.svg" alt="" width={32} height={32} priority />
           <b>XBASE<span>.</span></b>
         </a>
         <nav aria-label="주요 메뉴">
@@ -87,7 +87,7 @@ export default function Home() {
           <div className="orbit orbit-one"><span className="orbiter orbiter-large" /></div>
           <div className="orbit orbit-two"><span className="orbiter orbiter-small" /></div>
           <div className="orbit orbit-three"><span className="orbiter orbiter-medium" /></div>
-          <div className="core"><Image src="/xbase-logo.png" alt="XBASE 심볼" width={130} height={130} priority /></div>
+          <div className="core"><Image src="/xbase-logo.svg" alt="XBASE 심볼" width={130} height={130} priority /></div>
           <span className="visual-label label-a">THINK</span><span className="visual-label label-b">BUILD</span><span className="visual-label label-c">GROW</span>
         </div>
         <a className="scroll-hint" href="#about"><span />SCROLL</a>
@@ -145,7 +145,7 @@ export default function Home() {
       </section>
 
       <section className="beyond section-pad">
-        <div className="beyond-visual" aria-hidden="true"><div className="rings"><span>MARKETING</span><span>FINANCE</span><span>MANAGEMENT</span><span>OPERATIONS</span><i><Image src="/xbase-logo.png" alt="" width={118} height={118} /></i></div></div>
+        <div className="beyond-visual" aria-hidden="true"><div className="rings"><span>MARKETING</span><span>FINANCE</span><span>MANAGEMENT</span><span>OPERATIONS</span><i><Image src="/xbase-logo.svg" alt="" width={118} height={118} /></i></div></div>
         <div className="beyond-copy"><p className="section-kicker">BEYOND MARKETING</p><h2>마케팅을 넘어,<br /><span>비즈니스 전체를<br />운영하는 사람으로.</span></h2><p>고객을 이해하는 마케팅에서 시작해 숫자를 이해하는 회계와 재무, 조직과 시스템을 다루는 경영관리로 확장하고 있습니다.</p><div className="growth-path"><span>Marketing</span><i>→</i><span>Finance</span><i>→</i><span>Management</span><i>→</i><b>COO</b></div></div>
       </section>
 
@@ -159,7 +159,7 @@ export default function Home() {
         <p className="section-kicker">LET&apos;S CONNECT</p><h2>더 나은 방식을<br />함께 만들어요.</h2><p>프로젝트, 협업, 커리어에 관한 대화를 환영합니다.<br />공개하지 않은 세부 성과와 과정은 요청 시 비공개로 공유합니다.</p><div className="contact-actions"><a className="button white" href="mailto:hello@xbase.co.kr?subject=XBASE%20비공개%20포트폴리오%20문의">PRIVATE PORTFOLIO <Arrow /></a><a href="#top">BACK TO TOP ↑</a></div>
       </section>
 
-      <footer><a className="wordmark inverse" href="#top"><Image src="/xbase-logo.png" alt="" width={30} height={30} /><b>XBASE<span>.</span></b></a><p>개인 포트폴리오 · 프로젝트 내용은 공개 가능한 범위에서 재구성했습니다.</p><p>© 2026 XBASE. Built by Park Young Jun.</p></footer>
+      <footer><a className="wordmark inverse" href="#top"><Image src="/xbase-logo.svg" alt="" width={30} height={30} /><b>XBASE<span>.</span></b></a><p>개인 포트폴리오 · 프로젝트 내용은 공개 가능한 범위에서 재구성했습니다.</p><p>© 2026 XBASE. Built by Park Young Jun.</p></footer>
     </main>
   );
 }

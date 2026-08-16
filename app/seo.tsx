@@ -30,7 +30,7 @@ export function JsonLd({ slug }: { slug?: DetailSlug }) {
   const seo = slug ? seoPages[slug] : { title: "마케팅·데이터·AI 자동화 포트폴리오", description: "마케팅과 데이터, AI를 연결해 상상을 현실로 만들고 문제를 최선의 방법으로 해결하는 박영준의 개인 포트폴리오 XBASE입니다." };
   const graph: Record<string, unknown>[] = [
     { "@type": "Person", "@id": `${siteUrl}/#person`, name: "박영준", url: `${siteUrl}/about/`, jobTitle: "마케팅·데이터 기반 문제 해결자", knowsAbout: ["그로스 마케팅", "고객 경험", "데이터 분석", "AI 자동화", "바이브 코딩", "사업 운영"] },
-    { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: "XBASE", url: siteUrl, logo: { "@type": "ImageObject", url: `${siteUrl}/xbase-logo.png` }, founder: { "@id": `${siteUrl}/#person` } },
+    { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: "XBASE", url: siteUrl, logo: { "@type": "ImageObject", url: `${siteUrl}/xbase-logo.svg` }, founder: { "@id": `${siteUrl}/#person` } },
     { "@type": "WebSite", "@id": `${siteUrl}/#website`, url: siteUrl, name: "XBASE", inLanguage: "ko-KR", publisher: { "@id": `${siteUrl}/#organization` } },
     { "@type": slug ? "CollectionPage" : "WebPage", "@id": `${canonical}#webpage`, url: canonical, name: seo.title, description: seo.description, inLanguage: "ko-KR", isPartOf: { "@id": `${siteUrl}/#website` }, about: { "@id": `${siteUrl}/#person` }, primaryImageOfPage: { "@type": "ImageObject", url: `${siteUrl}/og.png`, width: 1200, height: 630 } },
   ];
