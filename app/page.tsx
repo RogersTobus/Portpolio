@@ -58,7 +58,7 @@ export default function Home() {
       <div className="scroll-progress" aria-hidden="true" />
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="XBASE 홈">
-          <Image src="/xbase-header-logo.svg" alt="" width={110} height={29} priority />
+          <Image src="/xbase-header-logo.svg" alt="" width={99} height={26} priority />
         </a>
         <nav aria-label="주요 메뉴">
           <a href="/about">About</a><a href="/impact">Impact</a><a href="/work">Work</a><a href="/creative">Creative</a><a href="/build">Build</a><a href="/thinking">Thinking</a>
