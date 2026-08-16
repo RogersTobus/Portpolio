@@ -82,7 +82,7 @@ export default function Home() {
           {works.map((work) => <a className="result-teaser-card" href="/work" key={work.no}>
             <div className="teaser-meta"><span>{work.no}</span><b>{work.type}</b></div>
             <strong className="teaser-metric">{work.metric}</strong><p className="teaser-label">{work.label}</p>
-            <p className="teaser-hook">{work.teaser}</p><div className="teaser-link">CASE 보기 <Arrow /></div>
+            <p className="teaser-hook">{work.teaser}</p>
           </a>)}
         </div>
       </section>
@@ -98,10 +98,10 @@ export default function Home() {
           <div className="career-spectrum-media" aria-hidden="true"><i /><i /><i /></div>
           <div className="career-spectrum-shade" />
           <div className="career-spectrum-track">
-            <article><time>2015—2024</time><span>01</span><h3>조직 운영</h3><p>현장 운영과 리더십</p></article>
-            <article><time>2024</time><span>02</span><h3>고객 경험</h3><p>설치 여정과 VOC 개선</p></article>
-            <article><time>2025</time><span>03</span><h3>그로스 마케팅</h3><p>유입부터 전환까지</p></article>
-            <article><time>2026—NOW</time><span>04</span><h3>비즈니스 운영</h3><p>데이터 기반 성장 설계</p></article>
+            <article><time>2015—2024</time><h3>조직 운영</h3><p>현장 운영과 리더십</p></article>
+            <article><time>2024</time><h3>고객 경험</h3><p>설치 여정과 VOC 개선</p></article>
+            <article><time>2025</time><h3>그로스 마케팅</h3><p>유입부터 전환까지</p></article>
+            <article><time>2026—NOW</time><h3>비즈니스 운영</h3><p>데이터 기반 성장 설계</p></article>
           </div>
         </div>
       </section>
