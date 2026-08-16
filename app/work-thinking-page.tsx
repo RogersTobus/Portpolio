@@ -18,7 +18,7 @@ const workCases = [
 ];
 
 // 병원·의료 마케팅 채용 흐름: 사업/채널 구축 → 퍼널 개선 → 서비스 기획 → 상담 CX → 협업 실행 → 콘텐츠와 현장 운영.
-const rankedWorkCases = ["07", "01", "03", "04", "02", "10", "05", "06"]
+const rankedWorkCases = ["07", "01", "03", "04", "02", "10"]
   .map((no) => workCases.find((item) => item.no === no))
   .filter((item): item is (typeof workCases)[number] => Boolean(item))
   .map((item, index) => ({ ...item, no: String(index + 1).padStart(2, "0") }));
