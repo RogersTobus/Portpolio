@@ -769,7 +769,7 @@ body:has(.case-showcase-details[open]){overflow:hidden}
 .case-detail-visual>img{object-fit:cover;filter:saturate(.82) contrast(1.04)}
 .case-detail-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,14,29,.06) 30%,rgba(6,14,29,.92) 100%)}
 .case-detail-visual-result{position:absolute;z-index:2;left:38px;right:38px;bottom:36px;color:#fff}
-.case-detail-visual-result>span{display:block;margin-bottom:9px;color:#9ab9ff;font-size:11px;font-weight:600;letter-spacing:.14em}
+.case-detail-visual-result>span{display:none}
 .case-detail-visual-result>strong{display:block;color:#fff;font-size:clamp(46px,5vw,72px);line-height:1;letter-spacing:-.06em}
 .case-detail-visual-result>p{margin-top:15px;max-width:42ch;color:rgba(255,255,255,.82);font-size:16px;line-height:1.5}
 .case-detail-content{min-width:0;height:100%;padding:30px 40px 22px;display:grid;grid-template-rows:auto auto 1fr;gap:16px;background:#fff}
