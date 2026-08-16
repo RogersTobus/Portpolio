@@ -722,6 +722,9 @@ body:has(.case-showcase-details[open]){overflow:hidden}
 .work-detail-page h3 {
   font-weight: 600;
 }
+.work-detail-page .case-showcase h2 {
+  font-size: clamp(28px, 2.2vw, 36px);
+}
 
 .case-showcase-list {
   align-items: stretch;
@@ -743,4 +746,9 @@ body:has(.case-showcase-details[open]){overflow:hidden}
 }
 .case-showcase-details {
   margin-top: auto;
+}
+@media (max-width: 680px) {
+  .work-detail-page .case-showcase h2 {
+    font-size: 26px;
+  }
 }
