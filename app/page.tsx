@@ -106,7 +106,7 @@ export default function Home() {
       <section className="impact merged-results section-pad" id="work">
         <div className="section-intro light-intro">
           <p className="section-kicker">CAPABILITIES</p>
-          <h2>실행의 결과는,<br />숫자로 남습니다.</h2>
+          <h2>실행의 결과는,<br />숫자로 증명합니다.</h2>
           <p>광고 운영부터 예약 전환, 홈페이지와 현장 운영까지.<br />직접 개선해 만든 변화를 핵심 지표로 보여드립니다.</p>
         </div>
         <div className="result-work-list">

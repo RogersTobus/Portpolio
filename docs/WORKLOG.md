@@ -450,3 +450,9 @@
 - 산업 경험 소개와 경력표를 CAPABILITIES 하단이 아닌 별도 EXPERIENCE 섹션으로 전환
 - EXPERIENCE 라벨과 구분되는 다크 네이비 배경을 적용해 섹션 경계를 명확화
 - 경력표 내부의 중복 EXPERIENCE 표기는 CAREER TIMELINE으로 정리
+
+## 2026-08-16 — Threads 소셜 링크 연결
+
+- 고정 소셜 도크의 Threads 아이콘을 `@xbase_lab` 프로필에 연결
+- 새 탭 열기와 보안 속성, 접근성 레이블 적용
+- CAPABILITIES 제목을 `실행의 결과는, 숫자로 증명합니다.`로 강화
