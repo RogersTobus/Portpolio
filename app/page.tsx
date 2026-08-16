@@ -20,13 +20,6 @@ const impacts = [
   { value: "SYSTEM", label: "측정·보고·반복 업무의 시스템화" },
 ];
 
-const capabilities = [
-  { no: "01", en: "MARKETING", title: "성과를 성장 과제에 연결합니다", text: "퍼포먼스 마케터와 협업해 광고 성과를 상담·예약 흐름과 연결하고, 개선 우선순위를 함께 조정합니다.", tags: ["Growth", "Collaboration", "Full Funnel"] },
-  { no: "02", en: "DATA ANALYTICS", title: "상담 이후까지 읽습니다", text: "광고 지표에 머무르지 않고 고객의 상담과 예약 흐름을 함께 살펴 개선해야 할 지점을 찾습니다.", tags: ["GA4", "Conversion", "Insight"] },
-  { no: "03", en: "VIBE CODING", title: "아이디어를 작동시킵니다", text: "랜딩페이지와 웹, 반복 업무 자동화를 빠르게 구현하고 실제 사용 흐름에서 검증합니다.", tags: ["Web", "WordPress", "Automation"] },
-  { no: "04", en: "SYSTEM", title: "성과가 반복되는 구조를 만듭니다", text: "의료광고 기준을 고려하면서 목표와 일정, 콘텐츠, 데이터, 보고가 하나의 흐름으로 움직이게 만듭니다.", tags: ["Compliance", "KPI", "Operations"] },
-];
-
 const works = [
   { no: "01", type: "GROWTH · DATA · CX", title: "의료 고객 여정 전체를\n하나의 퍼널로 보다", text: "퍼포먼스 마케터와 협업하며 광고 유입 이후 상담, 예약, 내원까지 흩어진 고객 접점을 연결해 개선 지점을 찾았습니다.", metric: "FUNNEL", label: "고객 여정 기반 협업", color: "blue" },
   { no: "02", type: "UX · DATA · MARKETING", title: "홈페이지를 소개서에서\n전환 도구로 바꾸다", text: "고객 행동을 바탕으로 정보의 순서와 예약 동선을 재구성해 더 쉽게 이해하고 행동할 수 있도록 개선했습니다.", metric: "WEB UX", label: "예약 동선 최적화", color: "cyan" },
@@ -103,19 +96,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="capabilities section-pad" id="capabilities">
-        <div className="section-intro dark-intro"><p className="section-kicker">CAPABILITIES</p><h2>성장을 만드는<br />네 가지 실행 기반</h2><p>전략과 분석, 제작을 분리하지 않습니다.<br />필요한 답을 찾고 직접 작동하게 만듭니다.</p></div>
-        <div className="capability-stack">
-          {capabilities.map((item, i) => <article className={`capability-panel panel-${i + 1}`} key={item.no}>
-            <div className="cap-visual" aria-hidden="true"><span>{item.no}</span><i /><i /></div>
-            <div className="cap-copy"><div className="cap-line" /><span>{item.en}</span><h3>{item.title}</h3><p>{item.text}</p><div className="tags">{item.tags.map(t => <span key={t}>{t}</span>)}</div></div>
-          </article>)}
-        </div>
-      </section>
-
-      <section className="impact section-pad" id="impact">
+      <section className="impact section-pad" id="capabilities">
         <div className="section-intro light-intro">
-          <p className="section-kicker">PROBLEMS I SOLVE</p>
+          <p className="section-kicker">CAPABILITIES</p>
           <h2>문제를 나누어 보고,<br />연결해서 해결합니다.</h2>
           <p>고객 여정과 데이터, 화면과 운영을 따로 보지 않습니다. 서로 연결된 문제를 구조화하고 실행 가능한 개선점으로 바꿉니다.</p>
         </div>

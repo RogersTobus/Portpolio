@@ -1,5 +1,11 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — CAPABILITIES 섹션 통합
+
+- 기존 검은색 CAPABILITIES 섹션 삭제
+- PROBLEMS I SOLVE 섹션의 라벨을 CAPABILITIES로 변경
+- 기존 CAPABILITIES 앵커가 새 섹션을 가리키도록 연결
+
 ## 2026-08-16 — SELECTED WORK 섹션 순서 변경
 
 - 홈의 SELECTED WORK 섹션을 ABOUT ME 바로 아래로 이동
