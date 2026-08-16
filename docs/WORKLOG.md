@@ -1,5 +1,12 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — 홈 SKILLS 섹션 추가 및 구조 점검
+
+- WORK와 CAPABILITIES 사이에 SKILLS 섹션 추가
+- MARKETING, DATA, AI & BUILD의 세 실행 영역으로 구성
+- 데스크톱 3열, 태블릿·모바일 1열 반응형 적용
+- 홈 구조를 소개 → 사례 → 도구 → 역량 → 방식 → 기록 → 방향 순서로 점검
+
 ## 2026-08-16 — WORK 섹션 라벨 변경
 
 - 홈의 `SELECTED WORK` 라벨을 `WORK`로 변경

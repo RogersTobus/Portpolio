@@ -20,6 +20,12 @@ const impacts = [
   { value: "SYSTEM", label: "측정·보고·반복 업무의 시스템화" },
 ];
 
+const skillGroups = [
+  { no: "01", category: "MARKETING", title: "고객을 움직이는 흐름", skills: ["Growth Marketing", "Performance", "Content", "CRM", "Customer Journey"] },
+  { no: "02", category: "DATA", title: "문제를 찾는 근거", skills: ["GA4", "Funnel Analysis", "VOC", "Conversion", "Reporting"] },
+  { no: "03", category: "AI & BUILD", title: "아이디어를 작동시키는 도구", skills: ["AI Workflow", "Web", "Automation", "Prototyping", "WordPress"] },
+];
+
 const works = [
   { no: "01", type: "GROWTH · DATA · CX", title: "의료 고객 여정 전체를\n하나의 퍼널로 보다", text: "퍼포먼스 마케터와 협업하며 광고 유입 이후 상담, 예약, 내원까지 흩어진 고객 접점을 연결해 개선 지점을 찾았습니다.", metric: "FUNNEL", label: "고객 여정 기반 협업", color: "blue" },
   { no: "02", type: "UX · DATA · MARKETING", title: "홈페이지를 소개서에서\n전환 도구로 바꾸다", text: "고객 행동을 바탕으로 정보의 순서와 예약 동선을 재구성해 더 쉽게 이해하고 행동할 수 있도록 개선했습니다.", metric: "WEB UX", label: "예약 동선 최적화", color: "cyan" },
@@ -92,6 +98,20 @@ export default function Home() {
             <div className="work-number">CASE {work.no}</div>
             <div className="work-copy"><span>{work.type}</span><h3>{work.title.split("\n").map(line => <span key={line}>{line}<br /></span>)}</h3><p>{work.text}</p><a className="private-case-link" href="/work">PRIVATE CASE <Arrow /></a></div>
             <div className="work-metric"><span>KEY RESULT</span><strong>{work.metric}</strong><p>{work.label}</p></div>
+          </article>)}
+        </div>
+      </section>
+
+      <section className="skills section-pad" id="skills">
+        <div className="section-intro split-title skills-title">
+          <div><p className="section-kicker">SKILLS</p><h2>성과를 만드는<br />실행 도구</h2></div>
+          <p>도구를 나열하기보다,<br />어떤 문제에 어떻게 사용하는지 보여드립니다.</p>
+        </div>
+        <div className="skills-grid">
+          {skillGroups.map((group) => <article className="skill-card" key={group.no}>
+            <div className="skill-card-head"><span>{group.no}</span><b>{group.category}</b></div>
+            <h3>{group.title}</h3>
+            <div className="skill-tags">{group.skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
           </article>)}
         </div>
       </section>
