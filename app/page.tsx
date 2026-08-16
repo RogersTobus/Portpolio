@@ -100,14 +100,14 @@ export default function Home() {
             <h1 className="reveal delay-1"><span className="hero-accent">데이터</span>로 길을 찾고,<br /><span className="hero-secondary-line">경험과 성과를 만듭니다.</span></h1>
             <p className="hero-description reveal delay-2">정보가 넘칠수록, 사람을 움직이는 건 마음에 남는 경험입니다.<br />마케팅·데이터·AI를 연결해 그 경험을 <strong>더 나은 성과</strong>로 바꿉니다.</p>
           </div>
-          <div className="hero-visual" aria-hidden="true">
-            <div className="sphere-sheen" />
-            <div className="orbit orbit-one"><span className="orbiter orbiter-large" /></div>
-            <div className="orbit orbit-two"><span className="orbiter orbiter-small" /></div>
-            <div className="orbit orbit-three"><span className="orbiter orbiter-medium" /></div>
-            <div className="core"><Image src="/xbase-hero-symbol.svg" alt="XBASE 심볼" width={92} height={80} priority /></div>
-            <span className="visual-label label-a">MARKETING</span><span className="visual-label label-b">DATA</span><span className="visual-label label-c">AI</span>
-          </div>
+        </div>
+        <div className="hero-visual" aria-hidden="true">
+          <div className="sphere-sheen" />
+          <div className="orbit orbit-one"><span className="orbiter orbiter-large" /></div>
+          <div className="orbit orbit-two"><span className="orbiter orbiter-small" /></div>
+          <div className="orbit orbit-three"><span className="orbiter orbiter-medium" /></div>
+          <div className="core"><Image src="/xbase-hero-symbol.svg" alt="XBASE 심볼" width={92} height={80} priority /></div>
+          <span className="visual-label label-a">MARKETING</span><span className="visual-label label-b">DATA</span><span className="visual-label label-c">AI</span>
         </div>
       </section>
 
