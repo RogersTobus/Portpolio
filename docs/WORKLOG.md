@@ -1,5 +1,12 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — 홈 섹션 배경 톤 구분
+
+- ABOUT ME를 차분한 쿨 그레이 배경으로 조정
+- SELECTED WORK에 옅은 블루 배경을 적용해 앞 섹션과 분리
+- HOW I WORK는 화이트, NEWS는 블루 그레이로 교차 구성
+- 기존 CAPABILITIES와 BEYOND MARKETING의 다크 배경은 유지
+
 ## 2026-08-16 — CAPABILITIES 섹션 통합
 
 - 기존 검은색 CAPABILITIES 섹션 삭제

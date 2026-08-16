@@ -104,4 +104,10 @@ body{font-size:16px;line-height:1.65}
 .about .about-copy{padding-top:9px}
 .about .about-copy p+p{margin-top:14px}
 .about-statement{margin-top:42px;padding-top:20px}
+
+/* Home section rhythm */
+.about{background:linear-gradient(180deg,#f7f8fa 0%,#f1f3f6 100%)}
+.work{background:linear-gradient(180deg,#edf3ff 0%,#f5f8ff 100%)}
+.process{background:#fff}
+.thinking{background:linear-gradient(180deg,#f4f6fa 0%,#eef2f8 100%)}
 @media(max-width:680px){.about.section-pad{padding-top:78px;padding-bottom:48px}.about .split-title h2{font-size:clamp(34px,calc(10vw - 2px),42px)}.about .about-copy{padding-top:0}.about-statement{margin-top:36px;padding-top:18px}}
