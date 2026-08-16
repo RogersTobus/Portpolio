@@ -92,6 +92,17 @@ export default function Home() {
         <div className="about-statement"><span>ONE PERSON.</span><span>MULTIPLE PERSPECTIVES.</span><span>ONE WAY OF WORKING.</span></div>
       </section>
 
+      <section className="work section-pad" id="work">
+        <div className="section-intro split-title work-title"><div><p className="section-kicker">SELECTED WORK</p><h2>문제를 발견하고<br />바꿔낸 것들</h2></div><p>성과만 나열하기보다 문제를 어떻게 보고,<br />무엇을 바꿨는지 보여드립니다.</p></div>
+        <div className="work-list">
+          {works.map((work) => <article className={`work-card ${work.color}`} key={work.no}>
+            <div className="work-number">CASE {work.no}</div>
+            <div className="work-copy"><span>{work.type}</span><h3>{work.title.split("\n").map(line => <span key={line}>{line}<br /></span>)}</h3><p>{work.text}</p><a className="private-case-link" href="/work">PRIVATE CASE <Arrow /></a></div>
+            <div className="work-metric"><span>KEY RESULT</span><strong>{work.metric}</strong><p>{work.label}</p></div>
+          </article>)}
+        </div>
+      </section>
+
       <section className="capabilities section-pad" id="capabilities">
         <div className="section-intro dark-intro"><p className="section-kicker">CAPABILITIES</p><h2>성장을 만드는<br />네 가지 실행 기반</h2><p>전략과 분석, 제작을 분리하지 않습니다.<br />필요한 답을 찾고 직접 작동하게 만듭니다.</p></div>
         <div className="capability-stack">
@@ -112,17 +123,6 @@ export default function Home() {
           {impacts.map((item, index) => <article className={index === 0 ? "impact-card featured" : "impact-card"} key={item.label}><span>0{index + 1}</span><strong>{item.value}</strong><p>{item.label}</p></article>)}
         </div>
         <div className="signal-marquee" aria-hidden="true"><div>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS ·</div></div>
-      </section>
-
-      <section className="work section-pad" id="work">
-        <div className="section-intro split-title work-title"><div><p className="section-kicker">SELECTED WORK</p><h2>문제를 발견하고<br />바꿔낸 것들</h2></div><p>성과만 나열하기보다 문제를 어떻게 보고,<br />무엇을 바꿨는지 보여드립니다.</p></div>
-        <div className="work-list">
-          {works.map((work) => <article className={`work-card ${work.color}`} key={work.no}>
-            <div className="work-number">CASE {work.no}</div>
-            <div className="work-copy"><span>{work.type}</span><h3>{work.title.split("\n").map(line => <span key={line}>{line}<br /></span>)}</h3><p>{work.text}</p><a className="private-case-link" href="/work">PRIVATE CASE <Arrow /></a></div>
-            <div className="work-metric"><span>KEY RESULT</span><strong>{work.metric}</strong><p>{work.label}</p></div>
-          </article>)}
-        </div>
       </section>
 
       <section className="process section-pad">

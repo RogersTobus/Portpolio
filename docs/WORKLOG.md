@@ -1,5 +1,10 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — SELECTED WORK 섹션 순서 변경
+
+- 홈의 SELECTED WORK 섹션을 ABOUT ME 바로 아래로 이동
+- 섹션의 기존 내용과 디자인은 유지
+
 ## 2026-08-16 — NEWS 섹션 순서 변경
 
 - 홈의 NEWS 섹션을 BEYOND MARKETING 섹션보다 위로 이동
