@@ -407,7 +407,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 .more-works a:hover::after,.more-about a:hover::after,.beyond-actions a:hover::after{transform:translateX(80%)}
 
 @media(max-width:680px){
-  .hero>.hero-visual{translate:0 -50%}
+  .hero>.hero-visual{left:50%;right:auto;translate:-50% -50%}
   .motion-ready .motion-item{transition-duration:.78s}
   .motion-ready .motion-item.motion-pending{transform:translate3d(0,8px,0);filter:blur(2px)}
   .motion-ready .motion-item.is-in-view{transform:none;filter:none}
