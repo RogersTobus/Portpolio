@@ -88,9 +88,6 @@ export default function Home() {
           <p className="eyebrow reveal">MARKETING × DATA × AI</p>
           <h1 className="reveal delay-1"><span className="hero-accent">데이터</span>로 길을 찾고,<br /><span className="hero-secondary-line">경험과 성과를 만듭니다.</span></h1>
           <p className="hero-description reveal delay-2">정보가 넘칠수록, 사람을 움직이는 건 마음에 남는 경험입니다.<br />마케팅·데이터·AI를 연결해 그 경험을 <strong>더 나은 성과</strong>로 바꿉니다.</p>
-          <div className="hero-actions reveal delay-3">
-            <a className="button hero-secondary" href="#work">프로젝트 보기 <Arrow /></a>
-          </div>
         </div>
         <div className="hero-visual" aria-hidden="true">
           <div className="sphere-sheen" />
@@ -112,9 +109,10 @@ export default function Home() {
         <div className="result-work-list">
           {works.slice(0, 3).map((work) => <article className={work.no === "01" ? "result-work-row featured" : "result-work-row"} key={work.no}>
             <div className="result-metric"><span>{work.no}</span><strong>{work.metric}</strong><p>{work.label}</p></div>
-            <div className="result-case"><span>{work.type}</span><h3>{work.title.split("\n").map(line => <span key={line}>{line}<br /></span>)}</h3><p>{work.text}</p><a className="private-case-link" href="/work">PRIVATE CASE <Arrow /></a></div>
+            <div className="result-case"><span>{work.type}</span><h3>{work.title.split("\n").map(line => <span key={line}>{line}<br /></span>)}</h3><p>{work.text}</p></div>
           </article>)}
         </div>
+        <div className="more-works"><a href="/work">더 많은 WORKS 보기 <Arrow /></a></div>
       </section>
 
       <section className="experience-band about-band section-pad" id="about">
