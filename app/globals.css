@@ -97,4 +97,5 @@ body{font-size:16px;line-height:1.65}
 @media(max-width:680px){.site-header .wordmark img{width:93px;height:24px;flex-basis:93px}}
 .core img{width:71%;height:71%;object-fit:contain}
 .hero h1 .hero-accent{color:var(--blue)}
+.hero h1 .hero-secondary-line{color:#aab3bf!important}
 .hero-description strong{color:#465a78;font-weight:500!important}
