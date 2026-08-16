@@ -114,8 +114,8 @@ export default function Home() {
       <section className="impact section-pad" id="capabilities">
         <div className="section-intro light-intro">
           <p className="section-kicker">CAPABILITIES</p>
-          <h2>문제를 나누어 보고,<br />연결해서 해결합니다.</h2>
-          <p>고객 여정과 데이터, 화면과 운영을 하나의 흐름으로 봅니다. 문제를 구조화하고 실행 가능한 개선으로 연결합니다.</p>
+          <h2>실행의 결과는,<br />숫자로 남습니다.</h2>
+          <p>광고 운영부터 예약 전환, 홈페이지와 현장 운영까지.<br />직접 개선해 만든 변화를 핵심 지표로 보여드립니다.</p>
         </div>
         <div className="impact-grid">
           {impacts.map((item, index) => <article className={index === 0 ? "impact-card featured" : "impact-card"} key={item.label}><span>0{index + 1}</span><strong>{item.value}</strong><p>{item.label}</p></article>)}

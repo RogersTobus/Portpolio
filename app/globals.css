@@ -111,9 +111,9 @@ body{font-size:16px;line-height:1.65}
 .process{background:#fff}
 .thinking{background:linear-gradient(180deg,#f4f6fa 0%,#eef2f8 100%)}
 .skills{background:#fff}.skills.section-pad{padding-top:88px;padding-bottom:88px}.skills-title{margin-bottom:40px}.skill-logo-grid{display:grid;grid-template-columns:repeat(9,1fr);gap:12px}.skill-logo-tile{aspect-ratio:1;border:1px solid #e0e5ed;border-radius:24px;background:linear-gradient(145deg,#fff,#f4f7fb);display:grid;place-items:center;box-shadow:0 16px 40px rgba(31,54,94,.06);transition:transform .3s,border-color .3s,box-shadow .3s}.skill-logo-tile:hover{transform:translateY(-6px);border-color:#b8cdf8;box-shadow:0 22px 48px rgba(31,54,94,.12)}.skill-logo-tile svg{width:49%;height:49%;filter:drop-shadow(0 10px 14px rgba(31,45,75,.13))}
-.skill-category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill-category-box{position:relative;min-height:290px;padding:28px 30px;border:1px solid #dde3ec;border-radius:28px;background:#f7f8fa;overflow:hidden;display:flex;flex-direction:column}.skill-category-box:nth-child(2){background:#f0f5ff}.skill-category-box:nth-child(3){background:#e9f1ff}.skill-category-box>span{color:#8791a0;font-size:11px;font-weight:500!important}.skill-category-box h3{position:relative;z-index:1;min-height:88px;margin-top:42px;display:flex;align-items:flex-end;font-size:clamp(29px,2.45vw,38px);line-height:1.1}.skill-category-tools{position:relative;z-index:1;margin-top:18px;padding-top:18px;border-top:1px solid #d8dee8;display:flex;gap:10px;flex-wrap:wrap}.skill-tool-icon{width:64px;height:64px;border:1px solid rgba(208,216,229,.9);border-radius:17px;background:rgba(255,255,255,.82);display:grid;place-items:center;box-shadow:0 8px 20px rgba(39,59,96,.07)}.skill-tool-icon img{width:43px;height:43px;object-fit:contain}.skill-category-box::after{content:"";position:absolute;width:210px;height:210px;right:-100px;top:-105px;border-radius:50%;background:radial-gradient(circle,rgba(69,125,255,.12),transparent 67%)}
+.skill-category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill-category-box{position:relative;min-height:260px;padding:28px 30px;border:1px solid #dde3ec;border-radius:28px;background:#f7f8fa;overflow:hidden;display:flex;flex-direction:column}.skill-category-box:nth-child(2){background:#f0f5ff}.skill-category-box:nth-child(3){background:#e9f1ff}.skill-category-box>span{color:#8791a0;font-size:11px;font-weight:500!important}.skill-category-box h3{position:relative;z-index:1;min-height:68px;margin-top:24px;display:flex;align-items:flex-end;font-size:clamp(29px,2.45vw,38px);line-height:1.1}.skill-category-tools{position:relative;z-index:1;margin-top:14px;padding-top:14px;border-top:1px solid #d8dee8;display:flex;gap:10px;flex-wrap:wrap}.skill-tool-icon{width:64px;height:64px;border:1px solid rgba(208,216,229,.9);border-radius:17px;background:rgba(255,255,255,.82);display:grid;place-items:center;box-shadow:0 8px 20px rgba(39,59,96,.07)}.skill-tool-icon img{width:43px;height:43px;object-fit:contain}.skill-category-box::after{content:"";position:absolute;width:210px;height:210px;right:-100px;top:-105px;border-radius:50%;background:radial-gradient(circle,rgba(69,125,255,.12),transparent 67%)}
 .impact-about{position:relative;margin-top:105px;padding-top:72px;border-top:1px solid #2e3136}.impact-about .split-title h2{font-size:clamp(42px,4.5vw,66px)}.impact-about .about-copy{padding-top:9px;max-width:560px}.impact-about .about-copy p{color:#9ba2ad;font-size:16px;line-height:1.9}.impact-about .about-copy p+p{margin-top:14px}.impact-about .about-statement{border-color:#30343a;color:#737b87}
-.about-band::before{display:none}.about-band .impact-about{margin-top:0}
+.about-band::before{display:none}.about-band .impact-about{margin-top:0;padding-top:0;border-top:0}
 .home-experience{position:relative;margin-top:72px;border-top:1px solid #30343a}.home-experience-head,.home-experience article{display:grid;grid-template-columns:1.05fr 1.5fr 1.4fr;align-items:center;gap:28px}.home-experience-head{padding:22px 0;color:#3f82ff;font:750 10px/1 var(--font-geist-mono);letter-spacing:.12em}.home-experience-head a{grid-column:3;justify-self:end;display:inline-flex;align-items:center;gap:12px;color:#9ba2ad;letter-spacing:0}.home-experience article{min-height:82px;border-top:1px solid #26292e}.home-experience time{color:#4387ff;font-size:13px;font-weight:700}.home-experience strong{font-size:18px}.home-experience article>span{color:#8f96a1;font-size:13px}
 .work-list{gap:10px}.work-card{min-height:310px}
 .beyond-actions{margin-top:36px;display:flex;gap:10px;flex-wrap:wrap}.beyond-actions a{padding:12px 16px;border:1px solid #343b48;border-radius:999px;color:#c6cfdf;font-size:12px;font-weight:500!important;transition:.25s}.beyond-actions a:first-child{border-color:#5378c9;color:#fff}.beyond-actions a:hover{transform:translateY(-2px);border-color:#789cff;color:#fff}.beyond-actions a span{margin-left:18px;color:#6e91dc}
@@ -152,8 +152,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 }
 
 @media(min-width:981px) and (max-width:1180px){
-  .skill-category-box{min-height:270px;padding:24px}
-  .skill-category-box h3{min-height:72px;margin-top:34px;font-size:29px}
+  .skill-category-box{min-height:245px;padding:24px}
+  .skill-category-box h3{min-height:60px;margin-top:22px;font-size:29px}
   .skill-category-tools{gap:7px;margin-top:15px;padding-top:15px;flex-wrap:nowrap}
   .skill-tool-icon{width:54px;height:54px;border-radius:15px;flex:0 0 54px}
   .skill-tool-icon img{width:36px;height:36px}
@@ -174,6 +174,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .signal-marquee{margin-top:52px;margin-bottom:-72px;padding:20px 0;font-size:20px}
   .skills.section-pad{padding-top:64px;padding-bottom:64px}
   .skill-category-grid{gap:12px}
+  .skill-category-box{min-height:205px}
+  .skill-category-box h3{min-height:52px;margin-top:18px}
+  .skill-category-tools{margin-top:12px;padding-top:12px}
   .thinking-track{gap:12px}
   .thinking-track article{min-height:310px;padding:24px}
   .thinking-track h3{margin-top:40px}
