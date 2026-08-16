@@ -29,13 +29,6 @@ const works = [
   { no: "04", type: "AI · AUTOMATION · CONTENT", title: "반복 업무를 줄이고\n콘텐츠 시스템을 만들다", text: "병원 블로그의 기획과 제작 흐름을 AI 기반으로 재설계했습니다. 사람은 판단에 집중하고 반복은 시스템이 맡게 했습니다.", metric: "AI SYSTEM", label: "콘텐츠 자동화 구축", color: "navy" },
 ];
 
-const steps = [
-  ["01", "FIND", "데이터와 현장의 목소리에서 진짜 문제를 찾습니다."],
-  ["02", "FRAME", "복잡한 문제를 모두가 이해할 수 있는 구조로 정리합니다."],
-  ["03", "BUILD", "가설을 빠르게 실행 가능한 결과물로 만듭니다."],
-  ["04", "IMPROVE", "결과를 확인하고 더 나은 방식으로 계속 고칩니다."],
-];
-
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 
 function SkillLogo({ name }: { name: (typeof skillLogos)[number] }) {
@@ -127,11 +120,6 @@ export default function Home() {
         <div className="skill-logo-grid">
           {skillLogos.map((name) => <div className="skill-logo-tile" aria-label={name} title={name} key={name}><SkillLogo name={name} /></div>)}
         </div>
-      </section>
-
-      <section className="process section-pad">
-        <div className="section-intro centered"><p className="section-kicker">HOW I WORK</p><h2>전략보다 실행으로,<br />실행보다 결과로.</h2><p>관찰과 데이터로 시작해,<br />빠르게 실행하고 결과로 검증합니다.</p></div>
-        <div className="process-grid">{steps.map(([no,title,text]) => <article key={no}><span>{no}</span><div className="process-symbol" aria-hidden="true"><i /><i /></div><h3>{title}</h3><p>{text}</p></article>)}</div>
       </section>
 
       <section className="thinking section-pad" id="thinking">
