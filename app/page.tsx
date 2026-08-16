@@ -58,8 +58,7 @@ export default function Home() {
       <div className="scroll-progress" aria-hidden="true" />
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="XBASE 홈">
-          <Image src="/xbase-logo.svg" alt="" width={32} height={32} priority />
-          <b>XBASE<span>.</span></b>
+          <Image src="/xbase-header-logo.svg" alt="" width={110} height={29} priority />
         </a>
         <nav aria-label="주요 메뉴">
           <a href="/about">About</a><a href="/impact">Impact</a><a href="/work">Work</a><a href="/creative">Creative</a><a href="/build">Build</a><a href="/thinking">Thinking</a>
@@ -87,7 +86,7 @@ export default function Home() {
           <div className="orbit orbit-one"><span className="orbiter orbiter-large" /></div>
           <div className="orbit orbit-two"><span className="orbiter orbiter-small" /></div>
           <div className="orbit orbit-three"><span className="orbiter orbiter-medium" /></div>
-          <div className="core"><Image src="/xbase-logo.svg" alt="XBASE 심볼" width={130} height={130} priority /></div>
+          <div className="core"><Image src="/xbase-hero-symbol.svg" alt="XBASE 심볼" width={92} height={80} priority /></div>
           <span className="visual-label label-a">THINK</span><span className="visual-label label-b">BUILD</span><span className="visual-label label-c">GROW</span>
         </div>
         <a className="scroll-hint" href="#about"><span />SCROLL</a>
