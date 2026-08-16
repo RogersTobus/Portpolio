@@ -84,7 +84,7 @@ export default function AboutPage() {
 
     <section className="about-foundation about-section">
       <div className="about-section-heading compact-heading">
-        <div><p className="section-kicker">WORKING PRINCIPLES</p><h2>성과를 만드는<br />세 가지 기준</h2></div>
+        <div><p className="section-kicker">WORKING PRINCIPLES</p><h2>성과를 만드는 세 가지 기준</h2></div>
       </div>
       <div className="foundation-grid">{foundations.map(([no, title, text]) => <article key={no}><span>{no}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
     </section>
