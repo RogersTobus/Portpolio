@@ -1,5 +1,11 @@
 # XBASE 작업 기록
 
+## 2026-08-16 — SKILLS를 CAPABILITIES에 통합
+
+- 독립된 흰색 SKILLS 섹션 삭제
+- CAPABILITIES 성과 카드 하단에 SKILLS 로고 배치
+- 다크 섹션에 맞춰 로고 타일 배경과 테두리 조정
+
 ## 2026-08-16 — CAPABILITIES 섹션 순서 변경
 
 - CAPABILITIES를 SKILLS 바로 위로 이동

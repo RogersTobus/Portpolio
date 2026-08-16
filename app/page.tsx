@@ -119,16 +119,13 @@ export default function Home() {
         <div className="impact-grid">
           {impacts.map((item, index) => <article className={index === 0 ? "impact-card featured" : "impact-card"} key={item.label}><span>0{index + 1}</span><strong>{item.value}</strong><p>{item.label}</p></article>)}
         </div>
+        <div className="impact-skills">
+          <p className="section-kicker">SKILLS</p>
+          <div className="skill-logo-grid">
+            {skillLogos.map((name) => <div className="skill-logo-tile" aria-label={name} title={name} key={name}><SkillLogo name={name} /></div>)}
+          </div>
+        </div>
         <div className="signal-marquee" aria-hidden="true"><div>MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS · MARKETING · DATA ANALYTICS · CUSTOMER EXPERIENCE · SYSTEM · OPERATIONS ·</div></div>
-      </section>
-
-      <section className="skills section-pad" id="skills">
-        <div className="section-intro split-title skills-title">
-          <div><p className="section-kicker">SKILLS</p><h2>성과를 만드는<br />실행 도구</h2></div>
-        </div>
-        <div className="skill-logo-grid">
-          {skillLogos.map((name) => <div className="skill-logo-tile" aria-label={name} title={name} key={name}><SkillLogo name={name} /></div>)}
-        </div>
       </section>
 
       <section className="process section-pad">
