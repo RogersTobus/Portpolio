@@ -95,7 +95,7 @@ export default function Home() {
           <div className="orbit orbit-two"><span className="orbiter orbiter-small" /></div>
           <div className="orbit orbit-three"><span className="orbiter orbiter-medium" /></div>
           <div className="core"><Image src="/xbase-hero-symbol.svg" alt="XBASE 심볼" width={92} height={80} priority /></div>
-          <span className="visual-label label-a">THINK</span><span className="visual-label label-b">BUILD</span><span className="visual-label label-c">GROW</span>
+          <span className="visual-label label-a">MARKETING</span><span className="visual-label label-b">DATA</span><span className="visual-label label-c">AI</span>
         </div>
         <a className="scroll-hint" href="#about"><span />SCROLL</a>
       </section>
