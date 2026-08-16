@@ -140,8 +140,7 @@ export default function Home() {
           <div><p className="section-kicker">SKILLS</p><h2>성과를 만드는 실행 도구</h2></div>
         </div>
         <div className="skill-category-grid">
-          {skillCategories.map((group, index) => <article className="skill-category-box" key={group.category}>
-            <span>0{index + 1}</span>
+          {skillCategories.map((group) => <article className="skill-category-box" key={group.category}>
             <h3>{group.category}</h3>
             <div className="skill-category-tools">{group.tools.map((tool) => <div className="skill-tool-icon" title={tool.name} key={tool.name}><img src={tool.src} alt={`${tool.name} 로고`} /></div>)}</div>
           </article>)}

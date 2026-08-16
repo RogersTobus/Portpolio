@@ -228,6 +228,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 .signal-marquee-track{display:flex;width:max-content}
 .signal-marquee-track>span{flex:none}
 .skill-category-tools{margin-top:14px;padding-top:0;border-top:0}
+.skill-category-box{min-height:210px;padding-top:20px;padding-bottom:20px}
+.skill-category-box h3{margin-top:0}
+.skill-category-box:first-child h3{font-size:clamp(26px,calc(2.45vw - 3px),35px)}
 .more-works a,.more-about a{min-width:196px;padding:14px 18px;font-size:14px;font-weight:500!important}
 .beyond-actions a{padding:14px 18px;font-size:14px;font-weight:500!important}
 
@@ -261,6 +264,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .result-metric p{font-size:15px}
   .home-experience article>span{font-size:13px}
   .skill-category-tools{margin-top:10px;padding-top:0}
+  .skill-category-box{min-height:150px;padding-top:12px;padding-bottom:12px}
+  .skill-category-box:first-child h3{font-size:clamp(18px,calc(6vw - 3px),22px)}
   .more-works a,.more-about a{font-size:14px}
   .beyond-actions a{padding:13px 14px;font-size:14px}
   .thinking-track{grid-template-columns:1fr}
