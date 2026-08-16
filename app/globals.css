@@ -216,16 +216,16 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 .hero-inner{position:relative;z-index:3;width:min(100%,1440px);height:100%;margin:0 auto}
 .hero-copy{position:absolute;z-index:3;left:clamp(22px,5vw,72px);bottom:72px;width:min(900px,calc(100% - 44px));margin:0}
 .hero h1{max-width:none;white-space:nowrap}
-.hero>.hero-visual{position:absolute;z-index:2;top:43%;right:clamp(-100px,calc((100vw - 1600px)/2),260px);translate:0 -50%;width:min(58vw,794px);border:0;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
+.hero>.hero-visual{position:absolute;z-index:2;top:43%;right:clamp(-100px,calc((100vw - 1600px)/2),260px);translate:0 -50%;width:min(64vw,953px);border:0;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
 .hero>.hero-visual::before{z-index:0;inset:18%;width:auto;height:auto;left:18%;top:18%;border-radius:50%;background:radial-gradient(circle,rgba(62,126,255,.28),rgba(59,190,238,.13) 38%,transparent 70%);filter:blur(36px);opacity:.7}
 .hero>.hero-visual::after{border:0;background:none;box-shadow:none}
 .hero>.hero-visual .sphere-sheen{opacity:.32;filter:blur(34px)}
 .hero>.hero-visual .orbit{border-color:rgba(32,101,255,.34);filter:drop-shadow(0 0 8px rgba(39,115,255,.28))}
 .hero>.hero-visual .orbit-two{border-color:rgba(53,135,255,.45)}
 .hero>.hero-visual .orbit-three{border-color:rgba(90,170,255,.34)}
-.hero>.hero-visual .core{width:199px;height:199px;border-radius:0;overflow:visible;background:transparent;box-shadow:none;filter:drop-shadow(0 0 26px rgba(42,119,255,.42));animation:synapse-core-glow 3.6s ease-in-out infinite alternate}
+.hero>.hero-visual .core{width:239px;height:239px;border-radius:0;overflow:visible;background:transparent;box-shadow:none;filter:drop-shadow(0 0 26px rgba(42,119,255,.42));animation:synapse-core-glow 3.6s ease-in-out infinite alternate}
 .hero>.hero-visual .orbiter{animation:synapse-pulse 1.8s ease-in-out infinite alternate}
-.hero>.hero-visual .orbiter-large{width:25px;height:25px}.hero>.hero-visual .orbiter-medium{width:17px;height:17px}.hero>.hero-visual .orbiter-small{width:12px;height:12px}
+.hero>.hero-visual .orbiter-large{width:30px;height:30px}.hero>.hero-visual .orbiter-medium{width:20px;height:20px}.hero>.hero-visual .orbiter-small{width:14px;height:14px}
 @keyframes synapse-pulse{from{opacity:.55;box-shadow:0 0 0 4px rgba(47,108,255,.08),0 0 14px 3px rgba(47,108,255,.35)}to{opacity:1;box-shadow:0 0 0 9px rgba(47,108,255,.1),0 0 32px 10px rgba(47,108,255,.7)}}
 @keyframes synapse-core-glow{from{filter:drop-shadow(0 0 18px rgba(42,119,255,.3))}to{filter:drop-shadow(0 0 38px rgba(42,119,255,.62))}}
 .section-kicker,.eyebrow{font-size:12px;line-height:1.4;font-weight:500!important}
@@ -265,7 +265,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 
 @media(min-width:681px) and (max-width:980px){
   .hero-copy{left:6vw;bottom:86px;width:min(820px,88vw)}
-  .hero>.hero-visual{top:40%;right:-190px;width:min(82vw,680px)}
+  .hero>.hero-visual{top:40%;right:-190px;width:min(88vw,816px)}
   .thinking-track{grid-template-columns:repeat(2,minmax(0,1fr))}
   .skill-category-box h3,.skill-category-box:first-child h3{font-size:24px}
 }
@@ -275,8 +275,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .hero{height:100svh;min-height:700px}
   .hero-copy{left:22px;bottom:76px;width:calc(100% - 44px)}
   .hero h1{font-size:clamp(36px,10vw,42px);white-space:nowrap}
-  .hero>.hero-visual{top:34%;right:-250px;width:520px}
-  .hero>.hero-visual .core{width:152px;height:152px}
+  .hero>.hero-visual{top:34%;right:-250px;width:624px}
+  .hero>.hero-visual .core{width:182px;height:182px}
   .hero-background-video{object-position:58% center}
   .hero-video-overlay{background:linear-gradient(180deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.83) 55%,rgba(255,255,255,.48) 100%)}
   .eyebrow,.section-kicker{font-size:12px}
