@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
       <section className="work section-pad" id="work">
-        <div className="section-intro split-title work-title"><div><p className="section-kicker">SELECTED WORK</p><h2>문제를 발견하고<br />바꿔낸 것들</h2></div><p>성과만 나열하기보다 문제를 어떻게 보고,<br />무엇을 바꿨는지 보여드립니다.</p></div>
+        <div className="section-intro split-title work-title"><div><p className="section-kicker">WORK</p><h2>문제를 발견하고<br />바꿔낸 것들</h2></div><p>성과만 나열하기보다 문제를 어떻게 보고,<br />무엇을 바꿨는지 보여드립니다.</p></div>
         <div className="work-list">
           {works.map((work) => <article className={`work-card ${work.color}`} key={work.no}>
             <div className="work-number">CASE {work.no}</div>
