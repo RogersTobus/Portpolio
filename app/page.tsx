@@ -13,11 +13,9 @@ export const metadata: Metadata = {
 };
 
 const impacts = [
-  { value: "₩100M", label: "월간 퍼포먼스 광고 운영 규모" },
   { value: "12→18%", label: "DB 예약 전환율 개선" },
   { value: "+200%", label: "홈페이지 예약 전환 향상" },
   { value: "27→4%", label: "설치 서비스 취소율 감소" },
-  { value: "15 CAMPS", label: "전국 단위 운영·품질 관리" },
 ];
 
 const skillLogos = ["Excel", "PowerPoint", "Illustrator", "Figma", "Canva", "Google Ads", "Google Analytics", "ChatGPT", "Claude"] as const;
@@ -117,7 +115,7 @@ export default function Home() {
           <h2>실행의 결과는,<br />숫자로 남습니다.</h2>
           <p>광고 운영부터 예약 전환, 홈페이지와 현장 운영까지.<br />직접 개선해 만든 변화를 핵심 지표로 보여드립니다.</p>
         </div>
-        <div className="impact-grid">
+        <div className="impact-grid compact">
           {impacts.map((item, index) => <article className={index === 0 ? "impact-card featured" : "impact-card"} key={item.label}><span>0{index + 1}</span><strong>{item.value}</strong><p>{item.label}</p></article>)}
         </div>
       </section>
