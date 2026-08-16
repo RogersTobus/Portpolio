@@ -722,3 +722,25 @@ body:has(.case-showcase-details[open]){overflow:hidden}
 .work-detail-page h3 {
   font-weight: 600;
 }
+
+.case-showcase-list {
+  align-items: stretch;
+}
+.case-showcase {
+  height: 100%;
+}
+.case-showcase-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.case-showcase header {
+  flex: 1;
+  grid-template-rows: auto auto 1fr;
+}
+.case-showcase header > .case-showcase-metric {
+  align-self: end;
+}
+.case-showcase-details {
+  margin-top: auto;
+}
