@@ -99,9 +99,9 @@ body{font-size:16px;line-height:1.65}
 .hero h1 .hero-accent{color:var(--blue)}
 .hero h1 .hero-secondary-line{color:#aab3bf!important}
 .hero-description strong{color:#465a78;font-weight:500!important}
-.about.section-pad{padding-top:105px;padding-bottom:105px}
+.about.section-pad{padding-top:105px;padding-bottom:55px}
 .about .split-title h2{font-size:clamp(42px,calc(4.5vw - 2px),66px)}
 .about .about-copy{padding-top:9px}
 .about .about-copy p+p{margin-top:14px}
-.about-statement{margin-top:70px}
-@media(max-width:680px){.about.section-pad{padding-top:78px;padding-bottom:78px}.about .split-title h2{font-size:clamp(34px,calc(10vw - 2px),42px)}.about .about-copy{padding-top:0}.about-statement{margin-top:52px}}
+.about-statement{margin-top:42px;padding-top:20px}
+@media(max-width:680px){.about.section-pad{padding-top:78px;padding-bottom:48px}.about .split-title h2{font-size:clamp(34px,calc(10vw - 2px),42px)}.about .about-copy{padding-top:0}.about-statement{margin-top:36px;padding-top:18px}}
