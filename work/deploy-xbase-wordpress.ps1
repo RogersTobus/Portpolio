@@ -52,6 +52,20 @@ if ($check.StatusCode -ne 200 -or $check.Content -notmatch 'XBASE') {
     throw '배포 후 홈페이지 확인에 실패했습니다. 서버 백업이 보존되어 있습니다.'
 }
 
+$requiredAssets = @(
+    'xbase-header-logo.svg',
+    'about/park-youngjun-portrait.jpg',
+    'portfolio/case-01-db-funnel.png',
+    'media/hero-background.mp4'
+)
+foreach ($assetPath in $requiredAssets) {
+    $assetUrl = 'https://xbase.co.kr/wp-content/themes/xbase/assets/' + $assetPath
+    $assetCheck = Invoke-WebRequest -Uri $assetUrl -Method Head -UseBasicParsing -TimeoutSec 30
+    if ($assetCheck.StatusCode -ne 200) {
+        throw "배포 후 필수 이미지·영상 확인에 실패했습니다: $assetPath"
+    }
+}
+
 [pscustomobject]@{
     Deployed = $true
     Url = 'https://xbase.co.kr/'

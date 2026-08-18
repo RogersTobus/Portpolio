@@ -3,21 +3,54 @@ $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path $PSScriptRoot -Parent
 $themeRoot = Join-Path $PSScriptRoot 'wordpress-theme\xbase'
 $assetsRoot = Join-Path $themeRoot 'assets'
+$publicRoot = Join-Path $projectRoot 'public'
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+
+if (Test-Path -LiteralPath $themeRoot) {
+    Remove-Item -LiteralPath $themeRoot -Recurse -Force
+}
 New-Item -ItemType Directory -Path $assetsRoot -Force | Out-Null
 
 $themeLogo = '<?php echo esc_url(get_template_directory_uri()); ?>/assets/xbase-logo.png'
+$publicAssetPaths = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
+Get-ChildItem -LiteralPath $publicRoot -Recurse -File | ForEach-Object {
+    $relativePath = $_.FullName.Substring($publicRoot.Length).TrimStart('\', '/').Replace('\', '/')
+    [void]$publicAssetPaths.Add($relativePath)
+}
+
+function Convert-XbaseAssetUrl([string]$url) {
+    $decodedUrl = [System.Net.WebUtility]::HtmlDecode($url)
+
+    if ($decodedUrl -match '^/_next/image\?url=([^&]+)') {
+        $decodedUrl = [System.Uri]::UnescapeDataString($Matches[1])
+    }
+    elseif ($decodedUrl -match '^https://xbase\.co\.kr(/[^?#]+)') {
+        $decodedUrl = $Matches[1]
+    }
+
+    if (-not $decodedUrl.StartsWith('/')) { return $url }
+    $relativePath = ($decodedUrl.TrimStart('/') -split '[?#]', 2)[0]
+    if (-not $publicAssetPaths.Contains($relativePath)) { return $url }
+
+    return '<?php echo esc_url(get_template_directory_uri()); ?>/assets/' + $relativePath
+}
 
 function Get-XbaseMain([string]$path) {
     $response = Invoke-WebRequest -Uri ('http://localhost:3000' + $path) -UseBasicParsing -TimeoutSec 30
     $mainMatch = [regex]::Match($response.Content, '(?s)<main(?:\s[^>]*)?>.*?</main>')
     if (-not $mainMatch.Success) { throw "Could not find main content at $path" }
     $content = $mainMatch.Value
-    $content = [regex]::Replace($content, 'src="/_next/image\?url=%2Fxbase-logo\.png[^"]*"', 'src="' + $themeLogo + '"')
-    $content = [regex]::Replace($content, '\s+srcSet="/_next/image\?url=%2Fxbase-logo\.png[^"]*"', '')
+    $content = [regex]::Replace($content, '\s+(?:srcSet|srcset)="[^"]*"', '')
+    $content = [regex]::Replace(
+        $content,
+        '(?<prefix>\b(?:src|poster)=["''])(?<url>[^"'']+)(?<suffix>["''])',
+        {
+            param($match)
+            $convertedUrl = Convert-XbaseAssetUrl $match.Groups['url'].Value
+            return $match.Groups['prefix'].Value + $convertedUrl + $match.Groups['suffix'].Value
+        }
+    )
     $content = [regex]::Replace($content, '\s+data-nimg="1"', '')
-    $content = $content.Replace('https://xbase.co.kr/xbase-logo.png', '<?php echo esc_url(get_template_directory_uri()); ?>/assets/xbase-logo.png')
-    $content = $content.Replace('https://xbase.co.kr/og.png', '<?php echo esc_url(get_template_directory_uri()); ?>/assets/og.png')
     return $content.Replace('fetchPriority=', 'fetchpriority=')
 }
 
@@ -172,6 +205,17 @@ add_action('init', 'xbase_ensure_portfolio_pages');
 
 $sourceCss = Get-Content -Raw -LiteralPath (Join-Path $projectRoot 'app\globals.css')
 $sourceCss = $sourceCss -replace '^@import "tailwindcss";\s*', ''
+$sourceCss = [regex]::Replace(
+    $sourceCss,
+    'url\((?<quote>["'']?)(?<url>/[^)"'']+)(?:["'']?)\)',
+    {
+        param($match)
+        $relativePath = ($match.Groups['url'].Value.TrimStart('/') -split '[?#]', 2)[0]
+        if (-not $publicAssetPaths.Contains($relativePath)) { return $match.Value }
+        $quote = $match.Groups['quote'].Value
+        return 'url(' + $quote + 'assets/' + $relativePath + $quote + ')'
+    }
+)
 $themeHeader = @'
 /*
 Theme Name: XBASE Portfolio
@@ -187,8 +231,7 @@ body.admin-bar .site-header { top:20px; }
 '@
 [System.IO.File]::WriteAllText((Join-Path $themeRoot 'style.css'), ($themeHeader + "`r`n" + $sourceCss), $utf8NoBom)
 
-Copy-Item -LiteralPath (Join-Path $projectRoot 'public\xbase-logo.png') -Destination (Join-Path $assetsRoot 'xbase-logo.png') -Force
-Copy-Item -LiteralPath (Join-Path $projectRoot 'public\og.png') -Destination (Join-Path $assetsRoot 'og.png') -Force
+Copy-Item -Path (Join-Path $publicRoot '*') -Destination $assetsRoot -Recurse -Force
 
 $zipPath = Join-Path $projectRoot 'outputs\xbase-theme.zip'
 if ($env:XBASE_SKIP_ZIP -ne '1') {
