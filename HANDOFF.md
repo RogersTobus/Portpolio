@@ -22,13 +22,13 @@ GitHub 저장소가 사이트의 유일한 원본이다. Cafe24에 올라간 Wor
 
 히어로 메시지:
 
-> 문제를 발견하고,  
-> 더 나은 방식을 만듭니다.
+> 데이터로 길을 찾고,<br>
+> 경험과 성과를 만듭니다.
 
 히어로 설명:
 
-> 마케팅과 데이터, AI를 연결해  
-> 상상을 현실로 만들고, 문제를 최선의 방법으로 해결합니다.
+> 정보가 넘칠수록, 사람을 움직이는 건 마음에 남는 경험입니다.<br>
+> 마케팅·데이터·AI를 연결해 그 경험을 더 나은 성과로 바꿉니다.
 
 XBASE는 에이전시나 컨설팅 회사가 아니라 개인 브랜드 포트폴리오다. 장기적으로 마케팅에서 회계·재무, 경영관리, 사업운영/COO 관점으로 확장하는 사람을 보여준다.
 
@@ -151,7 +151,8 @@ XBASE는 에이전시나 컨설팅 회사가 아니라 개인 브랜드 포트�
 - 세부 페이지 데이터: `app/detail-data.ts`
 - SEO/구조화 데이터: `app/seo.tsx`, `app/sitemap.ts`, `app/robots.ts`
 - 소셜 버튼: `app/social-dock.tsx`
-- 이미지: `public/xbase-logo.png`, `public/og.png`
+- 이미지: `public/xbase-logo.png`, `public/og.png`, `public/og-xbase-20260818.png`
+- 소셜 공유 카드 재생성: `work/render-og-card.mjs`
 
 ## 11. 로컬 실행
 

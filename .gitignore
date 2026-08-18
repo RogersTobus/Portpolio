@@ -44,6 +44,7 @@ yarn-error.log*
 /work/*
 !/work/deploy-xbase-wordpress.ps1
 !/work/export-wordpress-theme.ps1
+!/work/render-og-card.mjs
 !/work/setup-cafe24-credential.ps1
 !/work/cafe24-askpass.ps1
 !/work/cafe24-askpass.cmd

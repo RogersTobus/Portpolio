@@ -19,20 +19,20 @@ export function detailMetadata(slug: DetailSlug): Metadata {
     title: seo.title,
     description: seo.description,
     alternates: { canonical },
-    openGraph: { title: `${seo.title} | XBASE`, description: seo.description, url: canonical, images: [{ url: "/og.png", width: 1200, height: 630, alt: seo.imageAlt }] },
-    twitter: { title: `${seo.title} | XBASE`, description: seo.description, images: ["/og.png"] },
+    openGraph: { title: `${seo.title} | XBASE`, description: seo.description, url: canonical, images: [{ url: "/og-xbase-20260818.png", width: 1200, height: 630, alt: seo.imageAlt }] },
+    twitter: { title: `${seo.title} | XBASE`, description: seo.description, images: ["/og-xbase-20260818.png"] },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   };
 }
 
 export function JsonLd({ slug }: { slug?: DetailSlug }) {
   const canonical = slug ? `${siteUrl}/${slug}/` : `${siteUrl}/`;
-  const seo = slug ? seoPages[slug] : { title: "마케팅·데이터·AI 자동화 포트폴리오", description: "마케팅과 데이터, AI를 연결해 상상을 현실로 만들고 문제를 최선의 방법으로 해결하는 박영준의 개인 포트폴리오 XBASE입니다." };
+  const seo = slug ? seoPages[slug] : { title: "데이터로 길을 찾고, 경험과 성과를 만듭니다", description: "마케팅·데이터·AI를 연결해 사람에게 남는 경험을 더 나은 성과로 바꾸는 박영준의 개인 포트폴리오 XBASE입니다." };
   const graph: Record<string, unknown>[] = [
     { "@type": "Person", "@id": `${siteUrl}/#person`, name: "박영준", url: `${siteUrl}/about/`, jobTitle: "마케팅·데이터 기반 문제 해결자", knowsAbout: ["그로스 마케팅", "고객 경험", "데이터 분석", "AI 자동화", "바이브 코딩", "사업 운영"] },
     { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: "XBASE", url: siteUrl, logo: { "@type": "ImageObject", url: `${siteUrl}/xbase-logo.svg` }, founder: { "@id": `${siteUrl}/#person` } },
     { "@type": "WebSite", "@id": `${siteUrl}/#website`, url: siteUrl, name: "XBASE", inLanguage: "ko-KR", publisher: { "@id": `${siteUrl}/#organization` } },
-    { "@type": slug ? "CollectionPage" : "WebPage", "@id": `${canonical}#webpage`, url: canonical, name: seo.title, description: seo.description, inLanguage: "ko-KR", isPartOf: { "@id": `${siteUrl}/#website` }, about: { "@id": `${siteUrl}/#person` }, primaryImageOfPage: { "@type": "ImageObject", url: `${siteUrl}/og.png`, width: 1200, height: 630 } },
+    { "@type": slug ? "CollectionPage" : "WebPage", "@id": `${canonical}#webpage`, url: canonical, name: seo.title, description: seo.description, inLanguage: "ko-KR", isPartOf: { "@id": `${siteUrl}/#website` }, about: { "@id": `${siteUrl}/#person` }, primaryImageOfPage: { "@type": "ImageObject", url: `${siteUrl}/og-xbase-20260818.png`, width: 1200, height: 630 } },
   ];
   if (slug) graph.push({ "@type": "BreadcrumbList", "@id": `${canonical}#breadcrumb`, itemListElement: [{ "@type": "ListItem", position: 1, name: "홈", item: `${siteUrl}/` }, { "@type": "ListItem", position: 2, name: seo.title, item: canonical }] });
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c") }} />;

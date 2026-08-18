@@ -5,11 +5,11 @@ import SocialDock from "./social-dock";
 import MotionLayer from "./motion-layer";
 
 export const metadata: Metadata = {
-  title: "마케팅·데이터·AI 자동화 포트폴리오",
-  description: "마케팅과 데이터, AI를 연결해 상상을 현실로 만들고 문제를 최선의 방법으로 해결하는 박영준의 개인 포트폴리오 XBASE입니다.",
+  title: "데이터로 길을 찾고, 경험과 성과를 만듭니다",
+  description: "마케팅·데이터·AI를 연결해 사람에게 남는 경험을 더 나은 성과로 바꾸는 박영준의 개인 포트폴리오 XBASE입니다.",
   alternates: { canonical: "/" },
-  openGraph: { title: "XBASE | 문제를 발견하고 더 나은 방식을 만듭니다", description: "Marketing × Data × AI", url: "/", images: [{ url: "/og.png", width: 1200, height: 630, alt: "XBASE 마케팅 데이터 AI 포트폴리오" }] },
-  twitter: { title: "XBASE | Think better. Build better.", description: "Marketing × Data × AI", images: ["/og.png"] },
+  openGraph: { title: "XBASE | 데이터로 길을 찾고, 경험과 성과를 만듭니다", description: "마케팅·데이터·AI를 연결해 경험을 더 나은 성과로 바꿉니다.", url: "/", images: [{ url: "/og-xbase-20260818.png", width: 1200, height: 630, alt: "데이터로 길을 찾고 경험과 성과를 만드는 XBASE" }] },
+  twitter: { title: "XBASE | 데이터로 길을 찾고, 경험과 성과를 만듭니다", description: "마케팅·데이터·AI를 연결해 경험을 더 나은 성과로 바꿉니다.", images: ["/og-xbase-20260818.png"] },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
 };
 

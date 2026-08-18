@@ -88,24 +88,6 @@ require get_template_directory() . '/front-page.php';
 [System.IO.File]::WriteAllText((Join-Path $themeRoot 'index.php'), $indexPage, $utf8NoBom)
 
 $headerPage = @'
-<!doctype html>
-<html <?php language_attributes(); ?>>
-<head>
-  <meta charset="<?php bloginfo('charset'); ?>">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="마케팅과 데이터, AI와 기술을 연결해 문제를 발견하고 더 나은 방식을 만드는 XBASE 포트폴리오">
-  <meta property="og:title" content="XBASE — Think better. Build better.">
-  <meta property="og:description" content="Marketing × Data Analytics × Vibe Coding × System">
-  <meta property="og:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/og.png">
-  <meta property="og:url" content="https://xbase.co.kr/">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/xbase-logo.png">
-  <?php wp_head(); ?>
-</head>
-<body <?php body_class('xbase-site'); ?>>
-<?php wp_body_open(); ?>
-'@
-$headerPage = @'
 <?php global $xbase_meta; ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -117,12 +99,15 @@ $headerPage = @'
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta property="og:title" content="<?php echo esc_attr($xbase_meta['title'] ?? get_bloginfo('name')); ?>">
   <meta property="og:description" content="<?php echo esc_attr($xbase_meta['description'] ?? get_bloginfo('description')); ?>">
-  <meta property="og:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/og.png">
+  <meta property="og:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/og-xbase-20260818.png">
+  <meta property="og:image:secure_url" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/og-xbase-20260818.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="데이터로 길을 찾고 경험과 성과를 만드는 XBASE">
   <meta property="og:url" content="<?php echo esc_url($xbase_meta['canonical'] ?? home_url('/')); ?>">
   <meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="XBASE">
   <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="<?php echo esc_attr($xbase_meta['title'] ?? get_bloginfo('name')); ?>">
-  <meta name="twitter:description" content="<?php echo esc_attr($xbase_meta['description'] ?? get_bloginfo('description')); ?>"><meta name="twitter:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/og.png">
+  <meta name="twitter:description" content="<?php echo esc_attr($xbase_meta['description'] ?? get_bloginfo('description')); ?>"><meta name="twitter:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/og-xbase-20260818.png">
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/xbase-logo.png">
   <?php wp_head(); ?>
 </head>

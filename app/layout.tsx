@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://xbase.co.kr"),
-  title: { default: "XBASE | 마케팅·데이터·AI 자동화 포트폴리오", template: "%s | XBASE" },
-  description: "마케팅과 데이터, AI를 연결해 상상을 현실로 만들고 문제를 최선의 방법으로 해결하는 박영준의 개인 포트폴리오 XBASE입니다.",
+  title: { default: "XBASE | 데이터로 길을 찾고, 경험과 성과를 만듭니다", template: "%s | XBASE" },
+  description: "마케팅·데이터·AI를 연결해 사람에게 남는 경험을 더 나은 성과로 바꾸는 박영준의 개인 포트폴리오 XBASE입니다.",
   applicationName: "XBASE",
   authors: [{ name: "박영준", url: "https://xbase.co.kr/about/" }],
   creator: "박영준",
